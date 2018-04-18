@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,7 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'comptaApp'
 
+
 ]
+
+AUTH_USER_MODEL = 'comptaApp.CustomUser'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -83,7 +88,7 @@ WSGI_APPLICATION = 'comptacloud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'comptacloud',
+        'NAME': 'comptacloudbbd',
         'USER':'root',
         'PASSWORD': '',
         'HOST':'',

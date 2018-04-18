@@ -6,6 +6,16 @@
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+
+
+class CustomUser(AbstractUser):
+    # First/last name is not a global-friendly pattern
+    name = models.CharField(blank=True, max_length=255)
+    secondname = models.CharField(blank=True, max_length=255)
+
+    def __str__(self):
+        return self.email
 
 
 class AuthGroup(models.Model):
