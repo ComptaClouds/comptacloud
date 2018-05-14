@@ -5,11 +5,75 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  <p><a href="{% url 'logout' %}">logout</a></p>
+  Hi {{ user.groups.all.0 }}!
+Hi {{ user.username }}!
+{% if user.image %}
+<br/>
+<img src="{{ user.image.url }}" alt=" " width="300" height="300" />
+<br/>
+{% endif %}
+
+{% if user.standard is True %}
+<br/>
+Standard
+<br/>
+{% endif %}
+
+{% if user.valide is True %}
+<br/>
+Validé
+<br/>
+{% else %}
+<br/>
+Validation en attente
+<br/>
+{% endif %}
+
+{% if user.autorise is True %}
+<br/>
+autorisé
+<br/>
+{% else %}
+<br/>
+Autorisation en attente
+<br/>
+{% endif %}
+
+
+            <a href="{% url 'modifier' %}">Edit</a> |
+            <a href="{% url 'enregistrement' %}">continuer enregistrement</a>
+
+<!-- permissions du groupe auquel il appartient -->
+{% for speaker in user.groups.all %}
+
+  {% for speaker2 in speaker.permissions.all %}
+       <li> {{ speaker2.codename }}</li>
+
+  {% endfor %}
+
+{% endfor %}
+<br/>
+{% for speaker in user.groups.all %}
+       <li> {{ speaker.name }}</li>
+
+{% endfor %}
+<!-- fin permissions du groupe auquel il appartient -->
+
+
+<!-- permissions de l'utilisateur -->
+{% for speaker3 in user.user_permissions.all %}
+        <li>{{ speaker3.name }}</li>
+{% endfor %}
+<!-- fin permissions de l'utilisateur -->
+
+
+  <p><a href="{% url 'login' %}">logout</a></p>
 {% else %}
   <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a> |
-  <a href="{% url 'signup' %}">signup</a>
+
+    <a href="{% url 'login' %}">login</a> |
+    <a href="{% url 'signup' %}">signup</a>
+    <a href="{% url 'enregistrement' %}">continuer enregistrement</a>
 {% endif %}
 {% endblock %}
+

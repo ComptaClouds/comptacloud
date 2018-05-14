@@ -6,16 +6,90 @@
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser,PermissionsMixin
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django.contrib.auth.models import User
+from comptacloud import settings
+from django.contrib.auth.models import BaseUserManager
+from django.utils import timezone
+from django.contrib.auth.models import Group
+
+
+class CustomUserManager(BaseUserManager):
+
+    def _create_user(self, email, password,
+                     is_staff, is_superuser, **extra_fields):
+        """
+        Creates and saves a User with the given email and password.
+        """
+        now = timezone.now()
+        if not email:
+            raise ValueError('The given email must be set')
+        email = self.normalize_email(email)
+        user = self.model(email=email,
+                          is_staff=is_staff, is_active=True,
+                          is_superuser=is_superuser, last_login=now,
+                          date_joined=now, **extra_fields)
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
+
+    def create_user(self, email, password=None, **extra_fields):
+        return self._create_user(email, password, False, False,
+                                 **extra_fields)
+
+    def create_superuser(self, email, password, **extra_fields):
+        return self._create_user(email, password, True, True,
+                                 **extra_fields)
+
+
+
+
+
 
 
 class CustomUser(AbstractUser):
     # First/last name is not a global-friendly pattern
+
     name = models.CharField(blank=True, max_length=255)
     secondname = models.CharField(blank=True, max_length=255)
+    image = models.FileField(upload_to='documents/')
+    email_confirmed = models.BooleanField(default=False)
+    standard = models.BooleanField(default=True)
+    valide = models.BooleanField(default=False)
+    autorise = models.BooleanField(default=False)
 
-    def __str__(self):
-        return self.email
+
+    class Meta:
+        permissions = (
+            ("can_see_dealer_price", "Can see dealer price"),
+        )
+
+        def __str__(self):
+            return self.email
+
+class Profile(models.Model):
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    bio = models.TextField(max_length=500, blank=True)
+    location = models.CharField(max_length=30, blank=True)
+    birth_date = models.DateField(null=True, blank=True)
+
+@receiver(post_save, sender=User)
+def update_user_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
+    instance.profile.save()
+
+def user_directory_path(instance, filename):
+    return 'user_{0}/{1}'.format(instance.entreprise, filename)
+
+class Document(models.Model):
+    description = models.CharField(max_length=255, blank=True)
+    document = models.FileField(upload_to=user_directory_path)
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='documents',on_delete=models.CASCADE,default=1)
+    entreprise =  models.CharField(max_length=255, default='merde')
 
 
 class AuthGroup(models.Model):
