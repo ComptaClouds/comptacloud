@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'comptacloud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'comptacloudbbd',
+        'NAME': 'comptappli',
         'USER':'root',
         'PASSWORD': '',
         'HOST':'',

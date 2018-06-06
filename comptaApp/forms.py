@@ -1,18 +1,11 @@
 from django import forms
-from .models import User2
+from .models import*
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
-from .models import CustomUser,Document
+from .models import CustomUser
 from django.contrib.auth.models import User,Group
 
 
 
-class DocumentForm(forms.ModelForm):
-
-    entreprise = forms.ModelChoiceField(queryset=CustomUser.objects.filter(groups=1),
-                                   required=True)
-    class Meta:
-        model = Document
-        fields = ('description', 'document','entreprise', )
 
 
 class SignUpForm(UserCreationForm):
@@ -29,6 +22,13 @@ class CreationForm(forms.ModelForm):
         fields = ('denomination', 'siege', 'objet', 'capital', 'duree',)
 
 
+class fournisseurs(forms.ModelForm):
+
+    class Meta:
+        model = operationcompta
+        fields = ('libelle',)
+
+
 class CustomUserCreationForm(UserCreationForm):
     group = forms.ModelChoiceField(queryset=Group.objects.all(),
                                    required=True)
@@ -38,6 +38,13 @@ class CustomUserCreationForm(UserCreationForm):
         model = CustomUser
         fields = ('username', 'image', 'email','group', )
 
+class DocumentForm(forms.ModelForm):
+    entreprise = forms.ModelChoiceField(queryset=CustomUser.objects.filter(groups=1),
+                                                required=True)
+
+    class Meta:
+        model = Document
+        fields = ('description', 'document', 'entreprise',)
 
 class autorisation(forms.ModelForm):
     utilise = forms.ModelMultipleChoiceField(queryset=CustomUser.objects.filter(autorise=0),
@@ -50,7 +57,8 @@ class autorisation(forms.ModelForm):
 
 class CustomUserChangeForm(UserChangeForm):
    # image = forms.FileField(help_text="Upload image: ", required=False)
-
+    #group = forms.ModelChoiceField(queryset=Group.objects.all(),
+     #                             required=True)
     class Meta:
         model = CustomUser
         fields = ('username', 'password',)

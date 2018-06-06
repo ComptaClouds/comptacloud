@@ -3,6 +3,8 @@
 <html>
 <head>
   <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
 </head>
 <body>
@@ -10,5 +12,272 @@
     {% block content %}
     {% endblock %}
   </main>
+
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript">
+
+	$(document).ready(function(){
+      $("#formcom").submit(function(event){
+          event.preventDefault();
+          username=$(this).find("input[name=username]").val();
+			csrfmiddlewaretoken=$(this).find("input[name=csrfmiddlewaretoken]").val();
+			$.post("{% url 'modifier' %}",{username:username,csrfmiddlewaretoken:csrfmiddlewaretoken},function(data){
+			      $("#message").fadeIn();
+			      $("#message").delay(500).fadeOut();
+			      $('#choisi').empty().append(username);
+	             username=$("#formcom").find("input[name=username]").val("");
+	             console.log(data.a);
+
+
+
+			})
+      })
+	})
+</script>
+ <script type="text/javascript">
+
+function change_valeur() {
+select = document.getElementById("myFo");
+choice = select.selectedIndex ; // Récupération de l'index du <option> choisi
+valeur_cherchee = select.options[choice].value; // Récupération du texte du <option> d'index "choice"
+document.getElementById('entrep').value=valeur_cherchee;
+console.log(valeur_cherchee);
+}
+
+
+
+	$(document).on('submit','#op',function(e){
+      e.preventDefault();
+        var my_select_val=$("input[name=entrep]").val();
+       var splitted = my_select_val.split(',');
+
+
+      $.ajax({
+        type:'POST',
+        url:'http://127.0.0.1:8000/comptaApp/saisiesoperations/',
+        data:{
+          libelle:$("input[name=libelle]").val(),
+          nom:$("input[name=nom]").val(),
+          entrep:splitted[0],
+          movies:$("input[name=movies]").val(),
+          csrfmiddlewaretoken:splitted[1]
+        },
+        success:function(){
+        a=$("input[name=movies]").val();
+         $('#choix').empty().append("Fournisseur:"+a+"<button id='changer' onclick = 'displayLoginBox()' >changer</button>");
+         $("#mov").fadeOut();
+        }
+      });
+	});
+
+</script>
+<script type="text/javascript">
+
+function displayLoginBox(){
+    $("#mov").fadeIn();
+      }
+</script>
+<script type="text/Javascript" >
+   function ajout(element){
+      var formulaire = document.getElementById('voir');
+      console.log(formulaire);
+      // On clone le bouton d'ajout
+      var ajout = element.cloneNode(true);
+      // Crée un nouvel élément de type "input"
+      var champ = document.createElement("input");
+      // Les valeurs encodée dans le formulaire seront stockées dans un tableau
+      champ.name = "champs";
+      champ.type = "text";
+      champ.placeholder = "montant";
+      document.getElementById("nbre").value++;
+      var a=document.getElementById("nbre").value;
+      champ.setAttribute('oninput','myFunction()')
+
+      var sup = document.createElement("input");
+      sup.value = "-";
+      sup.type = "button";
+      // Ajout de l'événement onclick
+      sup.onclick = function onclick(event)
+         {suppression(this);};
+
+      // On crée un nouvel élément de type "p" et on insère le champ l'intérieur.
+      var bloc = document.createElement("p");
+      bloc.appendChild(champ);
+      formulaire.insertBefore(ajout, element);
+      formulaire.insertBefore(sup, element);
+      formulaire.insertBefore(bloc, element);
+
+
+   }
+
+
+   function suppression(element){
+   var formulaire = document.getElementById('voir');
+
+   // Supprime le bouton d'ajout
+   formulaire.removeChild(element.previousSibling);
+   // Supprime le champ
+   formulaire.removeChild(element.nextSibling);
+   // Supprime le bouton de suppression
+   formulaire.removeChild(element);
+    document.getElementById("nbre").value--;
+    var a=document.getElementById("nbre").value;
+    console.log(a);
+
+}
+
+function ajout2(element){
+      var formulaire2 = document.getElementById('voir2');
+      console.log(formulaire2);
+      // On clone le bouton d'ajout
+      var ajout2 = element.cloneNode(true);
+      // Crée un nouvel élément de type "input"
+      var champ2 = document.createElement("input");
+      // Les valeurs encodée dans le formulaire seront stockées dans un tableau
+      champ2.name = "champs2";
+      champ2.type = "text";
+      champ2.placeholder = "montant";
+      champ2.setAttribute('oninput','myFunction()')
+
+      var sup2 = document.createElement("input");
+      sup2.value = "-";
+      sup2.type = "button";
+      // Ajout de l'événement onclick
+      sup2.onclick = function onclick(event)
+         {suppression2(this);};
+
+      // On crée un nouvel élément de type "p" et on insère le champ l'intérieur.
+      var bloc2 = document.createElement("p");
+      bloc2.appendChild(champ2);
+      formulaire2.insertBefore(ajout2, element);
+      formulaire2.insertBefore(sup2, element);
+      formulaire2.insertBefore(bloc2, element);
+
+
+   }
+
+
+   function suppression2(element){
+   var formulaire2 = document.getElementById('voir2');
+
+   // Supprime le bouton d'ajout
+   formulaire2.removeChild(element.previousSibling);
+   // Supprime le champ
+   formulaire2.removeChild(element.nextSibling);
+   // Supprime le bouton de suppression
+   formulaire2.removeChild(element);
+
+}
+</script>
+
+ <script type="text/javascript">
+/* Code de l'imputation */
+	$(document).on('submit','#formulaireDynamique',function(e){
+     e.preventDefault();
+      console.log($('input[name=champs]').serialize());
+      $.ajax({
+        type:'POST',
+        url:'{% url 'imputation' %}',
+        data:{
+          useridimputer:$("input[name=useridimputer]").val(),
+          idoperation:$("input[name=idoperation]").val(),
+          csrfmiddlewaretoken:$("input[name=csrfmiddlewaretoken]").val(),
+          champs:$('input[name=champs]').serialize(),
+          champs2:$('input[name=champs2]').serialize()
+        },
+        success:function(){
+/* Code pour changer doperation a coté */
+
+        $enlever=$("input[name=idoperation]").val();
+        $("input[id="+$enlever+"]").slideUp();
+        $enlever=parseInt($enlever)+1;
+        for (var i=0; i<={{ countfiltre }}; i++) {
+        if($("input[id="+$enlever+"]").val()!=null){var i={{ countfiltre }};}
+        else{$enlever=parseInt($enlever)+1;}
+            }
+        $celui=$("input[id="+$enlever+"]").val();
+         $("input[name=idoperation]").val($enlever);
+         $("input[id=clear]").val($celui);
+         $d=document.getElementsByName("idoperation");
+        console.log($d);
+
+        }
+      });
+	});
+
+</script>
+
+<script>
+function myFunction() {
+
+var y=document.getElementsByName("champs").length;
+var y2=document.getElementsByName("champs2").length;
+var x=0;var x2=0;
+for(e=0;e<y;e++){
+f=parseInt(document.getElementsByName("champs")[e].value);
+console.log(f);
+if(document.getElementsByName("champs")[e].value=='')
+    {f=0;}
+x=x+f;
+}
+
+for(e=0;e<y2;e++){
+f2=parseInt(document.getElementsByName("champs2")[e].value);
+console.log(f2);
+if(document.getElementsByName("champs2")[e].value=='')
+    {f2=0;}
+x2=x2+f2;
+}
+    document.getElementById("debi").setAttribute("value",x);
+    document.getElementById("credi").setAttribute("value",x2);
+    valdeb=document.getElementById("debi").value;
+    valcred=document.getElementById("credi").value;
+    if(valdeb==valcred){document.getElementById("r").setAttribute("enabled","enabled");
+    document.getElementById("r").removeAttribute("disabled");
+    document.getElementById("r").style.cursor="pointer";}
+    else{document.getElementById("r").setAttribute("disabled","disabled");
+    document.getElementById("r").removeAttribute("enabled");
+    document.getElementById("r").style.cursor="not-allowed";}
+
+}
+</script>
+
+<script>
+function selectChange(val) {
+    console.log($('#myFor').val());
+}
+</script>
+
+<script>
+function a(){
+    console.log($('input[name=movies').val());
+}
+
+$(document).ready(function() {
+    $("#myFo").change(function(){
+        var my_select = $("#myFo option:selected");
+        //Récupération des valeurs du formulaires
+        var my_select_val = $("#myFo option:selected").val();
+        console.log(my_select_val);
+        var splitted = my_select_val.split(',');
+        fournir=splitted[0];
+        console.log(splitted[1]);
+		csrfmiddlewaretoken=splitted[1];
+		$.post("{% url 'afficherfournisseurs' %}",{fournir:fournir,csrfmiddlewaretoken:csrfmiddlewaretoken},function(data){
+		        valeurs=data.a;
+	             console.log(valeurs);
+	             console.log(valeurs.length);
+	             $("#yu").empty();
+	             for (var p=0;p<valeurs.length;p++){
+	             console.log(valeurs[p]);
+	             $("#yu").append("<option>"+valeurs[p]+"</option>");
+	             }
+			});
+        });
+    })
+
+</script>
+
 </html>

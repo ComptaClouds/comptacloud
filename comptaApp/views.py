@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import CreationForm
+import json
 from django.shortcuts import redirect,get_object_or_404
 from .models import*
 from django.http import *
@@ -21,6 +22,8 @@ from django.utils.http import urlsafe_base64_decode
 from .tokens import account_activation_token
 from django.utils.encoding import force_text
 import pprint
+import json
+from django.http.response import JsonResponse
 
 
 # users/views.py
@@ -29,8 +32,8 @@ from django.views import generic
 
 from django.db.models import Q
 
-from .models import CustomUser
-from .forms import CustomUserCreationForm,continuerenregistrement,CustomUser,CustomUserChangeForm,DocumentForm,SignUpForm,autorisation
+
+from .forms import*
 
 
 
@@ -62,7 +65,7 @@ def autorise(request):
 
 
 def modifier(request):
-
+    ab={}
 
     if request.method == 'POST':
         form = CustomUserChangeForm(request.POST,request.FILES, instance=request.user)
@@ -70,13 +73,30 @@ def modifier(request):
         if form.is_valid():
             user=form.save(commit=False)
             user.save()
-            return redirect('home')
+            ab['a']=12
+           # return redirect('home')
+            return HttpResponse(json.dumps(ab),content_type="application/json")
 
 
     else:
             form = CustomUserChangeForm(instance=request.user)
             args={'form':form}
             return render(request, 'modifier.html',args)
+
+
+def liaisons(request):
+    if request.method == 'POST':
+        form = liaison(request.POST)
+        if form.is_valid():
+            for s in form.cleaned_data["relations"]:
+                a=request.POST["comptableid"]
+                b=CustomUser.objects.get(id=a)
+                b.relations.add(s)
+        return HttpResponse(a)
+    else:
+            form = liaison()
+            args={'form':form}
+            return render(request, 'liaisons.html',args)
 
 
 def enregistrement(request):
@@ -240,3 +260,81 @@ def login_user(request):
 
 def main(request):
     return render(request, 'blog/login.html', {})
+
+
+def saisiesoperations(request):
+    if request.method == "POST":
+        username = request.POST['nom']
+        operation = request.POST['libelle']
+        entrepris = request.POST['entrep']
+        entrepri = CustomUser.objects.get(username=entrepris)
+        fournisseu = request.POST['movies']
+        fournisse = CustomUser.objects.get(username=fournisseu)
+        if Fournisseurs.objects.filter(nom=username).exists() == False:
+                Fournisseurs.objects.create(nom=username)
+        operationcompta.objects.create(libelle=operation,typejournal_idtypejournal=1,entrepriseid_id=entrepri.id,fournisseurs_id=fournisse.id)
+        return HttpResponse('')
+    else:
+        ent=CustomUser.objects.filter(groups=2)
+        four = CustomUser.objects.filter(groups=3)
+        return render(request, 'saisies_operations.html',{'ent':ent,'four':four})
+
+def imputation(request):
+    if request.method == "POST":
+        op=request.POST['idoperation']
+        userimpute=request.POST['useridimputer']
+        post=request.POST['champs']
+        post2 = request.POST['champs2']
+        q = QueryDict(post, mutable=True)
+        q2 = QueryDict(post2, mutable=True)
+        ukeys=q.pop('champs')
+        ukeys2 = q2.pop('champs2')
+        for nbr in ukeys:
+            dbiter=Debit.objects.create(montant=nbr)
+            dbiter.save()
+
+        for nbr in ukeys2:
+            cditer=Credit.objects.create(montant=nbr)
+            cditer.save()
+
+        ope=operationcompta.objects.get(id=op)
+        ope.useridimputer=userimpute
+        ope.save()
+        return HttpResponse('')
+    else:
+        for f in operationcompta.objects.filter(useridimputer__isnull=True)[:1]:
+            opere=f.libelle
+            operationconcernee=f.id
+        h=operationcompta.objects.all()
+        count=operationcompta.objects.all().count()
+        j=operationcompta.objects.filter(useridimputer__isnull=True)
+        countfiltre=operationcompta.objects.filter(useridimputer__isnull=True).count()
+
+        return render(request, 'imputation.html',{'opere':opere,'operationconcernee':operationconcernee,'h':h,'j':j,'count':count,'countfiltre':countfiltre})
+
+
+def fourni(request):
+    if request.method == "POST":
+        return HttpResponse('debitcredit')
+    else:
+        return render(request, 'saisiesoperations.html')
+
+
+def afficherfournisseurs(request):
+    ab = {}
+    if request.method == 'POST':
+            variable=request.POST['fournir']
+            variable2=CustomUser.objects.get(username=variable)
+            variable3=list(operationcompta.objects.filter(entrepriseid_id=variable2.id).values('fournisseurs_id'))
+            a=[]
+            for i in variable3:
+                a.append(i['fournisseurs_id'])
+            tableau=[]
+            for e in a:
+                f=CustomUser.objects.get(id=e)
+                tableau.append(f.username)
+            g=list(tableau)
+
+            ab['a'] = g
+            # return redirect('home')
+            return HttpResponse(json.dumps(ab), content_type="application/json")

@@ -1,0 +1,43 @@
+<!-- templates/signup.html -->
+{% extends 'base.html' %}
+
+{% block title %}Saisies operations{% endblock %}
+
+{% block content %}
+  <h2>{{ user.id }}</h2>
+
+<div id="choix"></div>
+
+  <form method="post" enctype="multipart/form-data" id="op" >
+    {% csrf_token %}
+      <label id="libel">libelle operation:<br/>
+   <input type="text" name="libelle">
+      </label>
+     <input type="text" name="nom" id="nom">
+      <label>liste entreprise:<br/>
+       <select id="myFo" name="myFo" onchange="change_valeur()">
+
+           <option>..........</option>
+        {% for ent in ent %}
+        <option value="{{ ent.username }},{{ csrf_token }}">{{ ent.username }}</option>
+        {% endfor %}
+    </select>
+          </label>
+      <label id="mov">liste fournisseurs:<br/>
+  <input type="text" name="movies" list="movies" oninput="a()"/>
+  <datalist id="movies">
+
+  <label> or select one from the list:
+  <select id="yu" name="movies">
+  </select>
+   </label>
+
+  </datalist>
+ </label>
+      <input type="hidden" id="entrep" name="entrep">
+    <button type="submit">Sign up</button>
+  </form>
+<br/>
+
+
+{% endblock %}

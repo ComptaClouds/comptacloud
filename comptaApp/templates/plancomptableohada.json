@@ -1,0 +1,3209 @@
+{
+    "comptes": [
+        {
+            "classe": "1",
+            "LIBELLE": "Comptes de ressources durables",
+            "comptes": [
+                        {
+                            "classe": "10",
+                            "libelle": "Capital",                        
+                            "comptes": [
+                                {
+                                    "classe": "101",
+                                    "libelle": "Capital social",
+                                    "undefined": "101 - Capital social"
+                                },
+                                {
+                                    "classe": "102",
+                                    "libelle": "Capital par dotation"
+                                },
+                                {
+                                    "classe": "103",
+                                    "libelle": "Capital personnel"
+                                },
+                                {
+                                    "classe": "104",
+                                    "libelle": "Compte de l'exploitant"
+                                },
+                                {
+                                    "classe": "105",
+                                    "libelle": "Primes liées Capitaux propres"
+                                },
+                                {
+                                    "classe": "106",
+                                    "libelle": "Écarts de réévaluation",
+                                    "comptes": [
+                                        {
+                                            "classe": "1061",
+                                            "libelle": "Écarts de réévaluation légale"
+                                        },
+                                        {
+                                            "classe": "1062",
+                                            "libelle": "Écarts de réévaluation libre"
+                                        }
+                                    ]
+
+                                },
+                                {
+                                    "classe": "109",
+                                    "libelle": "Actionnaires, capital souscrit, non appelé"
+                                }
+                            ]
+
+                        },
+                        {
+                            "classe": "11",
+                            "libelle": "Réserves",                          
+                            "comptes": [
+                                {
+                                    "classe": "111",
+                                    "libelle": "Réserve légale"
+                                },
+                                {
+                                    "classe": "113",
+                                    "libelle": "Réserves réglementées"
+                                },
+                                {
+                                    "classe": "118",
+                                    "libelle": "Autres réserves"
+                                }
+                            ]
+
+                        },
+                        {
+                            "classe": "12",
+                            "libelle": "Report à nouveau",                           
+                            "comptes": [
+                                {
+                                    "classe": "121",
+                                    "libelle": "Report à nouveau créditeur"
+                                },
+                                {
+                                    "classe": "129",
+                                    "libelle": "Report à nouveau débiteur"
+                                }
+                            ]
+
+                        },
+                        {
+                            "classe": "14",
+                            "libelle": "Subventions d'investissement",
+                            "undefined": "14 - Subventions d'investissement"
+                        },
+                        {
+                            "classe": "15",
+                            "libelle": "Provisions réglementées et assimilées",                          
+                            "comptes": [
+                                {
+                                    "classe": "151",
+                                    "libelle": "Amortissements dérogatoires"
+                                },
+                                {
+                                    "classe": "152",
+                                    "libelle": "Plus-values cession à réinvestir"
+                                },
+                                {
+                                    "classe": "153",
+                                    "libelle": "Fonds réglementés"
+                                },
+                                {
+                                    "classe": "155",
+                                    "libelle": "Provis. réglementées sur Immobilisations."
+                                },
+                                {
+                                    "classe": "156",
+                                    "libelle": "Provis. réglementées sur stocks"
+                                }
+                            ]
+
+                        },
+                        {
+                            "classe": "16",
+                            "libelle": "Emprunts et dettes assimilées",                           
+                            "comptes": [
+                                {
+                                    "classe": "161",
+                                    "libelle": "Emprunts obligataires",                                  
+                                    "comptes": [
+                                        {
+                                            "classe": "1611",
+                                            "libelle": "Emprunts obligataires ordinaires"
+                                        },
+                                        {
+                                            "classe": "1612",
+                                            "libelle": "Emprunts obligataires convertibles"
+                                        },
+                                        {
+                                            "classe": "1618",
+                                            "libelle": "Emprunts obligataires"
+                                        }
+                                    ]
+
+                                },
+                                {
+                                    "classe": "162",
+                                    "libelle": "Emprunts Établissement crédit"
+                                },
+                                {
+                                    "classe": "163",
+                                    "libelle": "Avances reçues de l'état"
+                                },
+                                {
+                                    "classe": "164",
+                                    "libelle": "Avances reçues, C/C bloqués"
+                                },
+                                {
+                                    "classe": "165",
+                                    "libelle": "Dépôts et cautionnements reçus"
+                                },
+                                {
+                                    "classe": "167",
+                                    "libelle": "Avances à conditions. particulières"
+                                },
+                                {
+                                    "classe": "168",
+                                    "libelle": "Autres emprunts et dettes"
+                                },
+                                {
+                                    "classe": "166",
+                                    "libelle": "Intérêts courus",                                  
+                                    "comptes": [
+                                        {
+                                            "classe": "1661",
+                                            "libelle": "Sur emprunts obligataires"
+                                        },
+                                        {
+                                            "classe": "1662",
+                                            "libelle": "Sur emprunts établissements de. crédit"
+                                        },
+                                        {
+                                            "classe": "1663",
+                                            "libelle": "Sur avances reçues de l'état"
+                                        },
+                                        {
+                                            "classe": "1664",
+                                            "libelle": "Sur avances reçues, C/C bloqués"
+                                        },
+                                        {
+                                            "classe": "1665",
+                                            "libelle": "Sur dépôts, cautionnements"
+                                        },
+                                        {
+                                            "classe": "1667",
+                                            "libelle": "sur avances à conditions. particulières."
+                                        },
+                                        {
+                                            "classe": "1668",
+                                            "libelle": "Sur autres emprunts et dettes"
+                                        }
+                                    ]
+
+                                }
+                            ]
+
+                        },
+                        {
+                            "classe": "17",
+                            "libelle": "Dettes crédit-bail et assimilé",                          
+                            "comptes": [
+                                {
+                                    "classe": "172",
+                                    "libelle": "Emprunts crédit-bail immobilier"
+                                },
+                                {
+                                    "classe": "173",
+                                    "libelle": "Emprunts crédit-bail mobilier"
+                                },
+                                {
+                                    "classe": "176",
+                                    "libelle": "Intérêts courus",
+                                    "comptes":[
+                                        {
+                                            "classe": "1762",
+                                            "libelle": "Sur emprunt. crédit-bail immobilier"
+                                        },
+                                        {
+                                            "classe": "1763",
+                                            "libelle": "Sur emprunt. crédit-bail mobilier"
+                                        },
+                                        {
+                                            "classe": "1768",
+                                            "libelle": "Sur emprunt. équivalent. autres. contrats"
+                                        },
+                                        ]
+                                },
+                                {
+                                    "classe": "178",
+                                    "libelle": "Emprunt. équivalents autres contrats"
+                                }
+                            ]
+
+                        },
+                        {
+                            "classe": "19",
+                            "libelle": "Provis.  Fin. Risques & Charges",
+                            "undefined": "19 - Provis.  Fin. Risques & Charges"
+                        }
+                    ]
+        },
+        {
+            "classe": "2",
+            "LIBELLE": "Comptes d'actif immobilisé",         
+            "comptes": [
+                {
+                    "classe": "21",
+                    "libelle": "Immobilisations incorporelles",                   
+                    "comptes": [
+                        {
+                            "classe": "211",
+                            "libelle": "Frais recherche et développement"
+                        },
+                        {
+                            "classe": "212",
+                            "libelle": "Brevets, licences, concessions"
+                        },
+                        {
+                            "classe": "213",
+                            "libelle": "Logiciels"
+                        },
+                        {
+                            "classe": "214",
+                            "libelle": "Marques"
+                        },
+                        {
+                            "classe": "215",
+                            "libelle": "Fonds commercial"
+                        },
+                        {
+                            "classe": "216",
+                            "libelle": "Droit au bail"
+                        },
+                        {
+                            "classe": "217",
+                            "libelle": "Investissements de création"
+                        },
+                        {
+                            "classe": "218",
+                            "libelle": "Autres droits, valeurs incorporelles."
+                        },
+                        {
+                            "classe": "219",
+                            "libelle": "Immobilisations. incorporelles en cours",
+                            "comptes":[
+                                            {
+                                        "classe": "2191",
+                                        "libelle": "Frais recherche et développement"
+                                    },
+                                    {
+                                        "classe": "2193",
+                                        "libelle": "Logiciels"
+                                    },
+                                    {
+                                        "classe": "2198",
+                                        "libelle": "Autres droits, valeurs incorporelles."
+                                    }
+                                ]
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "20",
+                    "libelle": "Charges immobilisées",                   
+                    "comptes": [
+                        {
+                            "classe": "201",
+                            "libelle": "Frais d'établissement"
+                        },
+                        {
+                            "classe": "202",
+                            "libelle": "Charges à répartir"
+                        },
+                        {
+                            "classe": "206",
+                            "libelle": "Primes Remboursement Obligations"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "22",
+                    "libelle": "Terrains",                 
+                    "comptes": [
+                        {
+                            "classe": "221",
+                            "libelle": "Terrains agricoles et forestiers"
+                        },
+                        {
+                            "classe": "222",
+                            "libelle": "Terrains nus"
+                        },
+                        {
+                            "classe": "223",
+                            "libelle": "Terrains bâtis"
+                        },
+                        {
+                            "classe": "224",
+                            "libelle": "Travaux mise en valeur terrains"
+                        },
+                        {
+                            "classe": "225",
+                            "libelle": "Terrains de gisement"
+                        },
+                        {
+                            "classe": "226",
+                            "libelle": "Terrains aménagés"
+                        },
+                        {
+                            "classe": "228",
+                            "libelle": "Autres terrains"
+                        },
+                        {
+                            "classe": "229",
+                            "libelle": "Aménagements terrains en cours"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "23",
+                    "libelle": "Bâtiments, installations. techniques",                  
+                    "comptes": [
+                        {
+                            "classe": "231",
+                            "libelle": "Bâtiments sur sol propre"
+                        },
+                        {
+                            "classe": "232",
+                            "libelle": "Bâtiments sur sol d'autrui"
+                        },
+                        {
+                            "classe": "233",
+                            "libelle": "Ouvrages d'infrastructure"
+                        },
+                        {
+                            "classe": "234",
+                            "libelle": "Installations techniques"
+                        },
+                        {
+                            "classe": "235",
+                            "libelle": "Aménagement de bureaux"
+                        },
+                        {
+                            "classe": "237",
+                            "libelle": "Bâtiments en concession"
+                        },
+                        {
+                            "classe": "238",
+                            "libelle": "Autres installations et agencements"
+                        },
+                        {
+                            "classe": "239",
+                            "libelle": "Bâtiment et installations en cours",
+                            "comptes":[
+                                                {
+                                        "classe": "2391",
+                                        "libelle": "En cours sur Bâtiments sur sol propre"
+                                    },
+                                    {
+                                        "classe": "2392",
+                                        "libelle": "En cours sur Bâtiments sur sol d'autrui"
+                                    },
+                                    {
+                                        "classe": "2393",
+                                        "libelle": "En cours sur Ouvrages d'infrastructure"
+                                    },
+                                    {
+                                        "classe": "2394",
+                                        "libelle": "En cours sur Installations techniques"
+                                    },
+                                    {
+                                        "classe": "2395",
+                                        "libelle": "En cours sur Aménagement de bureaux"
+                                    },
+                                    {
+                                        "classe": "2397",
+                                        "libelle": "En cours sur Bâtiments en concession"
+                                    },
+                                    {
+                                        "classe": "2398",
+                                        "libelle": "En cours sur Autres installations et agencements"
+                                    }
+                                ]
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "24",
+                    "libelle": "Matériel",                   
+                    "comptes": [
+                        {
+                            "classe": "241",
+                            "libelle": "Matériel, outillage industriel et commercial"
+                        },
+                        {
+                            "classe": "242",
+                            "libelle": "Matériel et outillage agricole"
+                        },
+                        {
+                            "classe": "243",
+                            "libelle": "Matériel Emballage récupérable"
+                        },
+                        {
+                            "classe": "244",
+                            "libelle": "Matériel et mobilier"
+                        },
+                        {
+                            "classe": "245",
+                            "libelle": "Matériel de transport"
+                        },
+                        {
+                            "classe": "246",
+                            "libelle": "Immobilisations. animales, agricoles"
+                        },
+                        {
+                            "classe": "248",
+                            "libelle": "Autres matériels"
+                        },
+                        {
+                            "classe": "249",
+                            "libelle": "Matériel en cours",
+                            "comptes":[{
+                                    "classe": "2491",
+                                    "libelle": "Matériel, outillage industriel et commercial en cours"
+                                },
+                                {
+                                    "classe": "2492",
+                                    "libelle": "Matériel et outillage agricole en cours"
+                                },
+                                {
+                                    "classe": "2493",
+                                    "libelle": "Matériel Emballage récupérable en cours"
+                                },
+                                {
+                                    "classe": "2494",
+                                    "libelle": "Matériel et mobilier de bureau en cours"
+                                },
+                                {
+                                    "classe": "2495",
+                                    "libelle": "Matériel de transport en cours"
+                                },
+                                {
+                                    "classe": "2496",
+                                    "libelle": "Immobilisations. animales, agricoles en cours"
+                                },
+                                {
+                                    "classe": "2497",
+                                    "libelle": "Agencements., aménagement. du matériel en cours"
+                                },
+                                {
+                                    "classe": "2498",
+                                    "libelle": "Autres matériels en cours"
+                                }]
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "25",
+                    "libelle": "Avances, acomptes versés sur immobilisations",
+                    "undefined": "25 - Avances, acomptes versés sur immobilisations"
+                },
+                {
+                    "classe": "26",
+                    "libelle": "Titres de participation",
+                    "undefined": "26 - Titres de participation"
+                },
+                {
+                    "classe": "27",
+                    "libelle": "Autres immobilisations. financières",                  
+                    "comptes": [
+                        {
+                            "classe": "271",
+                            "libelle": "Prêts et créances non commerciales"
+                        },
+                        {
+                            "classe": "272",
+                            "libelle": "Prêts au personnel"
+                        },
+                        {
+                            "classe": "273",
+                            "libelle": "Créances sur l'Etat"
+                        },
+                        {
+                            "classe": "274",
+                            "libelle": "Titres immobilisés"
+                        },
+                        {
+                            "classe": "275",
+                            "libelle": "Dépôts et cautionnements versés"
+                        },
+                        {
+                            "classe": "276",
+                            "libelle": "Intérêts courus",
+                            "comptes":[
+                                                {
+                                        "classe": "2761",
+                                        "libelle": "Int. Courus Prêts et créances non commerciales"
+                                    },
+                                    {
+                                        "classe": "2762",
+                                        "libelle": "Int. Courus Prêts au personnel"
+                                    },
+                                    {
+                                        "classe": "2763",
+                                        "libelle": "Int. Courus Créances sur l'Etat"
+                                    },
+                                    {
+                                        "classe": "2764",
+                                        "libelle": "Int. Courus Titres immobilisés"
+                                    },
+                                    {
+                                        "classe": "2765",
+                                        "libelle": "Int. Courus Dépôts et cautionnements versés"
+                                    },
+                                    {
+                                        "classe": "2767",
+                                        "libelle": "Int. Courus Créances rattachées à des participations"
+                                    },
+                                    {
+                                        "classe": "2768",
+                                        "libelle": "Int. Courus Immobilisations financières diverses"
+                                    },
+                                ]
+                        },
+                        {
+                            "classe": "277",
+                            "libelle": "Créances rattachées à des participations"
+                        },
+                        {
+                            "classe": "278",
+                            "libelle": "Immobilisations financières diverses"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "28",
+                    "libelle": "Amortissements",                   
+                    "comptes": [
+                        {
+                            "classe": "281",
+                            "libelle": "Amortis. : immobilisations. incorporelles",
+                            "comptes":[
+                                        {
+                                    "classe": "2811",
+                                    "libelle": "Amortissements. : frais R &D"
+                                },
+                                {
+                                    "classe": "2812",
+                                    "libelle": "Amortissements. : brevets, licences"
+                                },
+                                {
+                                    "classe": "2813",
+                                    "libelle": "Amortissements des logiciels"
+                                },
+                                {
+                                    "classe": "2814",
+                                    "libelle": "Amortissements des marques"
+                                },
+                                {
+                                    "classe": "2815",
+                                    "libelle": "Amortissements. du fonds commercial"
+                                },
+                                {
+                                    "classe": "2816",
+                                    "libelle": "Amortissements du droit au bail"
+                                },
+                                {
+                                    "classe": "2817",
+                                    "libelle": "Amont. : investissements. création"
+                                },
+                                {
+                                    "classe": "2818",
+                                    "libelle": "Amortissements. autres  valeurs incorporelles."
+                                }
+                        ]
+                        },
+                        {
+                            "classe": "282",
+                            "libelle": "Amortissements des terrains"
+                        },
+                        {
+                            "classe": "283",
+                            "libelle": "Amortissements. : bâtiments, installations. ",
+                            "comptes":[
+                                        {
+                                    "classe": "2831",
+                                    "libelle": "Amort. bâtim. industriels. sol propre"
+                                },
+                                {
+                                    "classe": "2832",
+                                    "libelle": "Amort. bâtiments. industriels. sol autrui"
+                                },
+                                {
+                                    "classe": "2833",
+                                    "libelle": "Amortissements. : ouvrages infrastructure"
+                                },
+                                {
+                                    "classe": "2834",
+                                    "libelle": "Amont. : installations. techniques"
+                                },
+                                {
+                                    "classe": "2835",
+                                    "libelle": "Amortissements. : aménagement. bureaux"
+                                },
+                                {
+                                    "classe": "2837",
+                                    "libelle": "Amont. bâtiments. industriels. concession"
+                                },
+                                {
+                                    "classe": "2838",
+                                    "libelle": "Amont. : autres. installations., agencements."
+                                }
+                                ]
+                        },
+                        {
+                            "classe": "284",
+                            "libelle": "Amortissements du matériel",
+                            "comptes":[
+                                {
+                            "classe": "2841",
+                            "libelle": "Amont. mat-outillage industriels."
+                        },
+                        {
+                            "classe": "2842",
+                            "libelle": "Amont. mat-outillage agricole"
+                        },
+                        {
+                            "classe": "2843",
+                            "libelle": "Amont. mat-outillage d'emballage"
+                        },
+                        {
+                            "classe": "2844",
+                            "libelle": "Amortissements. matériel, mobilier"
+                        },
+                        {
+                            "classe": "2845",
+                            "libelle": "Amortissements. matériel transport"
+                        },
+                        {
+                            "classe": "2846",
+                            "libelle": "Amont. : immobilisations. animales, agric."
+                        },
+                        {
+                            "classe": "2847",
+                            "libelle": "Amont. : agencements., aménagement."
+                        },
+                        {
+                            "classe": "2848",
+                            "libelle": "Amortissements. : autres matériels"
+                        }
+                                ]
+                        }
+                        
+                    ]
+
+                },
+                {
+                    "classe": "29",
+                    "libelle": "Provisions pour dépréciation",
+                    "comptes": [
+                        {
+                            "classe": "291",
+                            "libelle": "Provisions : immobilisations. incorporelles",
+                            "comptes":[
+                                            {
+                                        "classe": "2912",
+                                        "libelle": "Provisions : brevets, licences"
+                                    },
+                                    {
+                                        "classe": "2913",
+                                        "libelle": "Provisions des logiciels"
+                                    },
+                                    {
+                                        "classe": "2914",
+                                        "libelle": "Provisions des marques"
+                                    },
+                                    {
+                                        "classe": "2915",
+                                        "libelle": "Provisions du fonds commercial"
+                                    },
+                                    {
+                                        "classe": "2916",
+                                        "libelle": "Provisions du droit au bail"
+                                    },
+                                    {
+                                        "classe": "2917",
+                                        "libelle": "Provisions : investissements. création"
+                                    },
+                                    {
+                                        "classe": "2918",
+                                        "libelle": "Provisions autres  valeurs incorporelles."
+                                    },
+                                    {
+                                        "classe": "2919",
+                                        "libelle": "Provision Immobilisations incorporelles. En cours"
+                                    }
+                                ]
+                        },
+                        {
+                            "classe": "292",
+                            "libelle": "Provisions des terrains"
+                        },
+                        {
+                            "classe": "293",
+                            "libelle": "Provisions : bâtiments, installations. ",
+                            "comptes":[
+                                            {
+                                        "classe": "2931",
+                                        "libelle": "Provisions bâtiments. industriels. sol propre"
+                                    },
+                                    {
+                                        "classe": "2932",
+                                        "libelle": "Provisions bâtiments. industriels. sol autrui"
+                                    },
+                                    {
+                                        "classe": "2933",
+                                        "libelle": "Provisions : ouvrages infrastructure"
+                                    },
+                                    {
+                                        "classe": "2934",
+                                        "libelle": "Provisions : installations. techniques"
+                                    },
+                                    {
+                                        "classe": "2935",
+                                        "libelle": "Provisions : aménagement. bureaux"
+                                    },
+                                    {
+                                        "classe": "2937",
+                                        "libelle": "Provisions bâtiments. industriels. concession"
+                                    },
+                                    {
+                                        "classe": "2938",
+                                        "libelle": "Provisions : autres. installations., agencements."
+                                    },
+                                    {
+                                        "classe": "2939",
+                                        "libelle": "Provision Bâtiments En cours"
+                                    }
+                                ]
+                        },
+                        {
+                            "classe": "294",
+                            "libelle": "Provisions du matériel",
+                            "comptes":[
+                                        {
+                                    "classe": "2941",
+                                    "libelle": "Provisions mat-outillage industriels."
+                                },
+                                {
+                                    "classe": "2942",
+                                    "libelle": "Provisions mat-outillage agricole"
+                                },
+                                {
+                                    "classe": "2943",
+                                    "libelle": "Provisions mat-outillage d'emballage"
+                                },
+                                {
+                                    "classe": "2944",
+                                    "libelle": "Provisions matériel, mobilier"
+                                },
+                                {
+                                    "classe": "2945",
+                                    "libelle": "Provisions matériel transport"
+                                },
+                                {
+                                    "classe": "2946",
+                                    "libelle": "Provisions : immobilisations. animales, agric."
+                                },
+                                {
+                                    "classe": "2947",
+                                    "libelle": "Provisions : agencements., aménagement."
+                                },
+                                {
+                                    "classe": "2948",
+                                    "libelle": "Provisions : autres matériels"
+                                },
+                                {
+                                    "classe": "2949",
+                                    "libelle": "Provision Matériel En cours"
+                                }
+                        ]
+                        },
+                        {
+                            "classe": "295",
+                            "libelle": "Provisions avances et acomptes"
+                        },
+                        {
+                            "classe": "296",
+                            "libelle": "Provisions sut titres de participations"
+                        },
+                        {
+                            "classe": "297",
+                            "libelle": "Provisions sur autres immob.financières"
+                        }
+                    ]
+
+                                }
+                            ]
+
+        },
+        {
+            "classe": "3",
+            "LIBELLE": "Comptes de stocks",
+            "comptes": [
+                {
+                    "classe": "31",
+                    "libelle": "Marchandises",
+                    "undefined": "31 - Marchandises"
+                },
+                {
+                    "classe": "32",
+                    "libelle": "Matières premières, fournitures",
+                    "undefined": "32 - Matières premières, fournitures"
+                },
+                {
+                    "classe": "33",
+                    "libelle": "Autres approvisionnements",
+                    "undefined": "33 - Autres approvisionnements"
+                },
+                {
+                    "classe": "34",
+                    "libelle": "Produits en cours",
+                    "undefined": "34 - Produits en cours"
+                },
+                {
+                    "classe": "35",
+                    "libelle": "Services en cours",
+                    "undefined": "35 - Services en cours"
+                },
+                {
+                    "classe": "36",
+                    "libelle": "Produits finis",
+                    "undefined": "36 - Produits finis"
+                },
+                {
+                    "classe": "37",
+                    "libelle": "Produits intermèdiaires., résiduels",
+                    "undefined": "37 - Produits intermèdiaires., résiduels"
+                },
+                {
+                    "classe": "38",
+                    "libelle": "Stocks en cours de route",                   
+                    "comptes": [
+                        {
+                            "classe": "381",
+                            "libelle": "Marchandises en cours de route"
+                        },
+                        {
+                            "classe": "382",
+                            "libelle": "Mat. premières. en cours de route"
+                        },
+                        {
+                            "classe": "383",
+                            "libelle": "Autres approvisionnements. en cours route"
+                        },
+                        {
+                            "classe": "386",
+                            "libelle": "Produits finis en cours de route"
+                        },
+                        {
+                            "classe": "387",
+                            "libelle": "Stock en consignation., en dépôt"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "39",
+                    "libelle": "Dépréciations des stocks",                   
+                    "comptes": [
+                        {
+                            "classe": "391",
+                            "libelle": "Dépréciations. : stocks marchandises"
+                        },
+                        {
+                            "classe": "392",
+                            "libelle": "Dépréciations. : stocks mat. premières"
+                        },
+                        {
+                            "classe": "393",
+                            "libelle": "Dépréciations. : stocks autres. approvisionnements."
+                        },
+                        {
+                            "classe": "394",
+                            "libelle": "Dépréciations. : produits en cours"
+                        },
+                        {
+                            "classe": "395",
+                            "libelle": "Dépréciations. : services en cours"
+                        },
+                        {
+                            "classe": "396",
+                            "libelle": "Dépréciations. : stocks produits finis"
+                        },
+                        {
+                            "classe": "397",
+                            "libelle": "Dépréciations. : stocks produits intermèdiaires."
+                        },
+                        {
+                            "classe": "398",
+                            "libelle": "Dépréciations. : stocks cours de route"
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "classe": "4",
+            "LIBELLE": "Comptes de tiers",         
+            "comptes": [
+                {
+                    "classe": "40",
+                    "libelle": "Fournisseurs,comptes rattachés",                  
+                    "comptes": [
+                        {
+                            "classe": "401",
+                            "libelle": "Fournisseurs, dettes en compte"
+                        },
+                        {
+                            "classe": "402",
+                            "libelle": "Fournisseurs, effets à payer"
+                        },
+                        {
+                            "classe": "408",
+                            "libelle": "Fournis., factures non parvenues"
+                        },
+                        {
+                            "classe": "409",
+                            "libelle": "Fournisseurs débiteurs"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "41",
+                    "libelle": "Clients et comptes rattachés",                  
+                    "comptes": [
+                        {
+                            "classe": "411",
+                            "libelle": "Clients"
+                        },
+                        {
+                            "classe": "412",
+                            "libelle": "Clients, effets à recevoir"
+                        },
+                        {
+                            "classe": "414",
+                            "libelle": "Créances Cessions. courantes immobilisations."
+                        },
+                        {
+                            "classe": "415",
+                            "libelle": "Clients effets. escomptés non échus"
+                        },
+                        {
+                            "classe": "416",
+                            "libelle": "Créances litigieuses douteuses"
+                        },
+                        {
+                            "classe": "418",
+                            "libelle": "Clients, produits à recevoir"
+                        },
+                        {
+                            "classe": "419",
+                            "libelle": "Clients créditeurs"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "42",
+                    "libelle": "Personnel",                   
+                    "comptes": [
+                        {
+                            "classe": "421",
+                            "libelle": "Personnel, avances et acomptes"
+                        },
+                        {
+                            "classe": "422",
+                            "libelle": "Personnel, rémunérations dues"
+                        },
+                        {
+                            "classe": "423",
+                            "libelle": "Personnel, oppositions. saisies-arrêts"
+                        },
+                        {
+                            "classe": "424",
+                            "libelle": "Personnel, œuvres sociales"
+                        },
+                        {
+                            "classe": "425",
+                            "libelle": "Représentants du personnel"
+                        },
+                        {
+                            "classe":"428",
+                            "libelle":"",
+                            "comptes": [
+                                        {
+                                    "classe": "4281",
+                                    "libelle": "Dettes provisionnées. congés à payer"
+                                },
+                                {
+                                    "classe": "4286",
+                                    "libelle": "Pers., Autres charges à payer"
+                                },
+                                {
+                                    "classe": "4287",
+                                    "libelle": "Personnel, Produits à recevoir"
+                                }
+                                ]
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "43",
+                    "libelle": "Organismes sociaux",
+                    "comptes": [
+                        {
+                            "classe": "431",
+                            "libelle": "Sécurité sociale"
+                        },
+                        {
+                            "classe": "433",
+                            "libelle": "Autres organismes sociaux"
+                        },
+                        {
+                            "classe": "438",
+                            "libelle": "",
+                            "comptes":[{
+                            "classe": "4386",
+                            "libelle": "Organismes. sociaux, Autres charges à payer"
+                        },
+                        {
+                            "classe": "4387",
+                            "libelle": "Organismes sociaux, Produits à recevoir"
+                        }]
+                        }
+                        
+                    ]
+
+                },
+                {
+                    "classe": "44",
+                    "libelle": "État et collectivités publiques",                   
+                    "comptes": [
+                        {
+                            "classe": "441",
+                            "libelle": "État, impôt sur les bénéfices"
+                        },
+                        {
+                            "classe": "442",
+                            "libelle": "État, autres impôts et taxes"
+                        },
+                        {
+                            "classe": "443",
+                            "libelle": "État, TVA facturée"
+                        },
+                        {
+                            "classe": "444",
+                            "libelle": "État, TVA due ou crédit de TVA"
+                        },
+                        {
+                            "classe": "445",
+                            "libelle": "État, TVA récupérable"
+                        },
+                        {
+                            "classe": "446",
+                            "libelle": "État, Autres taxes sur C.A."
+                        },
+                        {
+                            "classe": "447",
+                            "libelle": "État, impôts retenus à la source"
+                        },
+                        {
+                            "classe": "448",
+                            "libelle": "",
+                            "comptes":[{
+                            "classe": "4486",
+                            "libelle": "Etat, Charges à payer"
+                        },
+                        {
+                            "classe": "4487",
+                            "libelle": "Etat, Produits à recevoir"
+                        }]
+                        },
+                        {
+                            "classe": "449",
+                            "libelle": "État, créances, dettes diverses"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "45",
+                    "libelle": "Organismes internationaux",                   
+                    "comptes": [
+                        {
+                            "classe": "451",
+                            "libelle": "Organismes africains"
+                        },
+                        {
+                            "classe": "452",
+                            "libelle": "Autres organismes internationaux"
+                        },
+                        {
+                            "classe": "458",
+                            "libelle": "",
+                            "comptes":[{
+                            "classe": "4581",
+                            "libelle": "Organismes. int., fonds de dotation. à recevoir"
+                        },
+                        {
+                            "classe": "4582",
+                            "libelle": "Organismes. int., subvention à recevoir"
+                        }]
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "46",
+                    "libelle": "Associés et groupe",                   
+                    "comptes": [
+                        {
+                            "classe": "461",
+                            "libelle": "Associés, opérations en. / capital"
+                        },
+                        {
+                            "classe": "462",
+                            "libelle": "Associés, comptes courants"
+                        },
+                        {
+                            "classe": "463",
+                            "libelle": "Associés, opérations en. en commun"
+                        },
+                        {
+                            "classe": "465",
+                            "libelle": "Associés, dividendes à payer"
+                        },
+                        {
+                            "classe": "466",
+                            "libelle": "Groupe, comptes courants"
+                        },
+                        {
+                            "classe": "467",
+                            "libelle": "Action., restant du Cal appelé"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "47",
+                    "libelle": "Débiteurs et créditeurs divers",                   
+                    "comptes": [
+                        {
+                            "classe": "471",
+                            "libelle": "",
+                            "comptes":[{
+                            "classe": "4711",
+                            "libelle": "Débiteurs divers"
+                        },
+                        {
+                            "classe": "4712",
+                            "libelle": "Créditeurs divers"
+                        }]
+                        },
+                        {
+                            "classe": "472",
+                            "libelle": "Versements. restant à effectuer/titres non libérés"
+                        },
+                        {
+                            "classe": "474",
+                            "libelle": "Répartition périodique"
+                        },
+                        {
+                            "classe": "475",
+                            "libelle": "Créances / Travaux non encore facturables"
+                        },
+                        {
+                            "classe": "476",
+                            "libelle": "Charges constatées d'avance"
+                        },
+                        {
+                            "classe": "477",
+                            "libelle": "Produits constatés d'avance"
+                        },
+                        {
+                            "classe": "478",
+                            "libelle": "Écarts de conversion - actif",
+                            "comptes":[
+                                        {
+                                    "classe": "4781",
+                                    "libelle": "Diminution des créances"
+                                },
+                                {
+                                    "classe": "4782",
+                                    "libelle": "Augmentation des dettes"
+                                },
+                                {
+                                    "classe": "4788",
+                                    "libelle": "Différences. compens./couverture change"
+                                }]
+                        },
+                        {
+                            "classe": "479",
+                            "libelle": "Écarts de conversion - passif",
+                            "comptes":[
+                                        {
+                                    "classe": "4791",
+                                    "libelle": "Augmentation des créances"
+                                },
+                                {
+                                    "classe": "4792",
+                                    "libelle": "Diminution des dettes"
+                                },
+                                {
+                                    "classe": "4798",
+                                    "libelle": "Différences. compens./couverture change"
+                                }
+                    ]
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "48",
+                    "libelle": "Créances et dettes  H.A.O.",                   
+                    "comptes": [
+                        {
+                            "classe": "481",
+                            "libelle": "Fournisseurs d'investissements"
+                        },
+                        {
+                            "classe": "482",
+                            "libelle": "Fournisseurs investissements., EAP"
+                        },
+                        {
+                            "classe": "483",
+                            "libelle": "Dettes / acqu. titres placement"
+                        },
+                        {
+                            "classe": "484",
+                            "libelle": "Autres dettes H.A.O."
+                        },
+                        {
+                            "classe": "485",
+                            "libelle": "Créances / cessions immobilisations."
+                        },
+                        {
+                            "classe": "486",
+                            "libelle": "Créances Cessions. titres placement"
+                        },
+                        {
+                            "classe": "488",
+                            "libelle": "Autres créances H.A.O."
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "49",
+                    "libelle": "Dépréciations sur risques tiers",                   
+                    "comptes": [
+                        {
+                            "classe": "490",
+                            "libelle": "Dépréciation : Comptes fournisseurs"
+                        },
+                        {
+                            "classe": "491",
+                            "libelle": "Dépréciation : Comptes clients"
+                        },
+                        {
+                            "classe": "492",
+                            "libelle": "Dépréciation : Comptes personnel"
+                        },
+                        {
+                            "classe": "493",
+                            "libelle": "Dépréciation : Comptes organismes sociaux"
+                        },
+                        {
+                            "classe": "494",
+                            "libelle": "Dépréciation : Comptes d'État et collectivités publiques"
+                        },
+                        {
+                            "classe": "495",
+                            "libelle": "Dépréciation : Comptes organismes internationaux"
+                        },
+                        {
+                            "classe": "496",
+                            "libelle": "Dépréciation : Comptes associé-groupe"
+                        },
+                        {
+                            "classe": "497",
+                            "libelle": "Dépréciation : Comptes débiteurs divers"
+                        },
+                        {
+                            "classe": "498",
+                            "libelle": "Dépréciation : Comptes de créances H.A.O.",
+                            "comptes":[{
+                            "classe": "4981",
+                            "libelle": "Dépréciation créances sur cessions d'immobilisations"
+                        },
+                        {
+                            "classe": "4982",
+                            "libelle": "Dépréciation créances sur cessions de titres placement"
+                        },
+                        {
+                            "classe": "4983",
+                            "libelle": "Dépréciation Autres créances H.A.O."
+                        }]
+                        },
+                        {
+                            "classe": "499",
+                            "libelle": "Risques provisionnés",
+                            "comptes":[
+                                {
+                            "classe": "4991",
+                            "libelle": "Risques provisionnés sur opérations d'exploitation"
+                        },
+                        {
+                            "classe": "4998",
+                            "libelle": "Risques provisionnés sur opérations H.A.O."
+                        }]
+                        }
+                        
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "classe": "5",
+            "LIBELLE": "Comptes de trésorerie",         
+            "comptes": [
+                {
+                    "classe": "50",
+                    "libelle": "Titres de placement",                   
+                    "comptes": [
+                        {
+                            "classe": "501",
+                            "libelle": "Titres du trésor, bons caisse CT"
+                        },
+                        {
+                            "classe": "502",
+                            "libelle": "Actions"
+                        },
+                        {
+                            "classe": "503",
+                            "libelle": "Obligations"
+                        },
+                        {
+                            "classe": "504",
+                            "libelle": "Bons de souscription"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "51",
+                    "libelle": "Valeurs à encaisser"
+                },
+                {
+                    "classe": "52",
+                    "libelle": "Banques",                   
+                    "comptes": [
+                        {
+                            "classe": "521",
+                            "libelle": "",
+                            "comptes":[{
+                            "classe": "5211",
+                            "libelle": "Banques débitrices"
+                        },
+                        {
+                            "classe": "5212",
+                            "libelle": "Banque créditrices"
+                        }]
+                        },
+                        {
+                            "classe": "522",
+                            "libelle": "Banques autres états UÉMOA"
+                        },
+                        {
+                            "classe": "523",
+                            "libelle": "Banques autres états Zone Franc"
+                        },
+                        {
+                            "classe": "524",
+                            "libelle": "Banques hors Zone Franc"
+                        },
+                        {
+                            "classe": "526",
+                            "libelle": "Intérêts courus sur crédits bancaires"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "53",
+                    "libelle": "Établisst financiers, assimilés"
+                },
+                {
+                    "classe": "54",
+                    "libelle": "Instruments de trésorerie",                   
+                    "comptes": [
+                        {
+                            "classe": "541",
+                            "libelle": "Options de taux d'intérêt"
+                        },
+                        {
+                            "classe": "542",
+                            "libelle": "Options de taux de change"
+                        },
+                        {
+                            "classe": "543",
+                            "libelle": "Options de taux boursiers"
+                        },
+                        {
+                            "classe": "544",
+                            "libelle": "Instruments de marchés à terme"
+                        },
+                        {
+                            "classe": "545",
+                            "libelle": "Avoirs or, autres. métaux précieux"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "56",
+                    "libelle": "Banques, crédits de trésorerie, escompte",                   
+                    "comptes": [
+                        {
+                            "classe": "561",
+                            "libelle": "Crédits de trésorerie"
+                        },
+                        {
+                            "classe": "564",
+                            "libelle": "Escompte de crédits de campagne"
+                        },
+                        {
+                            "classe": "565",
+                            "libelle": "Escompte de crédits ordinaires"
+                        },
+                        {
+                            "classe": "566",
+                            "libelle": "Intérêts courus sur crédits de trésorerie et escompte"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "57",
+                    "libelle": "Caisse"
+                },
+                {
+                    "classe": "58",
+                    "libelle": "Régies d'avances, accréditifs"
+                },
+                {
+                    "classe": "59",
+                    "libelle": "Dépréciations. risques trésorerie",                   
+                    "comptes": [
+                        {
+                            "classe": "590",
+                            "libelle": "Dépréciations. Risques Titres de placements"
+                        },
+                        {
+                            "classe": "591",
+                            "libelle": "Dépréciations. Risques Valeurs à encaisser"
+                        },
+                        {
+                            "classe": "592",
+                            "libelle": "Dépréciations. Autres risques de trésorerie"
+                        }
+                    ]
+
+                }
+            ]
+
+        },  
+        {
+            "classe": "6",
+            "LIBELLE": "Comptes de charges (A.O.)",
+            
+    "comptes": [
+        {
+            "classe": "60",
+            "libelle": "Achats et variation de stocks",           
+            "comptes": [
+                {
+                    "classe": "601",
+                    "libelle": "Achats de marchandises"
+                },
+                {
+                    "classe": "602",
+                    "libelle": "Achats Mat. premières, fournitures.",
+                    "comptes":[
+                        {
+                    "classe": "6021",
+                    "libelle": "MP et fournitures. dans l'UÉMOA"
+                },
+                {
+                    "classe": "6022",
+                    "libelle": "MP et fournitures. hors UÉMOA"
+                },
+                {
+                    "classe": "6023",
+                    "libelle": "MP et fournitures. Entrep. du groupe dans l'UÉMOA"
+                },
+                {
+                    "classe": "6024",
+                    "libelle": "MP et fournitures. Entreprises du groupe hors UÉMOA"
+                },
+                {
+                    "classe": "6029",
+                    "libelle": "MP et fournitures. Rabais, remises, ristournes. obtenus"
+                }
+                        ]
+                },
+                {
+                    "classe": "603",
+                    "libelle": "Variations. : stocks biens achetés",
+                    "comptes":[
+                        {
+                    "classe": "6031",
+                    "libelle": "Variations : stocks marchandises"
+                },
+                {
+                    "classe": "6032",
+                    "libelle": "Variations. Mat. premières, fournit."
+                },
+                {
+                    "classe": "6033",
+                    "libelle": "Variations. Autres approvisionnement."
+                }
+                        ]
+                },
+                {
+                    "classe": "604",
+                    "libelle": "Achats stockés de matières et fournitures"
+                },
+                {
+                    "classe": "605",
+                    "libelle": "Autres achats",
+                    "comptes":[
+                        {
+                    "classe": "6051",
+                    "libelle": "Fournitures non stockables - eau"
+                },
+                {
+                    "classe": "6052",
+                    "libelle": "Électricité"
+                },
+                {
+                    "classe": "6053",
+                    "libelle": "Autres énergies"
+                },
+                {
+                    "classe": "6054",
+                    "libelle": "Fournitures entretien"
+                },
+                {
+                    "classe": "6055",
+                    "libelle": "Fournit. bureau non stockables"
+                },
+                {
+                    "classe": "6056",
+                    "libelle": "Achats petit matériel, outillage"
+                },
+                {
+                    "classe": "6057",
+                    "libelle": "Achats études, prestations de. service"
+                },
+                {
+                    "classe": "6058",
+                    "libelle": "Achats travaux, matériel, équipement."
+                },
+                {
+                    "classe": "6059",
+                    "libelle": "Rabais, remises, ristournes. obtenus"
+                }
+                        ]
+                },
+                {
+                    "classe": "608",
+                    "libelle": "Achats d'emballages"
+                }
+            ]
+
+
+        },
+        {
+            "classe": "61",
+            "libelle": "Transports",                 
+            "comptes": [
+                {
+                    "classe": "611",
+                    "libelle": "Transports sur achats"
+                },
+                {
+                    "classe": "612",
+                    "libelle": "Transports sur ventes"
+                },
+                {
+                    "classe": "613",
+                    "libelle": "Transports pour le compte tiers"
+                },
+                {
+                    "classe": "614",
+                    "libelle": "Transports du personnel"
+                },
+                {
+                    "classe": "618",
+                    "libelle": "Autres frais de transport"
+                }
+            ]
+
+        },
+        {
+            "classe": "62 et 63",
+            "libelle": "Services extérieurs A et B",          
+            "comptes": [
+                {
+                    "classe": "621",
+                    "libelle": "Sous-traitance générale"
+                },
+                {
+                    "classe": "622",
+                    "libelle": "Locations et charges locatives"
+                },
+                {
+            "classe": "623",
+            "libelle": "Redevances crédit-bail et assimilées.",
+            "comptes":[
+                {
+            "classe": "6232",
+            "libelle": "Crédit-bail immobilier"
+        },
+        {
+            "classe": "6233",
+            "libelle": "Crédit-bail mobilier"
+        },
+        {
+            "classe": "6235",
+            "libelle": "Contrats assimilés"
+        }              ]
+        },
+        {
+            "classe": "624",
+            "libelle": "Entretien, réparat., maintenance",
+            "comptes":[
+                {
+            "classe": "6241",
+            "libelle": "Entretien, réparat. biens immobilisations."
+        },
+        {
+            "classe": "6242",
+            "libelle": "Entretien, rép. biens mobiliers"
+        },
+        {
+            "classe": "6243",
+            "libelle": "Maintenance"
+        },
+        {
+            "classe": "6248",
+            "libelle": "Autres entretiens et réparations"
+        }
+                ]
+        },
+        {
+            "classe": "625",
+            "libelle": "Primes d'assurance"
+        },
+        {
+            "classe": "626",
+            "libelle": "Études, recherches, documentation."
+        },
+        {
+            "classe": "627",
+            "libelle": "Publicité et publications"
+        },
+        {
+            "classe": "628",
+            "libelle": "Frais de télécommunications"
+        }
+            ]
+
+        },
+        {
+            "classe": "63",
+            "libelle": "Services extérieurs B",          
+            "comptes": [
+                {
+                    "classe": "631",
+                    "libelle": "Frais bancaires"
+                },
+                {
+                    "classe": "632",
+                    "libelle": "Rémunérations. intermèdiaires., conseils"
+                },
+                {
+                    "classe": "633",
+                    "libelle": "Frais de formation du personnel"
+                },
+                {
+                    "classe": "634",
+                    "libelle": "Redevances brevets, licences",
+                    "comptes":[
+                        {
+                    "classe": "6342",
+                    "libelle": "Redevances brevets, licences"
+                },
+                {
+                    "classe": "6343",
+                    "libelle": "Redevances pour logiciels"
+                },
+                {
+                    "classe": "6344",
+                    "libelle": "Redevances pour marques"
+                }
+                        ]
+                },
+                {
+                    "classe": "635",
+                    "libelle": "Cotisations",
+                    "comptes":[
+                        {
+                    "classe": "6351",
+                    "libelle": "Cotisations"
+                },
+                {
+                    "classe": "6358",
+                    "libelle": "Concours divers"
+                }
+                        ]
+                },
+                {
+                    "classe": "637",
+                    "libelle": "Rémunérations. personnel extérieur",
+                    "comptes":[
+                        {
+                    "classe": "6371",
+                    "libelle": "Personnel intérimaire"
+                },
+                {
+                    "classe": "6372",
+                    "libelle": "Personnel détaché ou prêté"
+                }
+                        ]
+                },
+                {
+                    "classe": "638",
+                    "libelle": "Autres charges externes"
+                }
+            ]
+
+        },
+        {
+            "classe": "64",
+            "libelle": "Impôts et taxes",          
+            "comptes": [
+                {
+                    "classe": "641",
+                    "libelle": "Impôts et taxes directs",
+                    "comptes":[
+                        {
+                    "classe": "6411",
+                    "libelle": "Impôts fonciers et taxes annexes"
+                },
+                {
+                    "classe": "6412",
+                    "libelle": "Patentes-licences, taxes annexes"
+                },
+                {
+                    "classe": "6413",
+                    "libelle": "Taxes / appointements, salaires"
+                },
+                {
+                    "classe": "6414",
+                    "libelle": "Taxes d'apprentissage"
+                },
+                {
+                    "classe": "6415",
+                    "libelle": "Format. professionnelle continue"
+                },
+                {
+                    "classe": "6418",
+                    "libelle": "Autres impôts et taxes directs"
+                }
+                        ]
+                },
+                {
+                    "classe": "645",
+                    "libelle": "Impôts et taxes indirects"
+                },
+                {
+                    "classe": "646",
+                    "libelle": "Droits d'enregistrement",
+                    "comptes":[
+                        {
+                    "classe": "6461",
+                    "libelle": "Droits de mutation"
+                },
+                {
+                    "classe": "6462",
+                    "libelle": "Droits de timbre"
+                },
+                {
+                    "classe": "6463",
+                    "libelle": "Taxes / les véhicules société"
+                },
+                {
+                    "classe": "6464",
+                    "libelle": "Vignettes"
+                },
+                {
+                    "classe": "6468",
+                    "libelle": "Autres droits"
+                }
+                        ]
+                },
+                {
+                    "classe": "647",
+                    "libelle": "Pénalités et amendes fiscales"
+                }
+            ]
+
+        },
+        {
+            "classe": "65",
+            "libelle": "Autres charges",           
+            "comptes": [
+                {
+                    "classe": "651",
+                    "libelle": "Pertes Créances clients et autres."
+                },
+                {
+                    "classe": "652",
+                    "libelle": "QP résultat / opérations en. en commun",
+                    "comptes":[
+                        {
+                    "classe": "6521",
+                    "libelle": "Quote-part transférée bénéfices"
+                },
+                {
+                    "classe": "6525",
+                    "libelle": "Pertes imputées par transfert"
+                }
+                        ]
+                },
+                
+                {
+                    "classe": "653",
+                    "libelle": "QP résult.annul./exécution. partiel"
+                },
+                {
+                    "classe": "654",
+                    "libelle": "Val comptable cession courante immobilisations",
+                    "compte":[
+                        {
+                            "classe":"6541",
+                            "libelle":"",
+                            "compte":[
+                                {
+                                    "classe": "65411",
+                                    "libelle": "Valeur Brute Immobilisations incorporelles"
+                                },
+                                {
+                                    "classe": "65418",
+                                    "libelle": "Amont. Immobilisations incorporelles"
+                                },
+                                {
+                                    "classe": "65421",
+                                    "libelle": "Valeur Brute Immobilisations corporelles"
+                                },
+                                {
+                                    "classe": "65428",
+                                    "libelle": "Amont. Immobilisations corporelles"
+                                },
+                                {
+                                    "classe": "65461",
+                                    "libelle": "Valeur Brute Immobilisations financières"
+                                },
+                                {
+                                    "classe": "65468",
+                                    "libelle": "Amont. Immobilisations financières"
+                                }
+                                ]
+                        }
+                        ]
+                },
+                
+                {
+                    "classe": "658",
+                    "libelle": "Charges diverses",
+                    "comptes": [
+                        {
+                    "classe": "6581",
+                    "libelle": "Jetons présence, autres rémunération administrateur."
+                },
+                {
+                    "classe": "6582",
+                    "libelle": "Dons"
+                },
+                {
+                    "classe": "6583",
+                    "libelle": "Mécénat"
+                }
+                        ]
+                },
+            
+                {
+                    "classe": "659",
+                    "libelle": "Charges provisionnées exploitation.",
+                    "comptes":[
+                        {
+                    "classe": "6591",
+                    "libelle": "Sur risques à court terme"
+                },
+                {
+                    "classe": "6593",
+                    "libelle": "Sur stocks"
+                },
+                {
+                    "classe": "6594",
+                    "libelle": "Sur créances"
+                },
+                {
+                    "classe": "6598",
+                    "libelle": "Autres charges provisionnées"
+                }
+                        ]
+                }
+                
+            ]
+
+        },
+        {
+            "classe": "66",
+            "libelle": "Charges de personnel",           
+            "comptes": [
+                {
+                    "classe": "661",
+                    "libelle": "Rémunérations personnel national",
+                    "comptes":[
+                        {
+                    "classe": "6611",
+                    "libelle": "Appointements., salaires, commissions."
+                },
+                {
+                    "classe": "6612",
+                    "libelle": "Primes et gratifications"
+                },
+                {
+                    "classe": "6613",
+                    "libelle": "Congés payés"
+                },
+                {
+                    "classe": "6614",
+                    "libelle": "Indemnités préavis, licenciement"
+                },
+                {
+                    "classe": "6615",
+                    "libelle": "Indemnités. maladie versées travailleur"
+                },
+                {
+                    "classe": "6616",
+                    "libelle": "Supplément familial"
+                },
+                {
+                    "classe": "6617",
+                    "libelle": "Avantages en nature"
+                },
+                {
+                    "classe": "6618",
+                    "libelle": "Autres rémunérations directes"
+                }
+                        ]
+                },
+                
+                {
+                    "classe": "662",
+                    "libelle": "Rémunèrations. personnel non national",
+                    "comptes":[
+                        {
+                    "classe": "6621",
+                    "libelle": "Appointements., salaires, commissions."
+                },
+                {
+                    "classe": "6622",
+                    "libelle": "Primes et gratifications"
+                },
+                {
+                    "classe": "6623",
+                    "libelle": "Congés payés"
+                },
+                {
+                    "classe": "6624",
+                    "libelle": "Indemnités préavis, licenciement"
+                },
+                {
+                    "classe": "6625",
+                    "libelle": "Indemnités. maladie versées travailleur"
+                },
+                {
+                    "classe": "6626",
+                    "libelle": "Supplément familial"
+                },
+                {
+                    "classe": "6627",
+                    "libelle": "Avantages en nature"
+                },
+                {
+                    "classe": "6628",
+                    "libelle": "Autres rémunérations directes"
+                }
+                        ]
+                },
+                
+                {
+                    "classe": "663",
+                    "libelle": "Indemnités. forfaitaires versées"
+                },
+                {
+                    "classe": "664",
+                    "libelle": "Charges sociales",
+                    "comptes":[
+                        {
+                    "classe": "6641",
+                    "libelle": "Ch. sociales /personnel national"
+                },
+                {
+                    "classe": "6642",
+                    "libelle": "Ch. soc. /personnel non national"
+                }
+                        ]
+                },
+                {
+                    "classe": "666",
+                    "libelle": "Rémunérations. exploitant individuel",
+                    "comptes":[ {
+                    "classe": "6661",
+                    "libelle": "Rémunérations. travail l'exploitant"
+                },
+                {
+                    "classe": "6662",
+                    "libelle": "Charges sociales"
+                }]
+                },
+                {
+                    "classe": "667",
+                    "libelle": "Rémunérations. transférée personnel extérieur.",
+                    "comptes":[
+                        {
+                    "classe": "6671",
+                    "libelle": "Personnel intérimaire"
+                },
+                {
+                    "classe": "6672",
+                    "libelle": "Personnel détaché ou prêté"
+                }
+                        ]
+                },
+                
+                {
+                    "classe": "668",
+                    "libelle": "Autres charges sociales"
+                }
+            ]
+
+        },
+        {
+            "classe": "67",
+            "libelle": "Frais financiers, charges assimilées.",            
+            "comptes": [
+                {
+                    "classe": "671",
+                    "libelle": "Intérêts des emprunts"
+                },
+                {
+                    "classe": "672",
+                    "libelle": "Intérêts loyers crédit-bail",
+                    "comptes":[
+                        {
+                    "classe": "6721",
+                    "libelle": "Intérêts loyer C-bail immobilier"
+                },
+                {
+                    "classe": "6722",
+                    "libelle": "Intérêts loyer C-bail mobilier"
+                },
+                {
+                    "classe": "6723",
+                    "libelle": "Intérêts loyers :autres contrats"
+                }
+                        ]
+                },
+                
+                {
+                    "classe": "673",
+                    "libelle": "Escomptes accordés"
+                },
+                {
+                    "classe": "674",
+                    "libelle": "Autres intérêts"
+                },
+                {
+                    "classe": "676",
+                    "libelle": "Pertes de change"
+                },
+                {
+                    "classe": "677",
+                    "libelle": "Pertes sur cessions de titres placement"
+                },
+                {
+                    "classe": "678",
+                    "libelle": "Pertes sur risques financiers",
+                    "comptes":[
+                        {
+                    "classe": "6781",
+                    "libelle": "Sur rentes viagères"
+                },
+                {
+                    "classe": "6782",
+                    "libelle": "Sur opérations financières"
+                },
+                {
+                    "classe": "6784",
+                    "libelle": "Sur instruments de trésorerie"
+                }
+                        ]
+                },
+                
+                {
+                    "classe": "679",
+                    "libelle": "Charges provisionnées financière",
+                    "comptes":[
+                        {
+                    "classe": "6791",
+                    "libelle": "Sur risques financiers"
+                },
+                {
+                    "classe": "6795",
+                    "libelle": "Sur titres de placement"
+                },
+                {
+                    "classe": "6798",
+                    "libelle": "Autres. charges provisionnées. financières"
+                }
+                        ]
+                }
+                
+            ]
+
+        },
+        {
+            "classe": "68",
+            "libelle": "Dotations aux amortissements",            
+            "comptes": [
+                {
+                    "classe": "681",
+                    "libelle": "Dotations amortissements d'exploitation",
+                    "comptes":[
+                         {
+                    "classe": "6811",
+                    "libelle": "Dotations. amort. : Charges immobilisées",
+                    "comptes":[
+                        ]
+                },
+                {
+                    "classe": "6812",
+                    "libelle": "",
+                    "comptes":[
+                        
+                {
+                    "classe": "68121",
+                    "libelle": "Dotations. amort. : Frais R&D"
+                },
+                {
+                    "classe": "68122",
+                    "libelle": "Dotations. amort. : Brevets,licences"
+                },
+                {
+                    "classe": "68125",
+                    "libelle": "Dotations. amort. : Fonds commercial"
+                },
+                {
+                    "classe": "68127",
+                    "libelle": "Dotations. amort. : autres immobilisations. incorporelles."
+                }
+                        ]
+                },
+                {
+                    "classe": "6813",
+                    "libelle": "",
+                    "comptes":[
+                        {
+                    "classe": "68131",
+                    "libelle": "Dotations. amort. : Terrains"
+                },
+                {
+                    "classe": "68132",
+                    "libelle": "Dotations. amort. : Bâtiments"
+                },
+                {
+                    "classe": "68133",
+                    "libelle": "Dotations. amort. : AAI"
+                },
+                {
+                    "classe": "68134",
+                    "libelle": "Dotations. amort. : Matériel"
+                },
+                {
+                    "classe": "68135",
+                    "libelle": "Dotations. amort. : Transport"
+                }
+                        ]
+                }
+                        ]
+                },
+               
+                
+                {
+                    "classe": "687",
+                    "libelle": "Dot. amort.à caractère financier",
+                    "comptes":[
+                        {
+                    "classe": "6872",
+                    "libelle": "Dotat. amort. P.R.Oblig."
+                },
+                {
+                    "classe": "6878",
+                    "libelle": "Aut. dotat. amort. financières"
+                }
+                        ]
+                }
+            ]
+
+        },
+        {
+            "classe": "69",
+            "libelle": "Dotations aux provisions",          
+            "comptes": [
+                {
+                    "classe": "691",
+                    "libelle": "Dotat. aux provisions exploitat.",
+                    "comptes":[
+                        {
+                    "classe": "6911",
+                    "libelle": "Pour risques et charges"
+                },
+                {
+                    "classe": "6912",
+                    "libelle": "Pour grosses réparations"
+                },
+                {
+                    "classe": "6913",
+                    "libelle": "Dépréciat. : immob. incorporel."
+                },
+                {
+                    "classe": "6914",
+                    "libelle": "Dépréciat. : immob. corporelles"
+                }
+                        ]
+                },
+                
+                {
+                    "classe": "697",
+                    "libelle": "Dotat. aux provis. financières",
+                    "comptes":[
+                        {
+                    "classe": "6971",
+                    "libelle": "Pour risques et charges"
+                },
+                {
+                    "classe": "6972",
+                    "libelle": "Dépréciat. : immob. financières"
+                }
+                        ]
+                }
+                
+            ]
+
+        }
+    ]
+
+        },
+        {
+            "classe": "7",
+            "LIBELLE": "Comptes de produits (A.O.)",         
+            "comptes": [
+                {
+                    "classe": "70",
+                    "libelle": "Ventes",                   
+                    "comptes": [
+                        {
+                            "classe": "701",
+                            "libelle": "Ventes de marchandises"
+                        },
+                        {
+                            "classe": "702",
+                            "libelle": "Ventes de produits finis",
+                            "comptes":[
+                                {
+                            "classe": "7021",
+                            "libelle": "Produits finis dans l'UÉMOA"
+                        },
+                        {
+                            "classe": "7022",
+                            "libelle": "Produits finis Hors UÉMOA"
+                        },
+                        {
+                            "classe": "7023",
+                            "libelle": "Produits finis Groupe UÉMOA"
+                        },
+                        {
+                            "classe": "7024",
+                            "libelle": "Produits finis Groupe hors UÉMOA"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "703",
+                            "libelle": "Ventes produits intermédiaires",
+                            "comptes":[
+                                {
+                            "classe": "7031",
+                            "libelle": "Produits interm. dans l'UÉMOA"
+                        },
+                        {
+                            "classe": "7032",
+                            "libelle": "Produits interm. Hors UÉMOA"
+                        },
+                        {
+                            "classe": "7033",
+                            "libelle": "Produits interm. Groupe UÉMOA"
+                        },
+                        {
+                            "classe": "7034",
+                            "libelle": "Prodts interm. Groupe hors UÉMOA"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "704",
+                            "libelle": "Ventes de produits résiduels",
+                            "comptes":[
+                                {
+                            "classe": "7041",
+                            "libelle": "Produits résiduels dans l'UÉMOA"
+                        },
+                        {
+                            "classe": "7042",
+                            "libelle": "Produits résiduels Hors UÉMOA"
+                        },
+                        {
+                            "classe": "7043",
+                            "libelle": "Produits résiduels Groupe UÉMOA"
+                        },
+                        {
+                            "classe": "7044",
+                            "libelle": "Prodts résidu. Groupe hors UÉMOA"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "705",
+                            "libelle": "Travaux facturés",
+                            "comptes":[
+                                {
+                            "classe": "7051",
+                            "libelle": "Travaux dans l'UÉMOA"
+                        },
+                        {
+                            "classe": "7052",
+                            "libelle": "Travaux Hors UÉMOA"
+                        },
+                        {
+                            "classe": "7053",
+                            "libelle": "Travaux Groupe UÉMOA"
+                        },
+                        {
+                            "classe": "7054",
+                            "libelle": "Travaux Groupe hors UÉMOA"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "706",
+                            "libelle": "Services vendus",
+                            "comptes":[
+                                {
+                            "classe": "7061",
+                            "libelle": "Services vendus dans l'UÉMOA"
+                        },
+                        {
+                            "classe": "7062",
+                            "libelle": "Services vendus Hors UÉMOA"
+                        },
+                        {
+                            "classe": "7063",
+                            "libelle": "Services vendus Groupe UÉMOA"
+                        },
+                        {
+                            "classe": "7064",
+                            "libelle": "Services vendus Groupe hors UÉMOA"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "707",
+                            "libelle": "Produits accessoires",
+                            "comptes":[
+                                {
+                            "classe": "7071",
+                            "libelle": "Ports, emballagas perdus, autres frais"
+                        },
+                        {
+                            "classe": "7072",
+                            "libelle": "Commissions et courtages"
+                        },
+                        {
+                            "classe": "7073",
+                            "libelle": "Locations"
+                        },
+                        {
+                            "classe": "7074",
+                            "libelle": "Boni/reprises, cess. emballages"
+                        },
+                        {
+                            "classe": "7075",
+                            "libelle": "Mise à disposition de personnel"
+                        },
+                        {
+                            "classe": "7076",
+                            "libelle": "Redevances brevets, logiciels"
+                        },
+                        {
+                            "classe": "7077",
+                            "libelle": "Service dans l'intérêt personnel"
+                        },
+                        {
+                            "classe": "7078",
+                            "libelle": "Autres produits accessoires"
+                        }
+                                ]
+                        }
+                        
+                    ]
+
+                },
+                {
+                    "classe": "71",
+                    "libelle": "Subventions d'exploitation",                   
+                    "comptes": [
+                        {
+                            "classe": "711",
+                            "libelle": "Sur produits à l'exportation"
+                        },
+                        {
+                            "classe": "712",
+                            "libelle": "Sur produits à l'importation"
+                        },
+                        {
+                            "classe": "713",
+                            "libelle": "Sur produits de péréquation"
+                        },
+                        {
+                            "classe": "718",
+                            "libelle": "Autres subventions exploitation"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "72",
+                    "libelle": "Production immobilisée",                   
+                    "comptes": [
+                        {
+                            "classe": "721",
+                            "libelle": "Immobilisations incorporelles"
+                        },
+                        {
+                            "classe": "722",
+                            "libelle": "Immobilisations corporelles"
+                        },
+                        {
+                            "classe": "726",
+                            "libelle": "Immobilisations financières"
+                        }
+                    ]
+                },
+                {
+                    "classe": "73",
+                    "libelle": "Variat. Stocks biens et services",                  
+                    "comptes": [
+                        {
+                            "classe": "734",
+                            "libelle": "Variat. Stocks produits en cours"
+                        },
+                        {
+                            "classe": "735",
+                            "libelle": "Variations : en-cours services"
+                        },
+                        {
+                            "classe": "736",
+                            "libelle": "Variat. : stocks produits finis"
+                        },
+                        {
+                            "classe": "737",
+                            "libelle": "Variat. stocks produit interméd."
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "75",
+                    "libelle": "Autres produits",                   
+                    "comptes": [
+                        {
+                            "classe": "752",
+                            "libelle": "QP résultat / opérat.  en commun",
+                            "comptes":[
+                                {
+                            "classe": "7521",
+                            "libelle": "Quote-part transférée de pertes"
+                        },
+                        {
+                            "classe": "7525",
+                            "libelle": "Bénéfices attribués par transfert"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "753",
+                            "libelle": "QP résultat /éxecut.part.contrat"
+                        },
+                        {
+                            "classe": "754",
+                            "libelle": "Pdt cessions courantes d'immob.",
+                            "comptes":[
+                                 {
+                            "classe": "7541",
+                            "libelle": "Prix cession Immobilisations incorporelles"
+                        },
+                        {
+                            "classe": "7542",
+                            "libelle": "Prix cession Immobilisations corporelles"
+                        },
+                        {
+                            "classe": "7546",
+                            "libelle": "Prix cession Immobilisations financières"
+                        }
+                                ]
+                        },
+                       
+                        {
+                            "classe": "758",
+                            "libelle": "Produits divers",
+                            "comptes":[
+                                {
+                            "classe": "7581",
+                            "libelle": "Jetons présence et autres-Adm"
+                        },
+                        {
+                            "classe": "7582",
+                            "libelle": "Indemnités d'assurances reçues"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "759",
+                            "libelle": "Rep. charge provision. exploitat",
+                            "comptes":[
+                                {
+                            "classe": "7591",
+                            "libelle": "Sur risques à court terme"
+                        },
+                        {
+                            "classe": "7593",
+                            "libelle": "Sur stocks"
+                        },
+                        {
+                            "classe": "7594",
+                            "libelle": "Sur créances"
+                        },
+                        {
+                            "classe": "7598",
+                            "libelle": "Sur autres charges provisionnées"
+                        }
+                                ]
+                        }
+                        
+                    ]
+
+                },
+                {
+                    "classe": "77",
+                    "libelle": "Revenus financiers et assimilés",
+                    
+    "comptes": [
+        {
+            "classe": "771",
+            "libelle": "Intérêts de prêts"
+        },
+        {
+            "classe": "772",
+            "libelle": "Revenus de participations"
+        },
+        {
+            "classe": "773",
+            "libelle": "Escomptes obtenus"
+        },
+        {
+            "classe": "774",
+            "libelle": "Revenus de titres de placement"
+        },
+        {
+            "classe": "776",
+            "libelle": "Gains de change"
+        },
+        {
+            "classe": "777",
+            "libelle": "Gains Cessions titres placement"
+        },
+        {
+            "classe": "778",
+            "libelle": "Gains sur risques financiers"
+        },
+        {
+            "classe": "779",
+            "libelle": "Rep. charges prov. financières",
+            "comptes":[
+                {
+            "classe": "7791",
+            "libelle": "Sur risques financiers"
+        },
+        {
+            "classe": "7795",
+            "libelle": "Sur titres de placement"
+        },
+        {
+            "classe": "7798",
+            "libelle": "Aut. charges provis. financières"
+        }
+                ]
+        }
+        
+    ]
+
+                },
+                {
+                    "classe": "78",
+                    "libelle": "Transferts de charges",                  
+                    "comptes": [
+                        {
+                            "classe": "781",
+                            "libelle": "Transferts charges exploitation"
+                        },
+                        {
+                            "classe": "787",
+                            "libelle": "Transferts charges financières"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "79",
+                    "libelle": "Reprises de provisions",                  
+                    "comptes": [
+                        {
+                            "classe": "791",
+                            "libelle": "Reprises provisions exploitat.",
+                            "comptes":[
+                                {
+                            "classe": "7911",
+                            "libelle": "Pour risques et charges"
+                        },
+                        {
+                            "classe": "7912",
+                            "libelle": "Pour grosses réparations"
+                        },
+                        {
+                            "classe": "7913",
+                            "libelle": "dépréciat. : immob. incorporel."
+                        },
+                        {
+                            "classe": "7914",
+                            "libelle": "Dépréciat. : immob. corporelles"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "797",
+                            "libelle": "Reprises provisions financières",
+                            "comptes":[
+                                {
+                            "classe": "7971",
+                            "libelle": "Pour risques et charges"
+                        },
+                        {
+                            "classe": "7972",
+                            "libelle": "Dépréciat. : immob. financières"
+                        },
+                        {
+                            "classe": "7978",
+                            "libelle": "Reprises d'amortissements"
+                        }
+                                ]
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "classe": "8",
+            "LIBELLE": "Comptes des autres charges et autres produits",          
+            "comptes": [
+                {
+                    "classe": "81",
+                    "libelle": "Valeurs comptables cess. immob.",                   
+                    "comptes": [
+                        {
+                            "classe": "8111",
+                            "libelle": "Val.Brute Immobilisations incorporelles"
+                        },
+                        {
+                            "classe": "8118",
+                            "libelle": "Amort. Immobilisations incorporelles"
+                        },
+                        {
+                            "classe": "8121",
+                            "libelle": "Val.Brute Immobilisations corporelles"
+                        },
+                        {
+                            "classe": "8128",
+                            "libelle": "Amort. Immobilisations corporelles"
+                        },
+                        {
+                            "classe": "8161",
+                            "libelle": "Val.Brute Immobilisations financières"
+                        },
+                        {
+                            "classe": "8168",
+                            "libelle": "Amort. Immobilisations financières"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "82",
+                    "libelle": "Produits des cess. immobilisat.",                 
+                    "comptes": [
+                        {
+                            "classe": "821",
+                            "libelle": "Prix cession Immobilisations incorporelles"
+                        },
+                        {
+                            "classe": "822",
+                            "libelle": "Prix cession Immobilisations corporelles"
+                        },
+                        {
+                            "classe": "826",
+                            "libelle": "Prix cession Immobilisations financières"
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "83",
+                    "libelle": "Charges hors activité ordinaire",                  
+                    "comptes": [
+                        {
+                            "classe": "831",
+                            "libelle": "Charges H.A.O. constatées"
+                        },
+                        {
+                            "classe": "834",
+                            "libelle": "Pertes sur créances H.A.O."
+                        },
+                        {
+                            "classe": "835",
+                            "libelle": "Dons et libéralités accordés"
+                        },
+                        {
+                            "classe": "836",
+                            "libelle": "Abandons de créances consentis"
+                        },
+                        {
+                            "classe": "839",
+                            "libelle": "Charges provisionnées H.A.O.",
+                            "comptes":[
+                                {
+                            "classe": "8393",
+                            "libelle": "Charges provisionnées H.A.O. Stocks"
+                        },
+                        {
+                            "classe": "8394",
+                            "libelle": "Charges provisionnées H.A.O. Tiers"
+                        },
+                        {
+                            "classe": "8395",
+                            "libelle": "Charges provisionnées H.A.O. Trésorerie"
+                        }
+                                ]
+                        }
+                        
+                    ]
+
+                },
+                {
+                    "classe": "84",
+                    "libelle": "Produits hors activité ordinaire",                    
+                    "comptes": [
+                        {
+                            "classe": "841",
+                            "libelle": "Produits H.A.O. constatés"
+                        },
+                        {
+                            "classe": "845",
+                            "libelle": "Dons et libéralités obtenus"
+                        },
+                        {
+                            "classe": "846",
+                            "libelle": "Abandons de créances obtenus"
+                        },
+                        {
+                            "classe": "848",
+                            "libelle": "Transferts de charges H.A.O."
+                        },
+                        {
+                            "classe": "849",
+                            "libelle": "Reprises sur Charges provisionnées H.A.O.",
+                            "comptes":[
+                                {
+                            "classe": "8493",
+                            "libelle": "Rep. Charges provisionnées H.A.O. Stocks"
+                        },
+                        {
+                            "classe": "8494",
+                            "libelle": "Rep. Charges provisionnées H.A.O. Tiers"
+                        },
+                        {
+                            "classe": "8495",
+                            "libelle": "Rep. Charges provisionnées H.A.O. Trésorerie"
+                        }
+                                ]
+                        }
+                        
+                    ]
+
+                },
+                {
+                    "classe": "85",
+                    "libelle": "Dotat. hors activité ordinaire",                  
+                    "comptes": [
+                        {
+                            "classe": "851",
+                            "libelle": "Dotat. aux provis. réglementées"
+                        },
+                        {
+                            "classe": "852",
+                            "libelle": "Dotat. aux amortissem. H.A.O."
+                        },
+                        {
+                            "classe": "853",
+                            "libelle": "Dotat. provis. dépréciat. H.A.O."
+                        },
+                        {
+                            "classe": "854",
+                            "libelle": "Dotat. provis. R & C H.A.O."
+                        },
+                        {
+                            "classe": "858",
+                            "libelle": "Autres dotations H.A.O."
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "86",
+                    "libelle": "Reprises hors activité ordinaire",                   
+                    "comptes": [
+                        {
+                            "classe": "861",
+                            "libelle": "Reprises provisions réglementées"
+                        },
+                        {
+                            "classe": "862",
+                            "libelle": "Reprises d'amortissements H.A.O."
+                        },
+                        {
+                            "classe": "863",
+                            "libelle": "Repris. provis. dépréc. H.A.O."
+                        },
+                        {
+                            "classe": "864",
+                            "libelle": "Rep. provis. R & C H.A.O."
+                        },
+                        {
+                            "classe": "865",
+                            "libelle": "Rep. subvent. investissement"
+                        },
+                        {
+                            "classe": "868",
+                            "libelle": "Autres Reprises H.A.O."
+                        }
+                    ]
+
+                },
+                {
+                    "classe": "87",
+                    "libelle": "Participation des travailleurs"
+                },
+                {
+                    "classe": "88",
+                    "libelle": "Subventions d'équilibre"
+                },
+                {
+                    "classe": "89",
+                    "libelle": "Impôts sur le résultat",                   
+                    "comptes": [
+                        {
+                            "classe": "891",
+                            "libelle": "Impôts bénéfices (exercice)"
+                        },
+                        {
+                            "classe": "892",
+                            "libelle": "Rappels impôts / résultat antér."
+                        },
+                        {
+                            "classe": "895",
+                            "libelle": "Impôt minimum forfaitaire I.M.F."
+                        },
+                        {
+                            "classe": "899",
+                            "libelle": "Dégrèvem. impôts / résult. ant."
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "classe": "9",
+            "LIBELLE": "Comptes des engagements ",
+            "comptes": [
+                {"classe":"90",
+                    "libelle":"",                 
+                    "comptes": [
+                        {
+                            "classe": "901",
+                            "libelle": "Engagements de financement obtenus",
+                            "comptes":[
+                                {
+                            "classe": "9011",
+                            "libelle": "Crédits confirmés obtenus"
+                        },
+                        {
+                            "classe": "9012",
+                            "libelle": "Emprunts restant à encaisser"
+                        },
+                        {
+                            "classe": "9013",
+                            "libelle": "Facilités financières renouvelables"
+                        },
+                        {
+                            "classe": "9014",
+                            "libelle": "Facilités d'émission"
+                        },
+                        {
+                            "classe": "9018",
+                            "libelle": "Autres engagements de financement obtenus"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "902",
+                            "libelle": "Engagements de garantie obtenus",
+                            "comptes":[
+                                {
+                            "classe": "9021",
+                            "libelle": "Avals obtenus"
+                        },
+                        {
+                            "classe": "9022",
+                            "libelle": "Cautions, garanties obtenues"
+                        },
+                        {
+                            "classe": "9023",
+                            "libelle": "Hypothèques obtenues"
+                        },
+                        {
+                            "classe": "9024",
+                            "libelle": "Effets endossés par des tiers"
+                        },
+                        {
+                            "classe": "9028",
+                            "libelle": "Autres garanties obtenues"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "903",
+                            "libelle": "Engagements réciproques",
+                            "comptes":[
+                                {
+                            "classe": "9031",
+                            "libelle": "Achats de marchandises à terme"
+                        },
+                        {
+                            "classe": "9032",
+                            "libelle": "Achats à terme de devises"
+                        },
+                        {
+                            "classe": "9033",
+                            "libelle": "Commandes fermes des clients"
+                        },
+                        {
+                            "classe": "9038",
+                            "libelle": "Autres engagements réciproques"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "904",
+                            "libelle": "Autres engagements obtenus",
+                            "comptes":[
+                                {
+                            "classe": "9041",
+                            "libelle": "Abandons créances conditionnels"
+                        },
+                        {
+                            "classe": "9043",
+                            "libelle": "Ventes clause réserve propriété"
+                        },
+                        {
+                            "classe": "9048",
+                            "libelle": "Divers engagements obtenus"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "905",
+                            "libelle": "Engagements de financement accordés",
+                            "comptes":[
+                                {
+                            "classe": "9051",
+                            "libelle": "Crédits accordés non encaissés"
+                        },
+                        {
+                            "classe": "9058",
+                            "libelle": "Autres engagements de financement accordés"
+                        },
+                                ]
+                        },
+                        
+                        {
+                            "classe": "906",
+                            "libelle": "Engagements de garantie accordés",
+                            "comptes":[
+                                {
+                            "classe": "9061",
+                            "libelle": "Avals accordés"
+                        },
+                        {
+                            "classe": "9062",
+                            "libelle": "Cautions, garanties accordées"
+                        },
+                        {
+                            "classe": "9063",
+                            "libelle": "Hypothèques accordées"
+                        },
+                        {
+                            "classe": "9064",
+                            "libelle": "Effets endossés par l'entreprise"
+                        },
+                        {
+                            "classe": "9068",
+                            "libelle": "Autres garanties accordées"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "907",
+                            "libelle": "Engagements réciproques",
+                            "comptes":[
+                                {
+                            "classe": "9071",
+                            "libelle": "Ventes de marchandises à terme"
+                        },
+                        {
+                            "classe": "9072",
+                            "libelle": "Ventes à terme de devises"
+                        },
+                        {
+                            "classe": "9073",
+                            "libelle": "Commandes fermes aux fournisseur"
+                        },
+                        {
+                            "classe": "9078",
+                            "libelle": "Autres engagements réciproques"
+                        }
+                                ]
+                        },
+                        
+                        {
+                            "classe": "908",
+                            "libelle": "Autres engagements accordés",
+                            "comptes":[
+                                 {
+                            "classe": "9081",
+                            "libelle": "Annulations conditionelles de dettes"
+                        },
+                        {
+                            "classe": "9082",
+                            "libelle": "Engagements de retraite"
+                        },
+                        {
+                            "classe": "9083",
+                            "libelle": "Achats clause réserve propriété"
+                        },
+                        {
+                            "classe": "9088",
+                            "libelle": "Divers engagements accordés"
+                        }
+                                ]
+                        }
+                       
+                    ]
+
+
+
+            }]
+        }
+        
+    ]
+}

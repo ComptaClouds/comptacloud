@@ -4,8 +4,10 @@
 {% block title %}Sign Up{% endblock %}
 
 {% block content %}
-  <h2>{{ user }}</h2>
-  <form method="post" enctype="multipart/form-data">
+<div id="message" style="display:none">Your message has been sent.<br /><br /></div>
+<div id="choisi"></div>
+  <h2>{{ user.id }}</h2>
+  <form method="post" enctype="multipart/form-data" id="formcom">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Sign up</button>

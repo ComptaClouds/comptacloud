@@ -1,0 +1,63 @@
+<!-- templates/signup.html -->
+{% extends 'base.html' %}
+
+{% block title %}imputation{% endblock %}
+
+{% block content %}
+
+  <h2>{{ user.id }}</h2>
+<div class="col-md-4">
+    <h3>liste des operations</h3>
+    {% for z in j %}
+      <input type="text" value="{{ z.libelle }}" id="{{ z.id }}" readonly style="border-color:transparent">
+        <br/>
+  {% endfor %}</div>
+
+<div class="col-md-4">
+    <h3>operation concernee</h3>
+    <input type="text" value="{{ opere }}" id="clear" readonly style="border-color:transparent;color:red;">
+</div>
+
+<form method="post" name="formulaireDynamique" id="formulaireDynamique">
+<div class="col-md-4">
+
+    <h3>imputations</h3>
+    <div class="row">
+        <div class="col-md-6 w3-light-grey">
+            <h4>DEBIT</h4>
+            {% csrf_token %}
+            <div id="voir">
+                <input type="button" onclick="ajout(this);" value="+"/>
+            </div>
+            <input type="hidden" value="{{ user.id }}" name="useridimputer">
+            <input type="hidden" value="{{ operationconcernee }}" name="idoperation">
+            <input type="hidden" id="nbre" value="1" name="champe" />
+            <br /><br />
+            <div >
+                <label>total debit</label>
+                <input type="text" id="debi" readonly>
+            </div>
+
+        </div>
+        <div class="col-md-6 w3-pale-blue ">
+            <h4>CREDIT</h4>
+            <div id="voir2">
+                <input type="button" onclick="ajout2(this);" value="+"/>
+            </div>
+            <br /><br />
+            <div>
+                <label>total credit</label>
+                <input type="text" id="credi" readonly>
+            </div>
+        </div>
+    </div>
+    <div class="row"><input type="submit" value="soumettre" disabled="disabled" id="r" style="cursor:not-allowed"/>
+</div>
+</div>
+
+     </form>
+<p id="demo"></p>
+
+
+
+{% endblock %}
