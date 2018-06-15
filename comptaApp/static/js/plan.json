@@ -1,0 +1,3517 @@
+{"comptes": [
+        {
+            "classe": "1",
+            "libelle": "Comptes de ressources durables",
+            "undefined": [{"name":"a"}]
+        },
+        {
+            "classe": "10",
+            "libelle": "Capital",
+            "undefined": "10 - Capital"
+        },
+        {
+            "classe": "101",
+            "libelle": "Capital social",
+            "undefined": "101 - Capital social"
+        },
+        {
+            "classe": "102",
+            "libelle": "Capital par dotation",
+            "undefined": "102 - Capital par dotation"
+        },
+        {
+            "classe": "103",
+            "libelle": "Capital personnel",
+            "undefined": "103 - Capital personnel"
+        },
+        {
+            "classe": "104",
+            "libelle": "Compte de l'exploitant",
+            "undefined": "104 - Compte de l'exploitant"
+        },
+        {
+            "classe": "105",
+            "libelle": "Primes liées Capitaux propres",
+            "undefined": "105 - Primes liées Capitaux propres"
+        },
+        {
+            "classe": "106",
+            "libelle": "Écarts de réévaluation",
+            "undefined": "106 - Écarts de réévaluation"
+        },
+        {
+            "classe": "1061",
+            "libelle": "Écarts de réévaluation légale",
+            "undefined": "1061 - Écarts de réévaluation légale"
+        },
+        {
+            "classe": "1062",
+            "libelle": "Écarts de réévaluation libre",
+            "undefined": "1062 - Écarts de réévaluation libre"
+        },
+        {
+            "classe": "109",
+            "libelle": "Actionnaires, capital souscrit, non appelé",
+            "undefined": "109 - Actionnaires, capital souscrit, non appelé"
+        },
+        {
+            "classe": "11",
+            "libelle": "Réserves",
+            "undefined": "11 - Réserves"
+        },
+        {
+            "classe": "111",
+            "libelle": "Réserve légale",
+            "undefined": "111 - Réserve légale"
+        },
+        {
+            "classe": "113",
+            "libelle": "Réserves réglementées",
+            "undefined": "113 - Réserves réglementées"
+        },
+        {
+            "classe": "118",
+            "libelle": "Autres réserves",
+            "undefined": "118 - Autres réserves"
+        },
+        {
+            "classe": "12",
+            "libelle": "Report à nouveau",
+            "undefined": "12 - Report à nouveau"
+        },
+        {
+            "classe": "121",
+            "libelle": "Report à nouveau créditeur",
+            "undefined": "121 - Report à nouveau créditeur"
+        },
+        {
+            "classe": "129",
+            "libelle": "Report à nouveau débiteur",
+            "undefined": "129 - Report à nouveau débiteur"
+        },
+        {
+            "classe": "14",
+            "libelle": "Subventions d'investissement",
+            "undefined": "14 - Subventions d'investissement"
+        },
+        {
+            "classe": "15",
+            "libelle": "Provisions réglementées et assimilées",
+            "undefined": "15 - Provisions réglementées et assimilées"
+        },
+        {
+            "classe": "151",
+            "libelle": "Amortissements dérogatoires",
+            "undefined": "151 - Amortissements dérogatoires"
+        },
+        {
+            "classe": "152",
+            "libelle": "Plus-values cession à réinvestir",
+            "undefined": "152 - Plus-values cession à réinvestir"
+        },
+        {
+            "classe": "153",
+            "libelle": "Fonds réglementés",
+            "undefined": "153 - Fonds réglementés"
+        },
+        {
+            "classe": "155",
+            "libelle": "Provis. réglementées sur Immobilisations.",
+            "undefined": "155 - Provis. réglementées sur Immobilisations."
+        },
+        {
+            "classe": "156",
+            "libelle": "Provis. réglementées sur stocks",
+            "undefined": "156 - Provis. réglementées sur stocks"
+        },
+        {
+            "classe": "16",
+            "libelle": "Emprunts et dettes assimilées",
+            "undefined": "16 - Emprunts et dettes assimilées"
+        },
+        {
+            "classe": "161",
+            "libelle": "Emprunts obligataires",
+            "undefined": "161 - Emprunts obligataires"
+        },
+        {
+            "classe": "1611",
+            "libelle": "Emprunts obligataires ordinaires",
+            "undefined": "1611 - Emprunts obligataires ordinaires"
+        },
+        {
+            "classe": "1612",
+            "libelle": "Emprunts obligataires convertibles",
+            "undefined": "1612 - Emprunts obligataires convertibles"
+        },
+        {
+            "classe": "1618",
+            "libelle": "Emprunts obligataires",
+            "undefined": "1618 - Emprunts obligataires"
+        },
+        {
+            "classe": "162",
+            "libelle": "Emprunts Établissement crédit",
+            "undefined": "162 - Emprunts Établissement crédit"
+        },
+        {
+            "classe": "163",
+            "libelle": "Avances reçues de l'état",
+            "undefined": "163 - Avances reçues de l'état"
+        },
+        {
+            "classe": "164",
+            "libelle": "Avances reçues, C/C bloqués",
+            "undefined": "164 - Avances reçues, C/C bloqués"
+        },
+        {
+            "classe": "165",
+            "libelle": "Dépôts et cautionnements reçus",
+            "undefined": "165 - Dépôts et cautionnements reçus"
+        },
+        {
+            "classe": "167",
+            "libelle": "Avances à conditions. particulières",
+            "undefined": "167 - Avances à conditions. particulières"
+        },
+        {
+            "classe": "168",
+            "libelle": "Autres emprunts et dettes",
+            "undefined": "168 - Autres emprunts et dettes"
+        },
+        {
+            "classe": "166",
+            "libelle": "Intérêts courus",
+            "undefined": "166 - Intérêts courus"
+        },
+        {
+            "classe": "1661",
+            "libelle": "Sur emprunts obligataires",
+            "undefined": "1661 - Sur emprunts obligataires"
+        },
+        {
+            "classe": "1662",
+            "libelle": "Sur emprunts établissements de. crédit",
+            "undefined": "1662 - Sur emprunts établissements de. crédit"
+        },
+        {
+            "classe": "1663",
+            "libelle": "Sur avances reçues de l'état",
+            "undefined": "1663 - Sur avances reçues de l'état"
+        },
+        {
+            "classe": "1664",
+            "libelle": "Sur avances reçues, C/C bloqués",
+            "undefined": "1664 - Sur avances reçues, C/C bloqués"
+        },
+        {
+            "classe": "1665",
+            "libelle": "Sur dépôts, cautionnements",
+            "undefined": "1665 - Sur dépôts, cautionnements"
+        },
+        {
+            "classe": "1667",
+            "libelle": "sur avances à conditions. particulières.",
+            "undefined": "1667 - sur avances à conditions. particulières."
+        },
+        {
+            "classe": "1668",
+            "libelle": "Sur autres emprunts et dettes",
+            "undefined": "1668 - Sur autres emprunts et dettes"
+        },
+        {
+            "classe": "17",
+            "libelle": "Dettes crédit-bail et assimilé",
+            "undefined": "17 - Dettes crédit-bail et assimilé"
+        },
+        {
+            "classe": "172",
+            "libelle": "Emprunts crédit-bail immobilier",
+            "undefined": "172 - Emprunts crédit-bail immobilier"
+        },
+        {
+            "classe": "173",
+            "libelle": "Emprunts crédit-bail mobilier",
+            "undefined": "173 - Emprunts crédit-bail mobilier"
+        },
+        {
+            "classe": "176",
+            "libelle": "Intérêts courus",
+            "undefined": "176 - Intérêts courus"
+        },
+        {
+            "classe": "1762",
+            "libelle": "Sur emprunt. crédit-bail immobilier",
+            "undefined": "1762 - Sur emprunt. crédit-bail immobilier"
+        },
+        {
+            "classe": "1763",
+            "libelle": "Sur emprunt. crédit-bail mobilier",
+            "undefined": "1763 - Sur emprunt. crédit-bail mobilier"
+        },
+        {
+            "classe": "1768",
+            "libelle": "Sur emprunt. équivalent. autres. contrats",
+            "undefined": "1768 - Sur emprunt. équivalent. autres. contrats"
+        },
+        {
+            "classe": "178",
+            "libelle": "Emprunt. équivalents autres contrats",
+            "undefined": "178 - Emprunt. équivalents autres contrats"
+        },
+        {
+            "classe": "18",
+            "libelle": "Dettes liées",
+            "undefined": "18 - Dettes liées"
+        },
+        {
+            "classe": "181",
+            "libelle": "Dettes liées participations",
+            "undefined": "181 - Dettes liées participations"
+        },
+        {
+            "classe": "182",
+            "libelle": "Dettes liées sociétés en participation.",
+            "undefined": "182 - Dettes liées sociétés en participation."
+        },
+        {
+            "classe": "183",
+            "libelle": "Int. courus sur Dettes liées à des participations",
+            "undefined": "183 - Int. courus sur Dettes liées à des participations"
+        },
+        {
+            "classe": "184",
+            "libelle": "Comptes permanents bloqués",
+            "undefined": "184 - Comptes permanents bloqués"
+        },
+        {
+            "classe": "185",
+            "libelle": "Comptes permanents non bloqués",
+            "undefined": "185 - Comptes permanents non bloqués"
+        },
+        {
+            "classe": "186",
+            "libelle": "Comptes de liaison charges",
+            "undefined": "186 - Comptes de liaison charges"
+        },
+        {
+            "classe": "187",
+            "libelle": "Comptes de liaison produits",
+            "undefined": "187 - Comptes de liaison produits"
+        },
+        {
+            "classe": "188",
+            "libelle": "Comptes liaison : Sociétés en Part.",
+            "undefined": "188 - Comptes liaison : Sociétés en Part."
+        },
+        {
+            "classe": "19",
+            "libelle": "Provis.  Fin. Risques & Charges",
+            "undefined": "19 - Provis.  Fin. Risques & Charges"
+        },
+        {
+            "classe": "2",
+            "libelle": "Comptes d'actif immobilisé",
+            "undefined": "2 - Comptes d'actif immobilisé"
+        },
+        {
+            "classe": "20",
+            "libelle": "Charges immobilisées",
+            "undefined": "20 - Charges immobilisées"
+        },
+        {
+            "classe": "201",
+            "libelle": "Frais d'établissement",
+            "undefined": "201 - Frais d'établissement"
+        },
+        {
+            "classe": "202",
+            "libelle": "Charges à répartir",
+            "undefined": "202 - Charges à répartir"
+        },
+        {
+            "classe": "206",
+            "libelle": "Primes Remboursement Obligations",
+            "undefined": "206 - Primes Remboursement Obligations"
+        },
+        {
+            "classe": "21",
+            "libelle": "Immobilisations incorporelles",
+            "undefined": "21 - Immobilisations incorporelles"
+        },
+        {
+            "classe": "211",
+            "libelle": "Frais recherche et développement",
+            "undefined": "211 - Frais recherche et développement"
+        },
+        {
+            "classe": "212",
+            "libelle": "Brevets, licences, concessions",
+            "undefined": "212 - Brevets, licences, concessions"
+        },
+        {
+            "classe": "213",
+            "libelle": "Logiciels",
+            "undefined": "213 - Logiciels"
+        },
+        {
+            "classe": "214",
+            "libelle": "Marques",
+            "undefined": "214 - Marques"
+        },
+        {
+            "classe": "215",
+            "libelle": "Fonds commercial",
+            "undefined": "215 - Fonds commercial"
+        },
+        {
+            "classe": "216",
+            "libelle": "Droit au bail",
+            "undefined": "216 - Droit au bail"
+        },
+        {
+            "classe": "217",
+            "libelle": "Investissements de création",
+            "undefined": "217 - Investissements de création"
+        },
+        {
+            "classe": "218",
+            "libelle": "Autres droits, valeurs incorporelles.",
+            "undefined": "218 - Autres droits, valeurs incorporelles."
+        },
+        {
+            "classe": "219",
+            "libelle": "Immobilisations. incorporelles en cours",
+            "undefined": "219 - Immobilisations. incorporelles en cours"
+        },
+        {
+            "classe": "2191",
+            "libelle": "Frais recherche et développement",
+            "undefined": "2191 - Frais recherche et développement"
+        },
+        {
+            "classe": "2193",
+            "libelle": "Logiciels",
+            "undefined": "2193 - Logiciels"
+        },
+        {
+            "classe": "2198",
+            "libelle": "Autres droits, valeurs incorporelles.",
+            "undefined": "2198 - Autres droits, valeurs incorporelles."
+        },
+        {
+            "classe": "22",
+            "libelle": "Terrains",
+            "undefined": "22 - Terrains"
+        },
+        {
+            "classe": "221",
+            "libelle": "Terrains agricoles et forestiers",
+            "undefined": "221 - Terrains agricoles et forestiers"
+        },
+        {
+            "classe": "222",
+            "libelle": "Terrains nus",
+            "undefined": "222 - Terrains nus"
+        },
+        {
+            "classe": "223",
+            "libelle": "Terrains bâtis",
+            "undefined": "223 - Terrains bâtis"
+        },
+        {
+            "classe": "224",
+            "libelle": "Travaux mise en valeur terrains",
+            "undefined": "224 - Travaux mise en valeur terrains"
+        },
+        {
+            "classe": "225",
+            "libelle": "Terrains de gisement",
+            "undefined": "225 - Terrains de gisement"
+        },
+        {
+            "classe": "226",
+            "libelle": "Terrains aménagés",
+            "undefined": "226 - Terrains aménagés"
+        },
+        {
+            "classe": "228",
+            "libelle": "Autres terrains",
+            "undefined": "228 - Autres terrains"
+        },
+        {
+            "classe": "229",
+            "libelle": "Aménagements terrains en cours",
+            "undefined": "229 - Aménagements terrains en cours"
+        },
+        {
+            "classe": "23",
+            "libelle": "Bâtiments, installations. techniques",
+            "undefined": "23 - Bâtiments, installations. techniques"
+        },
+        {
+            "classe": "231",
+            "libelle": "Bâtiments sur sol propre",
+            "undefined": "231 - Bâtiments sur sol propre"
+        },
+        {
+            "classe": "232",
+            "libelle": "Bâtiments sur sol d'autrui",
+            "undefined": "232 - Bâtiments sur sol d'autrui"
+        },
+        {
+            "classe": "233",
+            "libelle": "Ouvrages d'infrastructure",
+            "undefined": "233 - Ouvrages d'infrastructure"
+        },
+        {
+            "classe": "234",
+            "libelle": "Installations techniques",
+            "undefined": "234 - Installations techniques"
+        },
+        {
+            "classe": "235",
+            "libelle": "Aménagement de bureaux",
+            "undefined": "235 - Aménagement de bureaux"
+        },
+        {
+            "classe": "237",
+            "libelle": "Bâtiments en concession",
+            "undefined": "237 - Bâtiments en concession"
+        },
+        {
+            "classe": "238",
+            "libelle": "Autres installations et agencements",
+            "undefined": "238 - Autres installations et agencements"
+        },
+        {
+            "classe": "239",
+            "libelle": "Bâtiment et installations en cours",
+            "undefined": "239 - Bâtiment et installations en cours"
+        },
+        {
+            "classe": "2391",
+            "libelle": "En cours sur Bâtiments sur sol propre",
+            "undefined": "2391 - En cours sur Bâtiments sur sol propre"
+        },
+        {
+            "classe": "2392",
+            "libelle": "En cours sur Bâtiments sur sol d'autrui",
+            "undefined": "2392 - En cours sur Bâtiments sur sol d'autrui"
+        },
+        {
+            "classe": "2393",
+            "libelle": "En cours sur Ouvrages d'infrastructure",
+            "undefined": "2393 - En cours sur Ouvrages d'infrastructure"
+        },
+        {
+            "classe": "2394",
+            "libelle": "En cours sur Installations techniques",
+            "undefined": "2394 - En cours sur Installations techniques"
+        },
+        {
+            "classe": "2395",
+            "libelle": "En cours sur Aménagement de bureaux",
+            "undefined": "2395 - En cours sur Aménagement de bureaux"
+        },
+        {
+            "classe": "2397",
+            "libelle": "En cours sur Bâtiments en concession",
+            "undefined": "2397 - En cours sur Bâtiments en concession"
+        },
+        {
+            "classe": "2398",
+            "libelle": "En cours sur Autres installations et agencements",
+            "undefined": "2398 - En cours sur Autres installations et agencements"
+        },
+        {
+            "classe": "24",
+            "libelle": "Matériel",
+            "undefined": "24 - Matériel"
+        },
+        {
+            "classe": "241",
+            "libelle": "Matériel, outillage industriel et commercial",
+            "undefined": "241 - Matériel, outillage industriel et commercial"
+        },
+        {
+            "classe": "242",
+            "libelle": "Matériel et outillage agricole",
+            "undefined": "242 - Matériel et outillage agricole"
+        },
+        {
+            "classe": "243",
+            "libelle": "Matériel Emballage récupérable",
+            "undefined": "243 - Matériel Emballage récupérable"
+        },
+        {
+            "classe": "244",
+            "libelle": "Matériel et mobilier",
+            "undefined": "244 - Matériel et mobilier"
+        },
+        {
+            "classe": "245",
+            "libelle": "Matériel de transport",
+            "undefined": "245 - Matériel de transport"
+        },
+        {
+            "classe": "246",
+            "libelle": "Immobilisations. animales, agricoles",
+            "undefined": "246 - Immobilisations. animales, agricoles"
+        },
+        {
+            "classe": "248",
+            "libelle": "Autres matériels",
+            "undefined": "248 - Autres matériels"
+        },
+        {
+            "classe": "249",
+            "libelle": "Matériel en cours",
+            "undefined": "249 - Matériel en cours"
+        },
+        {
+            "classe": "2491",
+            "libelle": "Matériel, outillage industriel et commercial en cours",
+            "undefined": "2491 - Matériel, outillage industriel et commercial en cours"
+        },
+        {
+            "classe": "2492",
+            "libelle": "Matériel et outillage agricole en cours",
+            "undefined": "2492 - Matériel et outillage agricole en cours"
+        },
+        {
+            "classe": "2493",
+            "libelle": "Matériel Emballage récupérable en cours",
+            "undefined": "2493 - Matériel Emballage récupérable en cours"
+        },
+        {
+            "classe": "2494",
+            "libelle": "Matériel et mobilier de bureau en cours",
+            "undefined": "2494 - Matériel et mobilier de bureau en cours"
+        },
+        {
+            "classe": "2495",
+            "libelle": "Matériel de transport en cours",
+            "undefined": "2495 - Matériel de transport en cours"
+        },
+        {
+            "classe": "2496",
+            "libelle": "Immobilisations. animales, agricoles en cours",
+            "undefined": "2496 - Immobilisations. animales, agricoles en cours"
+        },
+        {
+            "classe": "2497",
+            "libelle": "Agencements., aménagement. du matériel en cours",
+            "undefined": "2497 - Agencements., aménagement. du matériel en cours"
+        },
+        {
+            "classe": "2498",
+            "libelle": "Autres matériels en cours",
+            "undefined": "2498 - Autres matériels en cours"
+        },
+        {
+            "classe": "25",
+            "libelle": "Avances, acomptes versés sur immobilisations",
+            "undefined": "25 - Avances, acomptes versés sur immobilisations"
+        },
+        {
+            "classe": "26",
+            "libelle": "Titres de participation",
+            "undefined": "26 - Titres de participation"
+        },
+        {
+            "classe": "27",
+            "libelle": "Autres immobilisations. financières",
+            "undefined": "27 - Autres immobilisations. financières"
+        },
+        {
+            "classe": "271",
+            "libelle": "Prêts et créances non commerciales",
+            "undefined": "271 - Prêts et créances non commerciales"
+        },
+        {
+            "classe": "272",
+            "libelle": "Prêts au personnel",
+            "undefined": "272 - Prêts au personnel"
+        },
+        {
+            "classe": "273",
+            "libelle": "Créances sur l'Etat",
+            "undefined": "273 - Créances sur l'Etat"
+        },
+        {
+            "classe": "274",
+            "libelle": "Titres immobilisés",
+            "undefined": "274 - Titres immobilisés"
+        },
+        {
+            "classe": "275",
+            "libelle": "Dépôts et cautionnements versés",
+            "undefined": "275 - Dépôts et cautionnements versés"
+        },
+        {
+            "classe": "276",
+            "libelle": "Intérêts courus",
+            "undefined": "276 - Intérêts courus"
+        },
+        {
+            "classe": "2761",
+            "libelle": "Int. Courus Prêts et créances non commerciales",
+            "undefined": "2761 - Int. Courus Prêts et créances non commerciales"
+        },
+        {
+            "classe": "2762",
+            "libelle": "Int. Courus Prêts au personnel",
+            "undefined": "2762 - Int. Courus Prêts au personnel"
+        },
+        {
+            "classe": "2763",
+            "libelle": "Int. Courus Créances sur l'Etat",
+            "undefined": "2763 - Int. Courus Créances sur l'Etat"
+        },
+        {
+            "classe": "2764",
+            "libelle": "Int. Courus Titres immobilisés",
+            "undefined": "2764 - Int. Courus Titres immobilisés"
+        },
+        {
+            "classe": "2765",
+            "libelle": "Int. Courus Dépôts et cautionnements versés",
+            "undefined": "2765 - Int. Courus Dépôts et cautionnements versés"
+        },
+        {
+            "classe": "2767",
+            "libelle": "Int. Courus Créances rattachées à des participations",
+            "undefined": "2767 - Int. Courus Créances rattachées à des participations"
+        },
+        {
+            "classe": "2768",
+            "libelle": "Int. Courus Immobilisations financières diverses",
+            "undefined": "2768 - Int. Courus Immobilisations financières diverses"
+        },
+        {
+            "classe": "277",
+            "libelle": "Créances rattachées à des participations",
+            "undefined": "277 - Créances rattachées à des participations"
+        },
+        {
+            "classe": "278",
+            "libelle": "Immobilisations financières diverses",
+            "undefined": "278 - Immobilisations financières diverses"
+        },
+        {
+            "classe": "28",
+            "libelle": "Amortissements",
+            "undefined": "28 - Amortissements"
+        },
+        {
+            "classe": "281",
+            "libelle": "Amortis. : immobilisations. incorporelles",
+            "undefined": "281 - Amortis. : immobilisations. incorporelles"
+        },
+        {
+            "classe": "2811",
+            "libelle": "Amortissements. : frais R &D",
+            "undefined": "2811 - Amortissements. : frais R &D"
+        },
+        {
+            "classe": "2812",
+            "libelle": "Amortissements. : brevets, licences",
+            "undefined": "2812 - Amortissements. : brevets, licences"
+        },
+        {
+            "classe": "2813",
+            "libelle": "Amortissements des logiciels",
+            "undefined": "2813 - Amortissements des logiciels"
+        },
+        {
+            "classe": "2814",
+            "libelle": "Amortissements des marques",
+            "undefined": "2814 - Amortissements des marques"
+        },
+        {
+            "classe": "2815",
+            "libelle": "Amortissements. du fonds commercial",
+            "undefined": "2815 - Amortissements. du fonds commercial"
+        },
+        {
+            "classe": "2816",
+            "libelle": "Amortissements du droit au bail",
+            "undefined": "2816 - Amortissements du droit au bail"
+        },
+        {
+            "classe": "2817",
+            "libelle": "Amont. : investissements. création",
+            "undefined": "2817 - Amont. : investissements. création"
+        },
+        {
+            "classe": "2818",
+            "libelle": "Amortissements. autres  valeurs incorporelles.",
+            "undefined": "2818 - Amortissements. autres  valeurs incorporelles."
+        },
+        {
+            "classe": "282",
+            "libelle": "Amortissements des terrains",
+            "undefined": "282 - Amortissements des terrains"
+        },
+        {
+            "classe": "283",
+            "libelle": "Amortissements. : bâtiments, installations. ",
+            "undefined": "283 - Amortissements. : bâtiments, installations. "
+        },
+        {
+            "classe": "2831",
+            "libelle": "Amort. bâtim. industriels. sol propre",
+            "undefined": "2831 - Amort. bâtim. industriels. sol propre"
+        },
+        {
+            "classe": "2832",
+            "libelle": "Amort. bâtiments. industriels. sol autrui",
+            "undefined": "2832 - Amort. bâtiments. industriels. sol autrui"
+        },
+        {
+            "classe": "2833",
+            "libelle": "Amortissements. : ouvrages infrastructure",
+            "undefined": "2833 - Amortissements. : ouvrages infrastructure"
+        },
+        {
+            "classe": "2834",
+            "libelle": "Amont. : installations. techniques",
+            "undefined": "2834 - Amont. : installations. techniques"
+        },
+        {
+            "classe": "2835",
+            "libelle": "Amortissements. : aménagement. bureaux",
+            "undefined": "2835 - Amortissements. : aménagement. bureaux"
+        },
+        {
+            "classe": "2837",
+            "libelle": "Amont. bâtiments. industriels. concession",
+            "undefined": "2837 - Amont. bâtiments. industriels. concession"
+        },
+        {
+            "classe": "2838",
+            "libelle": "Amont. : autres. installations., agencements.",
+            "undefined": "2838 - Amont. : autres. installations., agencements."
+        },
+        {
+            "classe": "284",
+            "libelle": "Amortissements du matériel",
+            "undefined": "284 - Amortissements du matériel"
+        },
+        {
+            "classe": "2841",
+            "libelle": "Amont. mat-outillage industriels.",
+            "undefined": "2841 - Amont. mat-outillage industriels."
+        },
+        {
+            "classe": "2842",
+            "libelle": "Amont. mat-outillage agricole",
+            "undefined": "2842 - Amont. mat-outillage agricole"
+        },
+        {
+            "classe": "2843",
+            "libelle": "Amont. mat-outillage d'emballage",
+            "undefined": "2843 - Amont. mat-outillage d'emballage"
+        },
+        {
+            "classe": "2844",
+            "libelle": "Amortissements. matériel, mobilier",
+            "undefined": "2844 - Amortissements. matériel, mobilier"
+        },
+        {
+            "classe": "2845",
+            "libelle": "Amortissements. matériel transport",
+            "undefined": "2845 - Amortissements. matériel transport"
+        },
+        {
+            "classe": "2846",
+            "libelle": "Amont. : immobilisations. animales, agric.",
+            "undefined": "2846 - Amont. : immobilisations. animales, agric."
+        },
+        {
+            "classe": "2847",
+            "libelle": "Amont. : agencements., aménagement.",
+            "undefined": "2847 - Amont. : agencements., aménagement."
+        },
+        {
+            "classe": "2848",
+            "libelle": "Amortissements. : autres matériels",
+            "undefined": "2848 - Amortissements. : autres matériels"
+        },
+        {
+            "classe": "29",
+            "libelle": "Provisions pour dépréciation",
+            "undefined": "29 - Provisions pour dépréciation"
+        },
+        {
+            "classe": "291",
+            "libelle": "Provisions : immobilisations. incorporelles",
+            "undefined": "291 - Provisions : immobilisations. incorporelles"
+        },
+        {
+            "classe": "2912",
+            "libelle": "Provisions : brevets, licences",
+            "undefined": "2912 - Provisions : brevets, licences"
+        },
+        {
+            "classe": "2913",
+            "libelle": "Provisions des logiciels",
+            "undefined": "2913 - Provisions des logiciels"
+        },
+        {
+            "classe": "2914",
+            "libelle": "Provisions des marques",
+            "undefined": "2914 - Provisions des marques"
+        },
+        {
+            "classe": "2915",
+            "libelle": "Provisions du fonds commercial",
+            "undefined": "2915 - Provisions du fonds commercial"
+        },
+        {
+            "classe": "2916",
+            "libelle": "Provisions du droit au bail",
+            "undefined": "2916 - Provisions du droit au bail"
+        },
+        {
+            "classe": "2917",
+            "libelle": "Provisions : investissements. création",
+            "undefined": "2917 - Provisions : investissements. création"
+        },
+        {
+            "classe": "2918",
+            "libelle": "Provisions autres  valeurs incorporelles.",
+            "undefined": "2918 - Provisions autres  valeurs incorporelles."
+        },
+        {
+            "classe": "2919",
+            "libelle": "Provision Immobilisations incorporelles. En cours",
+            "undefined": "2919 - Provision Immobilisations incorporelles. En cours"
+        },
+        {
+            "classe": "292",
+            "libelle": "Provisions des terrains",
+            "undefined": "292 - Provisions des terrains"
+        },
+        {
+            "classe": "293",
+            "libelle": "Provisions : bâtiments, installations. ",
+            "undefined": "293 - Provisions : bâtiments, installations. "
+        },
+        {
+            "classe": "2931",
+            "libelle": "Provisions bâtiments. industriels. sol propre",
+            "undefined": "2931 - Provisions bâtiments. industriels. sol propre"
+        },
+        {
+            "classe": "2932",
+            "libelle": "Provisions bâtiments. industriels. sol autrui",
+            "undefined": "2932 - Provisions bâtiments. industriels. sol autrui"
+        },
+        {
+            "classe": "2933",
+            "libelle": "Provisions : ouvrages infrastructure",
+            "undefined": "2933 - Provisions : ouvrages infrastructure"
+        },
+        {
+            "classe": "2934",
+            "libelle": "Provisions : installations. techniques",
+            "undefined": "2934 - Provisions : installations. techniques"
+        },
+        {
+            "classe": "2935",
+            "libelle": "Provisions : aménagement. bureaux",
+            "undefined": "2935 - Provisions : aménagement. bureaux"
+        },
+        {
+            "classe": "2937",
+            "libelle": "Provisions bâtiments. industriels. concession",
+            "undefined": "2937 - Provisions bâtiments. industriels. concession"
+        },
+        {
+            "classe": "2938",
+            "libelle": "Provisions : autres. installations., agencements.",
+            "undefined": "2938 - Provisions : autres. installations., agencements."
+        },
+        {
+            "classe": "2939",
+            "libelle": "Provision Bâtiments En cours",
+            "undefined": "2939 - Provision Bâtiments En cours"
+        },
+        {
+            "classe": "294",
+            "libelle": "Provisions du matériel",
+            "undefined": "294 - Provisions du matériel"
+        },
+        {
+            "classe": "2941",
+            "libelle": "Provisions mat-outillage industriels.",
+            "undefined": "2941 - Provisions mat-outillage industriels."
+        },
+        {
+            "classe": "2942",
+            "libelle": "Provisions mat-outillage agricole",
+            "undefined": "2942 - Provisions mat-outillage agricole"
+        },
+        {
+            "classe": "2943",
+            "libelle": "Provisions mat-outillage d'emballage",
+            "undefined": "2943 - Provisions mat-outillage d'emballage"
+        },
+        {
+            "classe": "2944",
+            "libelle": "Provisions matériel, mobilier",
+            "undefined": "2944 - Provisions matériel, mobilier"
+        },
+        {
+            "classe": "2945",
+            "libelle": "Provisions matériel transport",
+            "undefined": "2945 - Provisions matériel transport"
+        },
+        {
+            "classe": "2946",
+            "libelle": "Provisions : immobilisations. animales, agric.",
+            "undefined": "2946 - Provisions : immobilisations. animales, agric."
+        },
+        {
+            "classe": "2947",
+            "libelle": "Provisions : agencements., aménagement.",
+            "undefined": "2947 - Provisions : agencements., aménagement."
+        },
+        {
+            "classe": "2948",
+            "libelle": "Provisions : autres matériels",
+            "undefined": "2948 - Provisions : autres matériels"
+        },
+        {
+            "classe": "2949",
+            "libelle": "Provision Matériel En cours",
+            "undefined": "2949 - Provision Matériel En cours"
+        },
+        {
+            "classe": "295",
+            "libelle": "Provisions avances et acomptes",
+            "undefined": "295 - Provisions avances et acomptes"
+        },
+        {
+            "classe": "296",
+            "libelle": "Provisions sut titres de participations",
+            "undefined": "296 - Provisions sut titres de participations"
+        },
+        {
+            "classe": "297",
+            "libelle": "Provisions sur autres immob.financières",
+            "undefined": "297 - Provisions sur autres immob.financières"
+        },
+        {
+            "classe": "3",
+            "libelle": "Comptes de stocks",
+            "undefined": "3 - Comptes de stocks"
+        },
+        {
+            "classe": "31",
+            "libelle": "Marchandises",
+            "undefined": "31 - Marchandises"
+        },
+        {
+            "classe": "32",
+            "libelle": "Matières premières, fournitures",
+            "undefined": "32 - Matières premières, fournitures"
+        },
+        {
+            "classe": "33",
+            "libelle": "Autres approvisionnements",
+            "undefined": "33 - Autres approvisionnements"
+        },
+        {
+            "classe": "34",
+            "libelle": "Produits en cours",
+            "undefined": "34 - Produits en cours"
+        },
+        {
+            "classe": "35",
+            "libelle": "Services en cours",
+            "undefined": "35 - Services en cours"
+        },
+        {
+            "classe": "36",
+            "libelle": "Produits finis",
+            "undefined": "36 - Produits finis"
+        },
+        {
+            "classe": "37",
+            "libelle": "Produits intermèdiaires., résiduels",
+            "undefined": "37 - Produits intermèdiaires., résiduels"
+        },
+        {
+            "classe": "38",
+            "libelle": "Stocks en cours de route",
+            "undefined": "38 - Stocks en cours de route"
+        },
+        {
+            "classe": "381",
+            "libelle": "Marchandises en cours de route",
+            "undefined": "381 - Marchandises en cours de route"
+        },
+        {
+            "classe": "382",
+            "libelle": "Mat. premières. en cours de route",
+            "undefined": "382 - Mat. premières. en cours de route"
+        },
+        {
+            "classe": "383",
+            "libelle": "Autres approvisionnements. en cours route",
+            "undefined": "383 - Autres approvisionnements. en cours route"
+        },
+        {
+            "classe": "386",
+            "libelle": "Produits finis en cours de route",
+            "undefined": "386 - Produits finis en cours de route"
+        },
+        {
+            "classe": "387",
+            "libelle": "Stock en consignation., en dépôt",
+            "undefined": "387 - Stock en consignation., en dépôt"
+        },
+        {
+            "classe": "39",
+            "libelle": "Dépréciations des stocks",
+            "undefined": "39 - Dépréciations des stocks"
+        },
+        {
+            "classe": "391",
+            "libelle": "Dépréciations. : stocks marchandises",
+            "undefined": "391 - Dépréciations. : stocks marchandises"
+        },
+        {
+            "classe": "392",
+            "libelle": "Dépréciations. : stocks mat. premières",
+            "undefined": "392 - Dépréciations. : stocks mat. premières"
+        },
+        {
+            "classe": "393",
+            "libelle": "Dépréciations. : stocks autres. approvisionnements.",
+            "undefined": "393 - Dépréciations. : stocks autres. approvisionnements."
+        },
+        {
+            "classe": "394",
+            "libelle": "Dépréciations. : produits en cours",
+            "undefined": "394 - Dépréciations. : produits en cours"
+        },
+        {
+            "classe": "395",
+            "libelle": "Dépréciations. : services en cours",
+            "undefined": "395 - Dépréciations. : services en cours"
+        },
+        {
+            "classe": "396",
+            "libelle": "Dépréciations. : stocks produits finis",
+            "undefined": "396 - Dépréciations. : stocks produits finis"
+        },
+        {
+            "classe": "397",
+            "libelle": "Dépréciations. : stocks produits intermèdiaires.",
+            "undefined": "397 - Dépréciations. : stocks produits intermèdiaires."
+        },
+        {
+            "classe": "398",
+            "libelle": "Dépréciations. : stocks cours de route",
+            "undefined": "398 - Dépréciations. : stocks cours de route"
+        },
+        {
+            "classe": "4",
+            "libelle": "Comptes de tiers",
+            "undefined": "4 - Comptes de tiers"
+        },
+        {
+            "classe": "40",
+            "libelle": "Fournisseurs, comptes rattachés",
+            "undefined": "40 - Fournisseurs, comptes rattachés"
+        },
+        {
+            "classe": "401",
+            "libelle": "Fournisseurs, dettes en compte",
+            "undefined": "401 - Fournisseurs, dettes en compte"
+        },
+        {
+            "classe": "402",
+            "libelle": "Fournisseurs, effets à payer",
+            "undefined": "402 - Fournisseurs, effets à payer"
+        },
+        {
+            "classe": "408",
+            "libelle": "Fournis., factures non parvenues",
+            "undefined": "408 - Fournis., factures non parvenues"
+        },
+        {
+            "classe": "409",
+            "libelle": "Fournisseurs débiteurs",
+            "undefined": "409 - Fournisseurs débiteurs"
+        },
+        {
+            "classe": "41",
+            "libelle": "Clients et comptes rattachés",
+            "undefined": "41 - Clients et comptes rattachés"
+        },
+        {
+            "classe": "411",
+            "libelle": "Clients",
+            "undefined": "411 - Clients"
+        },
+        {
+            "classe": "412",
+            "libelle": "Clients, effets à recevoir",
+            "undefined": "412 - Clients, effets à recevoir"
+        },
+        {
+            "classe": "414",
+            "libelle": "Créances Cessions. courantes immobilisations.",
+            "undefined": "414 - Créances Cessions. courantes immobilisations."
+        },
+        {
+            "classe": "415",
+            "libelle": "Clients effets. escomptés non échus",
+            "undefined": "415 - Clients effets. escomptés non échus"
+        },
+        {
+            "classe": "416",
+            "libelle": "Créances litigieuses douteuses",
+            "undefined": "416 - Créances litigieuses douteuses"
+        },
+        {
+            "classe": "418",
+            "libelle": "Clients, produits à recevoir",
+            "undefined": "418 - Clients, produits à recevoir"
+        },
+        {
+            "classe": "419",
+            "libelle": "Clients créditeurs",
+            "undefined": "419 - Clients créditeurs"
+        },
+        {
+            "classe": "42",
+            "libelle": "Personnel",
+            "undefined": "42 - Personnel"
+        },
+        {
+            "classe": "421",
+            "libelle": "Personnel, avances et acomptes",
+            "undefined": "421 - Personnel, avances et acomptes"
+        },
+        {
+            "classe": "422",
+            "libelle": "Personnel, rémunérations dues",
+            "undefined": "422 - Personnel, rémunérations dues"
+        },
+        {
+            "classe": "423",
+            "libelle": "Personnel, oppositions. saisies-arrêts",
+            "undefined": "423 - Personnel, oppositions. saisies-arrêts"
+        },
+        {
+            "classe": "424",
+            "libelle": "Personnel, œuvres sociales",
+            "undefined": "424 - Personnel, œuvres sociales"
+        },
+        {
+            "classe": "425",
+            "libelle": "Représentants du personnel",
+            "undefined": "425 - Représentants du personnel"
+        },
+        {
+            "classe": "4281",
+            "libelle": "Dettes provisionnées. congés à payer",
+            "undefined": "4281 - Dettes provisionnées. congés à payer"
+        },
+        {
+            "classe": "4286",
+            "libelle": "Pers., Autres charges à payer",
+            "undefined": "4286 - Pers., Autres charges à payer"
+        },
+        {
+            "classe": "4287",
+            "libelle": "Personnel, Produits à recevoir",
+            "undefined": "4287 - Personnel, Produits à recevoir"
+        },
+        {
+            "classe": "43",
+            "libelle": "Organismes sociaux",
+            "undefined": "43 - Organismes sociaux"
+        },
+        {
+            "classe": "431",
+            "libelle": "Sécurité sociale",
+            "undefined": "431 - Sécurité sociale"
+        },
+        {
+            "classe": "433",
+            "libelle": "Autres organismes sociaux",
+            "undefined": "433 - Autres organismes sociaux"
+        },
+        {
+            "classe": "4386",
+            "libelle": "Organismes. sociaux, Autres charges à payer",
+            "undefined": "4386 - Organismes. sociaux, Autres charges à payer"
+        },
+        {
+            "classe": "4387",
+            "libelle": "Organismes sociaux, Produits à recevoir",
+            "undefined": "4387 - Organismes sociaux, Produits à recevoir"
+        },
+        {
+            "classe": "44",
+            "libelle": "État et collectivités publiques",
+            "undefined": "44 - État et collectivités publiques"
+        },
+        {
+            "classe": "441",
+            "libelle": "État, impôt sur les bénéfices",
+            "undefined": "441 - État, impôt sur les bénéfices"
+        },
+        {
+            "classe": "442",
+            "libelle": "État, autres impôts et taxes",
+            "undefined": "442 - État, autres impôts et taxes"
+        },
+        {
+            "classe": "443",
+            "libelle": "État, TVA facturée",
+            "undefined": "443 - État, TVA facturée"
+        },
+        {
+            "classe": "444",
+            "libelle": "État, TVA due ou crédit de TVA",
+            "undefined": "444 - État, TVA due ou crédit de TVA"
+        },
+        {
+            "classe": "445",
+            "libelle": "État, TVA récupérable",
+            "undefined": "445 - État, TVA récupérable"
+        },
+        {
+            "classe": "446",
+            "libelle": "État, Autres taxes sur C.A.",
+            "undefined": "446 - État, Autres taxes sur C.A."
+        },
+        {
+            "classe": "447",
+            "libelle": "État, impôts retenus à la source",
+            "undefined": "447 - État, impôts retenus à la source"
+        },
+        {
+            "classe": "4486",
+            "libelle": "Etat, Charges à payer",
+            "undefined": "4486 - Etat, Charges à payer"
+        },
+        {
+            "classe": "4487",
+            "libelle": "Etat, Produits à recevoir",
+            "undefined": "4487 - Etat, Produits à recevoir"
+        },
+        {
+            "classe": "449",
+            "libelle": "État, créances, dettes diverses",
+            "undefined": "449 - État, créances, dettes diverses"
+        },
+        {
+            "classe": "45",
+            "libelle": "Organismes internationaux",
+            "undefined": "45 - Organismes internationaux"
+        },
+        {
+            "classe": "451",
+            "libelle": "Organismes africains",
+            "undefined": "451 - Organismes africains"
+        },
+        {
+            "classe": "452",
+            "libelle": "Autres organismes internationaux",
+            "undefined": "452 - Autres organismes internationaux"
+        },
+        {
+            "classe": "4581",
+            "libelle": "Organismes. int., fonds de dotation. à recevoir",
+            "undefined": "4581 - Organismes. int., fonds de dotation. à recevoir"
+        },
+        {
+            "classe": "4582",
+            "libelle": "Organismes. int., subvention à recevoir",
+            "undefined": "4582 - Organismes. int., subvention à recevoir"
+        },
+        {
+            "classe": "46",
+            "libelle": "Associés et groupe",
+            "undefined": "46 - Associés et groupe"
+        },
+        {
+            "classe": "461",
+            "libelle": "Associés, opérations en. / capital",
+            "undefined": "461 - Associés, opérations en. / capital"
+        },
+        {
+            "classe": "462",
+            "libelle": "Associés, comptes courants",
+            "undefined": "462 - Associés, comptes courants"
+        },
+        {
+            "classe": "463",
+            "libelle": "Associés, opérations en. en commun",
+            "undefined": "463 - Associés, opérations en. en commun"
+        },
+        {
+            "classe": "465",
+            "libelle": "Associés, dividendes à payer",
+            "undefined": "465 - Associés, dividendes à payer"
+        },
+        {
+            "classe": "466",
+            "libelle": "Groupe, comptes courants",
+            "undefined": "466 - Groupe, comptes courants"
+        },
+        {
+            "classe": "467",
+            "libelle": "Action., restant du Cal appelé",
+            "undefined": "467 - Action., restant du Cal appelé"
+        },
+        {
+            "classe": "47",
+            "libelle": "Débiteurs et créditeurs divers",
+            "undefined": "47 - Débiteurs et créditeurs divers"
+        },
+        {
+            "classe": "4711",
+            "libelle": "Débiteurs divers",
+            "undefined": "4711 - Débiteurs divers"
+        },
+        {
+            "classe": "4712",
+            "libelle": "Créditeurs divers",
+            "undefined": "4712 - Créditeurs divers"
+        },
+        {
+            "classe": "472",
+            "libelle": "Versements. restant à effectuer/titres non libérés",
+            "undefined": "472 - Versements. restant à effectuer/titres non libérés"
+        },
+        {
+            "classe": "474",
+            "libelle": "Répartition périodique",
+            "undefined": "474 - Répartition périodique"
+        },
+        {
+            "classe": "475",
+            "libelle": "Créances / Travaux non encore facturables",
+            "undefined": "475 - Créances / Travaux non encore facturables"
+        },
+        {
+            "classe": "476",
+            "libelle": "Charges constatées d'avance",
+            "undefined": "476 - Charges constatées d'avance"
+        },
+        {
+            "classe": "477",
+            "libelle": "Produits constatés d'avance",
+            "undefined": "477 - Produits constatés d'avance"
+        },
+        {
+            "classe": "478",
+            "libelle": "Écarts de conversion - actif",
+            "undefined": "478 - Écarts de conversion - actif"
+        },
+        {
+            "classe": "4781",
+            "libelle": "Diminution des créances",
+            "undefined": "4781 - Diminution des créances"
+        },
+        {
+            "classe": "4782",
+            "libelle": "Augmentation des dettes",
+            "undefined": "4782 - Augmentation des dettes"
+        },
+        {
+            "classe": "4788",
+            "libelle": "Différences. compens./couverture change",
+            "undefined": "4788 - Différences. compens./couverture change"
+        },
+        {
+            "classe": "479",
+            "libelle": "Écarts de conversion - passif",
+            "undefined": "479 - Écarts de conversion - passif"
+        },
+        {
+            "classe": "4791",
+            "libelle": "Augmentation des créances",
+            "undefined": "4791 - Augmentation des créances"
+        },
+        {
+            "classe": "4792",
+            "libelle": "Diminution des dettes",
+            "undefined": "4792 - Diminution des dettes"
+        },
+        {
+            "classe": "4798",
+            "libelle": "Différences. compens./couverture change",
+            "undefined": "4798 - Différences. compens./couverture change"
+        },
+        {
+            "classe": "48",
+            "libelle": "Créances et dettes  H.A.O.",
+            "undefined": "48 - Créances et dettes  H.A.O."
+        },
+        {
+            "classe": "481",
+            "libelle": "Fournisseurs d'investissements",
+            "undefined": "481 - Fournisseurs d'investissements"
+        },
+        {
+            "classe": "482",
+            "libelle": "Fournisseurs investissements., EAP",
+            "undefined": "482 - Fournisseurs investissements., EAP"
+        },
+        {
+            "classe": "483",
+            "libelle": "Dettes / acqu. titres placement",
+            "undefined": "483 - Dettes / acqu. titres placement"
+        },
+        {
+            "classe": "484",
+            "libelle": "Autres dettes H.A.O.",
+            "undefined": "484 - Autres dettes H.A.O."
+        },
+        {
+            "classe": "485",
+            "libelle": "Créances / cessions immobilisations.",
+            "undefined": "485 - Créances / cessions immobilisations."
+        },
+        {
+            "classe": "486",
+            "libelle": "Créances Cessions. titres placement",
+            "undefined": "486 - Créances Cessions. titres placement"
+        },
+        {
+            "classe": "488",
+            "libelle": "Autres créances H.A.O.",
+            "undefined": "488 - Autres créances H.A.O."
+        },
+        {
+            "classe": "49",
+            "libelle": "Dépréciations sur risques tiers",
+            "undefined": "49 - Dépréciations sur risques tiers"
+        },
+        {
+            "classe": "490",
+            "libelle": "Dépréciation : Comptes fournisseurs",
+            "undefined": "490 - Dépréciation : Comptes fournisseurs"
+        },
+        {
+            "classe": "491",
+            "libelle": "Dépréciation : Comptes clients",
+            "undefined": "491 - Dépréciation : Comptes clients"
+        },
+        {
+            "classe": "492",
+            "libelle": "Dépréciation : Comptes personnel",
+            "undefined": "492 - Dépréciation : Comptes personnel"
+        },
+        {
+            "classe": "493",
+            "libelle": "Dépréciation : Comptes organismes sociaux",
+            "undefined": "493 - Dépréciation : Comptes organismes sociaux"
+        },
+        {
+            "classe": "494",
+            "libelle": "Dépréciation : Comptes d'État et collectivités publiques",
+            "undefined": "494 - Dépréciation : Comptes d'État et collectivités publiques"
+        },
+        {
+            "classe": "495",
+            "libelle": "Dépréciation : Comptes organismes internationaux",
+            "undefined": "495 - Dépréciation : Comptes organismes internationaux"
+        },
+        {
+            "classe": "496",
+            "libelle": "Dépréciation : Comptes associé-groupe",
+            "undefined": "496 - Dépréciation : Comptes associé-groupe"
+        },
+        {
+            "classe": "497",
+            "libelle": "Dépréciation : Comptes débiteurs divers",
+            "undefined": "497 - Dépréciation : Comptes débiteurs divers"
+        },
+        {
+            "classe": "498",
+            "libelle": "Dépréciation : Comptes de créances H.A.O.",
+            "undefined": "498 - Dépréciation : Comptes de créances H.A.O."
+        },
+        {
+            "classe": "4981",
+            "libelle": "Dépréciation créances sur cessions d'immobilisations",
+            "undefined": "4981 - Dépréciation créances sur cessions d'immobilisations"
+        },
+        {
+            "classe": "4982",
+            "libelle": "Dépréciation créances sur cessions de titres placement",
+            "undefined": "4982 - Dépréciation créances sur cessions de titres placement"
+        },
+        {
+            "classe": "4983",
+            "libelle": "Dépréciation Autres créances H.A.O.",
+            "undefined": "4983 - Dépréciation Autres créances H.A.O."
+        },
+        {
+            "classe": "499",
+            "libelle": "Risques provisionnés",
+            "undefined": "499 - Risques provisionnés"
+        },
+        {
+            "classe": "4991",
+            "libelle": "Risques provisionnés sur opérations d'exploitation",
+            "undefined": "4991 - Risques provisionnés sur opérations d'exploitation"
+        },
+        {
+            "classe": "4998",
+            "libelle": "Risques provisionnés sur opérations H.A.O.",
+            "undefined": "4998 - Risques provisionnés sur opérations H.A.O."
+        },
+        {
+            "classe": "5",
+            "libelle": "Comptes de trésorerie",
+            "undefined": "5 - Comptes de trésorerie"
+        },
+        {
+            "classe": "50",
+            "libelle": "Titres de placement",
+            "undefined": "50 - Titres de placement"
+        },
+        {
+            "classe": "501",
+            "libelle": "Titres du trésor, bons caisse CT",
+            "undefined": "501 - Titres du trésor, bons caisse CT"
+        },
+        {
+            "classe": "502",
+            "libelle": "Actions",
+            "undefined": "502 - Actions"
+        },
+        {
+            "classe": "503",
+            "libelle": "Obligations",
+            "undefined": "503 - Obligations"
+        },
+        {
+            "classe": "504",
+            "libelle": "Bons de souscription",
+            "undefined": "504 - Bons de souscription"
+        },
+        {
+            "classe": "51",
+            "libelle": "Valeurs à encaisser",
+            "undefined": "51 - Valeurs à encaisser"
+        },
+        {
+            "classe": "52",
+            "libelle": "Banques",
+            "undefined": "52 - Banques"
+        },
+        {
+            "classe": "5211",
+            "libelle": "Banques débitrices",
+            "undefined": "5211 - Banques débitrices"
+        },
+        {
+            "classe": "5212",
+            "libelle": "Banque créditrices",
+            "undefined": "5212 - Banque créditrices"
+        },
+        {
+            "classe": "522",
+            "libelle": "Banques autres états UÉMOA",
+            "undefined": "522 - Banques autres états UÉMOA"
+        },
+        {
+            "classe": "523",
+            "libelle": "Banques autres états Zone Franc",
+            "undefined": "523 - Banques autres états Zone Franc"
+        },
+        {
+            "classe": "524",
+            "libelle": "Banques hors Zone Franc",
+            "undefined": "524 - Banques hors Zone Franc"
+        },
+        {
+            "classe": "526",
+            "libelle": "Intérêts courus sur crédits bancaires",
+            "undefined": "526 - Intérêts courus sur crédits bancaires"
+        },
+        {
+            "classe": "53",
+            "libelle": "Établisst financiers, assimilés",
+            "undefined": "53 - Établisst financiers, assimilés"
+        },
+        {
+            "classe": "54",
+            "libelle": "Instruments de trésorerie",
+            "undefined": "54 - Instruments de trésorerie"
+        },
+        {
+            "classe": "541",
+            "libelle": "Options de taux d'intérêt",
+            "undefined": "541 - Options de taux d'intérêt"
+        },
+        {
+            "classe": "542",
+            "libelle": "Options de taux de change",
+            "undefined": "542 - Options de taux de change"
+        },
+        {
+            "classe": "543",
+            "libelle": "Options de taux boursiers",
+            "undefined": "543 - Options de taux boursiers"
+        },
+        {
+            "classe": "544",
+            "libelle": "Instruments de marchés à terme",
+            "undefined": "544 - Instruments de marchés à terme"
+        },
+        {
+            "classe": "545",
+            "libelle": "Avoirs or, autres. métaux précieux",
+            "undefined": "545 - Avoirs or, autres. métaux précieux"
+        },
+        {
+            "classe": "56",
+            "libelle": "Banques, crédits de trésorerie, escompte",
+            "undefined": "56 - Banques, crédits de trésorerie, escompte"
+        },
+        {
+            "classe": "561",
+            "libelle": "Crédits de trésorerie",
+            "undefined": "561 - Crédits de trésorerie"
+        },
+        {
+            "classe": "564",
+            "libelle": "Escompte de crédits de campagne",
+            "undefined": "564 - Escompte de crédits de campagne"
+        },
+        {
+            "classe": "565",
+            "libelle": "Escompte de crédits ordinaires",
+            "undefined": "565 - Escompte de crédits ordinaires"
+        },
+        {
+            "classe": "566",
+            "libelle": "Intérêts courus sur crédits de trésorerie et escompte",
+            "undefined": "566 - Intérêts courus sur crédits de trésorerie et escompte"
+        },
+        {
+            "classe": "57",
+            "libelle": "Caisse",
+            "undefined": "57 - Caisse"
+        },
+        {
+            "classe": "58",
+            "libelle": "Régies d'avances, accréditifs",
+            "undefined": "58 - Régies d'avances, accréditifs"
+        },
+        {
+            "classe": "59",
+            "libelle": "Dépréciations. risques trésorerie",
+            "undefined": "59 - Dépréciations. risques trésorerie"
+        },
+        {
+            "classe": "590",
+            "libelle": "Dépréciations. Risques Titres de placements",
+            "undefined": "590 - Dépréciations. Risques Titres de placements"
+        },
+        {
+            "classe": "591",
+            "libelle": "Dépréciations. Risques Valeurs à encaisser",
+            "undefined": "591 - Dépréciations. Risques Valeurs à encaisser"
+        },
+        {
+            "classe": "592",
+            "libelle": "Dépréciations. Autres risques de trésorerie",
+            "undefined": "592 - Dépréciations. Autres risques de trésorerie"
+        },
+        {
+            "classe": "6",
+            "libelle": "Comptes de charges (A.O.)",
+            "undefined": "6 - Comptes de charges (A.O.)"
+        },
+        {
+            "classe": "60",
+            "libelle": "Achats et variations de stocks",
+            "undefined": "60 - Achats et variations de stocks"
+        },
+        {
+            "classe": "601",
+            "libelle": "Achats de marchandises",
+            "undefined": "601 - Achats de marchandises"
+        },
+        {
+            "classe": "602",
+            "libelle": "Achats Mat. premières, fournitures.",
+            "undefined": "602 - Achats Mat. premières, fournitures."
+        },
+        {
+            "classe": "6021",
+            "libelle": "MP et fournitures. dans l'UÉMOA",
+            "undefined": "6021 - MP et fournitures. dans l'UÉMOA"
+        },
+        {
+            "classe": "6022",
+            "libelle": "MP et fournitures. hors UÉMOA",
+            "undefined": "6022 - MP et fournitures. hors UÉMOA"
+        },
+        {
+            "classe": "6023",
+            "libelle": "MP et fournitures. Entrep. du groupe dans l'UÉMOA",
+            "undefined": "6023 - MP et fournitures. Entrep. du groupe dans l'UÉMOA"
+        },
+        {
+            "classe": "6024",
+            "libelle": "MP et fournitures. Entreprises du groupe hors UÉMOA",
+            "undefined": "6024 - MP et fournitures. Entreprises du groupe hors UÉMOA"
+        },
+        {
+            "classe": "6029",
+            "libelle": "MP et fournitures. Rabais, remises, ristournes. obtenus",
+            "undefined": "6029 - MP et fournitures. Rabais, remises, ristournes. obtenus"
+        },
+        {
+            "classe": "603",
+            "libelle": "Variations. : stocks biens achetés",
+            "undefined": "603 - Variations. : stocks biens achetés"
+        },
+        {
+            "classe": "6031",
+            "libelle": "Variations : stocks marchandises",
+            "undefined": "6031 - Variations : stocks marchandises"
+        },
+        {
+            "classe": "6032",
+            "libelle": "Variations. Mat. premières, fournit.",
+            "undefined": "6032 - Variations. Mat. premières, fournit."
+        },
+        {
+            "classe": "6033",
+            "libelle": "Variations. Autres approvisionnement.",
+            "undefined": "6033 - Variations. Autres approvisionnement."
+        },
+        {
+            "classe": "604",
+            "libelle": "Achats stockés de matières et fournitures",
+            "undefined": "604 - Achats stockés de matières et fournitures"
+        },
+        {
+            "classe": "605",
+            "libelle": "Autres achats",
+            "undefined": "605 - Autres achats"
+        },
+        {
+            "classe": "6051",
+            "libelle": "Fournitures non stockables - eau",
+            "undefined": "6051 - Fournitures non stockables - eau"
+        },
+        {
+            "classe": "6052",
+            "libelle": "Électricité",
+            "undefined": "6052 - Électricité"
+        },
+        {
+            "classe": "6053",
+            "libelle": "Autres énergies",
+            "undefined": "6053 - Autres énergies"
+        },
+        {
+            "classe": "6054",
+            "libelle": "Fournitures entretien",
+            "undefined": "6054 - Fournitures entretien"
+        },
+        {
+            "classe": "6055",
+            "libelle": "Fournit. bureau non stockables",
+            "undefined": "6055 - Fournit. bureau non stockables"
+        },
+        {
+            "classe": "6056",
+            "libelle": "Achats petit matériel, outillage",
+            "undefined": "6056 - Achats petit matériel, outillage"
+        },
+        {
+            "classe": "6057",
+            "libelle": "Achats études, prestations de. service",
+            "undefined": "6057 - Achats études, prestations de. service"
+        },
+        {
+            "classe": "6058",
+            "libelle": "Achats travaux, matériel, équipement.",
+            "undefined": "6058 - Achats travaux, matériel, équipement."
+        },
+        {
+            "classe": "6059",
+            "libelle": "Rabais, remises, ristournes. obtenus",
+            "undefined": "6059 - Rabais, remises, ristournes. obtenus"
+        },
+        {
+            "classe": "608",
+            "libelle": "Achats d'emballages",
+            "undefined": "608 - Achats d'emballages"
+        },
+        {
+            "classe": "61",
+            "libelle": "Transports",
+            "undefined": "61 - Transports"
+        },
+        {
+            "classe": "611",
+            "libelle": "Transports sur achats",
+            "undefined": "611 - Transports sur achats"
+        },
+        {
+            "classe": "612",
+            "libelle": "Transports sur ventes",
+            "undefined": "612 - Transports sur ventes"
+        },
+        {
+            "classe": "613",
+            "libelle": "Transports pour le compte tiers",
+            "undefined": "613 - Transports pour le compte tiers"
+        },
+        {
+            "classe": "614",
+            "libelle": "Transports du personnel",
+            "undefined": "614 - Transports du personnel"
+        },
+        {
+            "classe": "618",
+            "libelle": "Autres frais de transport",
+            "undefined": "618 - Autres frais de transport"
+        },
+        {
+            "classe": "62 et 63",
+            "libelle": "Services extérieurs A et B",
+            "undefined": "62 et 63 - Services extérieurs A et B"
+        },
+        {
+            "classe": "621",
+            "libelle": "Sous-traitance générale",
+            "undefined": "621 - Sous-traitance générale"
+        },
+        {
+            "classe": "622",
+            "libelle": "Locations et charges locatives",
+            "undefined": "622 - Locations et charges locatives"
+        },
+        {
+            "classe": "623",
+            "libelle": "Redevances crédit-bail et assimilées.",
+            "undefined": "623 - Redevances crédit-bail et assimilées."
+        },
+        {
+            "classe": "6232",
+            "libelle": "Crédit-bail immobilier",
+            "undefined": "6232 - Crédit-bail immobilier"
+        },
+        {
+            "classe": "6233",
+            "libelle": "Crédit-bail mobilier",
+            "undefined": "6233 - Crédit-bail mobilier"
+        },
+        {
+            "classe": "6235",
+            "libelle": "Contrats assimilés",
+            "undefined": "6235 - Contrats assimilés"
+        },
+        {
+            "classe": "624",
+            "libelle": "Entretien, réparat., maintenance",
+            "undefined": "624 - Entretien, réparat., maintenance"
+        },
+        {
+            "classe": "6241",
+            "libelle": "Entretien, réparat. biens immobilisations.",
+            "undefined": "6241 - Entretien, réparat. biens immobilisations."
+        },
+        {
+            "classe": "6242",
+            "libelle": "Entretien, rép. biens mobiliers",
+            "undefined": "6242 - Entretien, rép. biens mobiliers"
+        },
+        {
+            "classe": "6243",
+            "libelle": "Maintenance",
+            "undefined": "6243 - Maintenance"
+        },
+        {
+            "classe": "6248",
+            "libelle": "Autres entretiens et réparations",
+            "undefined": "6248 - Autres entretiens et réparations"
+        },
+        {
+            "classe": "625",
+            "libelle": "Primes d'assurance",
+            "undefined": "625 - Primes d'assurance"
+        },
+        {
+            "classe": "626",
+            "libelle": "Études, recherches, documentation.",
+            "undefined": "626 - Études, recherches, documentation."
+        },
+        {
+            "classe": "627",
+            "libelle": "Publicité et publications",
+            "undefined": "627 - Publicité et publications"
+        },
+        {
+            "classe": "628",
+            "libelle": "Frais de télécommunications",
+            "undefined": "628 - Frais de télécommunications"
+        },
+        {
+            "classe": "63",
+            "libelle": "Services extérieurs B",
+            "undefined": "63 - Services extérieurs B"
+        },
+        {
+            "classe": "631",
+            "libelle": "Frais bancaires",
+            "undefined": "631 - Frais bancaires"
+        },
+        {
+            "classe": "632",
+            "libelle": "Rémunérations. intermèdiaires., conseils",
+            "undefined": "632 - Rémunérations. intermèdiaires., conseils"
+        },
+        {
+            "classe": "633",
+            "libelle": "Frais de formation du personnel",
+            "undefined": "633 - Frais de formation du personnel"
+        },
+        {
+            "classe": "634",
+            "libelle": "Redevances brevets, licences",
+            "undefined": "634 - Redevances brevets, licences"
+        },
+        {
+            "classe": "6342",
+            "libelle": "Redevances brevets, licences",
+            "undefined": "6342 - Redevances brevets, licences"
+        },
+        {
+            "classe": "6343",
+            "libelle": "Redevances pour logiciels",
+            "undefined": "6343 - Redevances pour logiciels"
+        },
+        {
+            "classe": "6344",
+            "libelle": "Redevances pour marques",
+            "undefined": "6344 - Redevances pour marques"
+        },
+        {
+            "classe": "635",
+            "libelle": "Cotisations",
+            "undefined": "635 - Cotisations"
+        },
+        {
+            "classe": "6351",
+            "libelle": "Cotisations",
+            "undefined": "6351 - Cotisations"
+        },
+        {
+            "classe": "6358",
+            "libelle": "Concours divers",
+            "undefined": "6358 - Concours divers"
+        },
+        {
+            "classe": "637",
+            "libelle": "Rémunérations. personnel extérieur",
+            "undefined": "637 - Rémunérations. personnel extérieur"
+        },
+        {
+            "classe": "6371",
+            "libelle": "Personnel intérimaire",
+            "undefined": "6371 - Personnel intérimaire"
+        },
+        {
+            "classe": "6372",
+            "libelle": "Personnel détaché ou prêté",
+            "undefined": "6372 - Personnel détaché ou prêté"
+        },
+        {
+            "classe": "638",
+            "libelle": "Autres charges externes",
+            "undefined": "638 - Autres charges externes"
+        },
+        {
+            "classe": "64",
+            "libelle": "Impôts et taxes",
+            "undefined": "64 - Impôts et taxes"
+        },
+        {
+            "classe": "641",
+            "libelle": "Impôts et taxes directs",
+            "undefined": "641 - Impôts et taxes directs"
+        },
+        {
+            "classe": "6411",
+            "libelle": "Impôts fonciers et taxes annexes",
+            "undefined": "6411 - Impôts fonciers et taxes annexes"
+        },
+        {
+            "classe": "6412",
+            "libelle": "Patentes-licences, taxes annexes",
+            "undefined": "6412 - Patentes-licences, taxes annexes"
+        },
+        {
+            "classe": "6413",
+            "libelle": "Taxes / appointements, salaires",
+            "undefined": "6413 - Taxes / appointements, salaires"
+        },
+        {
+            "classe": "6414",
+            "libelle": "Taxes d'apprentissage",
+            "undefined": "6414 - Taxes d'apprentissage"
+        },
+        {
+            "classe": "6415",
+            "libelle": "Format. professionnelle continue",
+            "undefined": "6415 - Format. professionnelle continue"
+        },
+        {
+            "classe": "6418",
+            "libelle": "Autres impôts et taxes directs",
+            "undefined": "6418 - Autres impôts et taxes directs"
+        },
+        {
+            "classe": "645",
+            "libelle": "Impôts et taxes indirects",
+            "undefined": "645 - Impôts et taxes indirects"
+        },
+        {
+            "classe": "646",
+            "libelle": "Droits d'enregistrement",
+            "undefined": "646 - Droits d'enregistrement"
+        },
+        {
+            "classe": "6461",
+            "libelle": "Droits de mutation",
+            "undefined": "6461 - Droits de mutation"
+        },
+        {
+            "classe": "6462",
+            "libelle": "Droits de timbre",
+            "undefined": "6462 - Droits de timbre"
+        },
+        {
+            "classe": "6463",
+            "libelle": "Taxes / les véhicules société",
+            "undefined": "6463 - Taxes / les véhicules société"
+        },
+        {
+            "classe": "6464",
+            "libelle": "Vignettes",
+            "undefined": "6464 - Vignettes"
+        },
+        {
+            "classe": "6468",
+            "libelle": "Autres droits",
+            "undefined": "6468 - Autres droits"
+        },
+        {
+            "classe": "647",
+            "libelle": "Pénalités et amendes fiscales",
+            "undefined": "647 - Pénalités et amendes fiscales"
+        },
+        {
+            "classe": "65",
+            "libelle": "Autres charges",
+            "undefined": "65 - Autres charges"
+        },
+        {
+            "classe": "651",
+            "libelle": "Pertes Créances clients et autres.",
+            "undefined": "651 - Pertes Créances clients et autres."
+        },
+        {
+            "classe": "652",
+            "libelle": "QP résultat / opérations en. en commun",
+            "undefined": "652 - QP résultat / opérations en. en commun"
+        },
+        {
+            "classe": "6521",
+            "libelle": "Quote-part transférée bénéfices",
+            "undefined": "6521 - Quote-part transférée bénéfices"
+        },
+        {
+            "classe": "6525",
+            "libelle": "Pertes imputées par transfert",
+            "undefined": "6525 - Pertes imputées par transfert"
+        },
+        {
+            "classe": "653",
+            "libelle": "QP résult.annul./exécution. partiel",
+            "undefined": "653 - QP résult.annul./exécution. partiel"
+        },
+        {
+            "classe": "654",
+            "libelle": "Val comptable cession courante immobilisations",
+            "undefined": "654 - Val comptable cession courante immobilisations"
+        },
+        {
+            "classe": "65411",
+            "libelle": "Valeur Brute Immobilisations incorporelles",
+            "undefined": "65411 - Valeur Brute Immobilisations incorporelles"
+        },
+        {
+            "classe": "65418",
+            "libelle": "Amont. Immobilisations incorporelles",
+            "undefined": "65418 - Amont. Immobilisations incorporelles"
+        },
+        {
+            "classe": "65421",
+            "libelle": "Valeur Brute Immobilisations corporelles",
+            "undefined": "65421 - Valeur Brute Immobilisations corporelles"
+        },
+        {
+            "classe": "65428",
+            "libelle": "Amont. Immobilisations corporelles",
+            "undefined": "65428 - Amont. Immobilisations corporelles"
+        },
+        {
+            "classe": "65461",
+            "libelle": "Valeur Brute Immobilisations financières",
+            "undefined": "65461 - Valeur Brute Immobilisations financières"
+        },
+        {
+            "classe": "65468",
+            "libelle": "Amont. Immobilisations financières",
+            "undefined": "65468 - Amont. Immobilisations financières"
+        },
+        {
+            "classe": "658",
+            "libelle": "Charges diverses",
+            "undefined": "658 - Charges diverses"
+        },
+        {
+            "classe": "6581",
+            "libelle": "Jetons présence, autres rémunération administrateur.",
+            "undefined": "6581 - Jetons présence, autres rémunération administrateur."
+        },
+        {
+            "classe": "6582",
+            "libelle": "Dons",
+            "undefined": "6582 - Dons"
+        },
+        {
+            "classe": "6583",
+            "libelle": "Mécénat",
+            "undefined": "6583 - Mécénat"
+        },
+        {
+            "classe": "659",
+            "libelle": "Charges provisionnées exploitation.",
+            "undefined": "659 - Charges provisionnées exploitation."
+        },
+        {
+            "classe": "6591",
+            "libelle": "Sur risques à court terme",
+            "undefined": "6591 - Sur risques à court terme"
+        },
+        {
+            "classe": "6593",
+            "libelle": "Sur stocks",
+            "undefined": "6593 - Sur stocks"
+        },
+        {
+            "classe": "6594",
+            "libelle": "Sur créances",
+            "undefined": "6594 - Sur créances"
+        },
+        {
+            "classe": "6598",
+            "libelle": "Autres charges provisionnées",
+            "undefined": "6598 - Autres charges provisionnées"
+        },
+        {
+            "classe": "66",
+            "libelle": "Charges de personnel",
+            "undefined": "66 - Charges de personnel"
+        },
+        {
+            "classe": "661",
+            "libelle": "Rémunérations personnel national",
+            "undefined": "661 - Rémunérations personnel national"
+        },
+        {
+            "classe": "6611",
+            "libelle": "Appointements., salaires, commissions.",
+            "undefined": "6611 - Appointements., salaires, commissions."
+        },
+        {
+            "classe": "6612",
+            "libelle": "Primes et gratifications",
+            "undefined": "6612 - Primes et gratifications"
+        },
+        {
+            "classe": "6613",
+            "libelle": "Congés payés",
+            "undefined": "6613 - Congés payés"
+        },
+        {
+            "classe": "6614",
+            "libelle": "Indemnités préavis, licenciement",
+            "undefined": "6614 - Indemnités préavis, licenciement"
+        },
+        {
+            "classe": "6615",
+            "libelle": "Indemnités. maladie versées travailleur",
+            "undefined": "6615 - Indemnités. maladie versées travailleur"
+        },
+        {
+            "classe": "6616",
+            "libelle": "Supplément familial",
+            "undefined": "6616 - Supplément familial"
+        },
+        {
+            "classe": "6617",
+            "libelle": "Avantages en nature",
+            "undefined": "6617 - Avantages en nature"
+        },
+        {
+            "classe": "6618",
+            "libelle": "Autres rémunérations directes",
+            "undefined": "6618 - Autres rémunérations directes"
+        },
+        {
+            "classe": "662",
+            "libelle": "Rémunèrations. personnel non national",
+            "undefined": "662 - Rémunèrations. personnel non national"
+        },
+        {
+            "classe": "6621",
+            "libelle": "Appointements., salaires, commissions.",
+            "undefined": "6621 - Appointements., salaires, commissions."
+        },
+        {
+            "classe": "6622",
+            "libelle": "Primes et gratifications",
+            "undefined": "6622 - Primes et gratifications"
+        },
+        {
+            "classe": "6623",
+            "libelle": "Congés payés",
+            "undefined": "6623 - Congés payés"
+        },
+        {
+            "classe": "6624",
+            "libelle": "Indemnités préavis, licenciement",
+            "undefined": "6624 - Indemnités préavis, licenciement"
+        },
+        {
+            "classe": "6625",
+            "libelle": "Indemnités. maladie versées travailleur",
+            "undefined": "6625 - Indemnités. maladie versées travailleur"
+        },
+        {
+            "classe": "6626",
+            "libelle": "Supplément familial",
+            "undefined": "6626 - Supplément familial"
+        },
+        {
+            "classe": "6627",
+            "libelle": "Avantages en nature",
+            "undefined": "6627 - Avantages en nature"
+        },
+        {
+            "classe": "6628",
+            "libelle": "Autres rémunérations directes",
+            "undefined": "6628 - Autres rémunérations directes"
+        },
+        {
+            "classe": "663",
+            "libelle": "Indemnités. forfaitaires versées",
+            "undefined": "663 - Indemnités. forfaitaires versées"
+        },
+        {
+            "classe": "664",
+            "libelle": "Charges sociales",
+            "undefined": "664 - Charges sociales"
+        },
+        {
+            "classe": "6641",
+            "libelle": "Ch. sociales /personnel national",
+            "undefined": "6641 - Ch. sociales /personnel national"
+        },
+        {
+            "classe": "6642",
+            "libelle": "Ch. soc. /personnel non national",
+            "undefined": "6642 - Ch. soc. /personnel non national"
+        },
+        {
+            "classe": "666",
+            "libelle": "Rémunérations. exploitant individuel",
+            "undefined": "666 - Rémunérations. exploitant individuel"
+        },
+        {
+            "classe": "6661",
+            "libelle": "Rémunérations. travail l'exploitant",
+            "undefined": "6661 - Rémunérations. travail l'exploitant"
+        },
+        {
+            "classe": "6662",
+            "libelle": "Charges sociales",
+            "undefined": "6662 - Charges sociales"
+        },
+        {
+            "classe": "667",
+            "libelle": "Rémunérations. transférée personnel extérieur.",
+            "undefined": "667 - Rémunérations. transférée personnel extérieur."
+        },
+        {
+            "classe": "6671",
+            "libelle": "Personnel intérimaire",
+            "undefined": "6671 - Personnel intérimaire"
+        },
+        {
+            "classe": "6672",
+            "libelle": "Personnel détaché ou prêté",
+            "undefined": "6672 - Personnel détaché ou prêté"
+        },
+        {
+            "classe": "668",
+            "libelle": "Autres charges sociales",
+            "undefined": "668 - Autres charges sociales"
+        },
+        {
+            "classe": "67",
+            "libelle": "Frais financiers, charges assimilées.",
+            "undefined": "67 - Frais financiers, charges assimilées."
+        },
+        {
+            "classe": "671",
+            "libelle": "Intérêts des emprunts",
+            "undefined": "671 - Intérêts des emprunts"
+        },
+        {
+            "classe": "672",
+            "libelle": "Intérêts loyers crédit-bail",
+            "undefined": "672 - Intérêts loyers crédit-bail"
+        },
+        {
+            "classe": "6721",
+            "libelle": "Intérêts loyer C-bail immobilier",
+            "undefined": "6721 - Intérêts loyer C-bail immobilier"
+        },
+        {
+            "classe": "6722",
+            "libelle": "Intérêts loyer C-bail mobilier",
+            "undefined": "6722 - Intérêts loyer C-bail mobilier"
+        },
+        {
+            "classe": "6723",
+            "libelle": "Intérêts loyers :autres contrats",
+            "undefined": "6723 - Intérêts loyers :autres contrats"
+        },
+        {
+            "classe": "673",
+            "libelle": "Escomptes accordés",
+            "undefined": "673 - Escomptes accordés"
+        },
+        {
+            "classe": "674",
+            "libelle": "Autres intérêts",
+            "undefined": "674 - Autres intérêts"
+        },
+        {
+            "classe": "676",
+            "libelle": "Pertes de change",
+            "undefined": "676 - Pertes de change"
+        },
+        {
+            "classe": "677",
+            "libelle": "Pertes sur cessions de titres placement",
+            "undefined": "677 - Pertes sur cessions de titres placement"
+        },
+        {
+            "classe": "678",
+            "libelle": "Pertes sur risques financiers",
+            "undefined": "678 - Pertes sur risques financiers"
+        },
+        {
+            "classe": "6781",
+            "libelle": "Sur rentes viagères",
+            "undefined": "6781 - Sur rentes viagères"
+        },
+        {
+            "classe": "6782",
+            "libelle": "Sur opérations financières",
+            "undefined": "6782 - Sur opérations financières"
+        },
+        {
+            "classe": "6784",
+            "libelle": "Sur instruments de trésorerie",
+            "undefined": "6784 - Sur instruments de trésorerie"
+        },
+        {
+            "classe": "679",
+            "libelle": "Charges provisionnées financière",
+            "undefined": "679 - Charges provisionnées financière"
+        },
+        {
+            "classe": "6791",
+            "libelle": "Sur risques financiers",
+            "undefined": "6791 - Sur risques financiers"
+        },
+        {
+            "classe": "6795",
+            "libelle": "Sur titres de placement",
+            "undefined": "6795 - Sur titres de placement"
+        },
+        {
+            "classe": "6798",
+            "libelle": "Autres. charges provisionnées. financières",
+            "undefined": "6798 - Autres. charges provisionnées. financières"
+        },
+        {
+            "classe": "68",
+            "libelle": "Dotations aux amortissements",
+            "undefined": "68 - Dotations aux amortissements"
+        },
+        {
+            "classe": "681",
+            "libelle": "Dotations amortissements d'exploitation",
+            "undefined": "681 - Dotations amortissements d'exploitation"
+        },
+        {
+            "classe": "6811",
+            "libelle": "Dotations. amort. : Charges immobilisées",
+            "undefined": "6811 - Dotations. amort. : Charges immobilisées"
+        },
+        {
+            "classe": "68121",
+            "libelle": "Dotations. amort. : Frais R&D",
+            "undefined": "68121 - Dotations. amort. : Frais R&D"
+        },
+        {
+            "classe": "68122",
+            "libelle": "Dotations. amort. : Brevets,licences",
+            "undefined": "68122 - Dotations. amort. : Brevets,licences"
+        },
+        {
+            "classe": "68125",
+            "libelle": "Dotations. amort. : Fonds commercial",
+            "undefined": "68125 - Dotations. amort. : Fonds commercial"
+        },
+        {
+            "classe": "68127",
+            "libelle": "Dotations. amort. : autres immobilisations. incorporelles.",
+            "undefined": "68127 - Dotations. amort. : autres immobilisations. incorporelles."
+        },
+        {
+            "classe": "68131",
+            "libelle": "Dotations. amort. : Terrains",
+            "undefined": "68131 - Dotations. amort. : Terrains"
+        },
+        {
+            "classe": "68132",
+            "libelle": "Dotations. amort. : Bâtiments",
+            "undefined": "68132 - Dotations. amort. : Bâtiments"
+        },
+        {
+            "classe": "68133",
+            "libelle": "Dotations. amort. : AAI",
+            "undefined": "68133 - Dotations. amort. : AAI"
+        },
+        {
+            "classe": "68134",
+            "libelle": "Dotations. amort. : Matériel",
+            "undefined": "68134 - Dotations. amort. : Matériel"
+        },
+        {
+            "classe": "68135",
+            "libelle": "Dotations. amort. : Transport",
+            "undefined": "68135 - Dotations. amort. : Transport"
+        },
+        {
+            "classe": "687",
+            "libelle": "Dot. amort.à caractère financier",
+            "undefined": "687 - Dot. amort.à caractère financier"
+        },
+        {
+            "classe": "6872",
+            "libelle": "Dotat. amort. P.R.Oblig.",
+            "undefined": "6872 - Dotat. amort. P.R.Oblig."
+        },
+        {
+            "classe": "6878",
+            "libelle": "Aut. dotat. amort. financières",
+            "undefined": "6878 - Aut. dotat. amort. financières"
+        },
+        {
+            "classe": "69",
+            "libelle": "Dotations aux provisions",
+            "undefined": "69 - Dotations aux provisions"
+        },
+        {
+            "classe": "691",
+            "libelle": "Dotat. aux provisions exploitat.",
+            "undefined": "691 - Dotat. aux provisions exploitat."
+        },
+        {
+            "classe": "6911",
+            "libelle": "Pour risques et charges",
+            "undefined": "6911 - Pour risques et charges"
+        },
+        {
+            "classe": "6912",
+            "libelle": "Pour grosses réparations",
+            "undefined": "6912 - Pour grosses réparations"
+        },
+        {
+            "classe": "6913",
+            "libelle": "Dépréciat. : immob. incorporel.",
+            "undefined": "6913 - Dépréciat. : immob. incorporel."
+        },
+        {
+            "classe": "6914",
+            "libelle": "Dépréciat. : immob. corporelles",
+            "undefined": "6914 - Dépréciat. : immob. corporelles"
+        },
+        {
+            "classe": "697",
+            "libelle": "Dotat. aux provis. financières",
+            "undefined": "697 - Dotat. aux provis. financières"
+        },
+        {
+            "classe": "6971",
+            "libelle": "Pour risques et charges",
+            "undefined": "6971 - Pour risques et charges"
+        },
+        {
+            "classe": "6972",
+            "libelle": "Dépréciat. : immob. financières",
+            "undefined": "6972 - Dépréciat. : immob. financières"
+        },
+        {
+            "classe": "7",
+            "libelle": "Comptes de produits (A.O.)",
+            "undefined": "7 - Comptes de produits (A.O.)"
+        },
+        {
+            "classe": "70",
+            "libelle": "Ventes",
+            "undefined": "70 - Ventes"
+        },
+        {
+            "classe": "701",
+            "libelle": "Ventes de marchandises",
+            "undefined": "701 - Ventes de marchandises"
+        },
+        {
+            "classe": "702",
+            "libelle": "Ventes de produits finis",
+            "undefined": "702 - Ventes de produits finis"
+        },
+        {
+            "classe": "7021",
+            "libelle": "Produits finis dans l'UÉMOA",
+            "undefined": "7021 - Produits finis dans l'UÉMOA"
+        },
+        {
+            "classe": "7022",
+            "libelle": "Produits finis Hors UÉMOA",
+            "undefined": "7022 - Produits finis Hors UÉMOA"
+        },
+        {
+            "classe": "7023",
+            "libelle": "Produits finis Groupe UÉMOA",
+            "undefined": "7023 - Produits finis Groupe UÉMOA"
+        },
+        {
+            "classe": "7024",
+            "libelle": "Produits finis Groupe hors UÉMOA",
+            "undefined": "7024 - Produits finis Groupe hors UÉMOA"
+        },
+        {
+            "classe": "703",
+            "libelle": "Ventes produits intermédiaires",
+            "undefined": "703 - Ventes produits intermédiaires"
+        },
+        {
+            "classe": "7031",
+            "libelle": "Produits interm. dans l'UÉMOA",
+            "undefined": "7031 - Produits interm. dans l'UÉMOA"
+        },
+        {
+            "classe": "7032",
+            "libelle": "Produits interm. Hors UÉMOA",
+            "undefined": "7032 - Produits interm. Hors UÉMOA"
+        },
+        {
+            "classe": "7033",
+            "libelle": "Produits interm. Groupe UÉMOA",
+            "undefined": "7033 - Produits interm. Groupe UÉMOA"
+        },
+        {
+            "classe": "7034",
+            "libelle": "Prodts interm. Groupe hors UÉMOA",
+            "undefined": "7034 - Prodts interm. Groupe hors UÉMOA"
+        },
+        {
+            "classe": "704",
+            "libelle": "Ventes de produits résiduels",
+            "undefined": "704 - Ventes de produits résiduels"
+        },
+        {
+            "classe": "7041",
+            "libelle": "Produits résiduels dans l'UÉMOA",
+            "undefined": "7041 - Produits résiduels dans l'UÉMOA"
+        },
+        {
+            "classe": "7042",
+            "libelle": "Produits résiduels Hors UÉMOA",
+            "undefined": "7042 - Produits résiduels Hors UÉMOA"
+        },
+        {
+            "classe": "7043",
+            "libelle": "Produits résiduels Groupe UÉMOA",
+            "undefined": "7043 - Produits résiduels Groupe UÉMOA"
+        },
+        {
+            "classe": "7044",
+            "libelle": "Prodts résidu. Groupe hors UÉMOA",
+            "undefined": "7044 - Prodts résidu. Groupe hors UÉMOA"
+        },
+        {
+            "classe": "705",
+            "libelle": "Travaux facturés",
+            "undefined": "705 - Travaux facturés"
+        },
+        {
+            "classe": "7051",
+            "libelle": "Travaux dans l'UÉMOA",
+            "undefined": "7051 - Travaux dans l'UÉMOA"
+        },
+        {
+            "classe": "7052",
+            "libelle": "Travaux Hors UÉMOA",
+            "undefined": "7052 - Travaux Hors UÉMOA"
+        },
+        {
+            "classe": "7053",
+            "libelle": "Travaux Groupe UÉMOA",
+            "undefined": "7053 - Travaux Groupe UÉMOA"
+        },
+        {
+            "classe": "7054",
+            "libelle": "Travaux Groupe hors UÉMOA",
+            "undefined": "7054 - Travaux Groupe hors UÉMOA"
+        },
+        {
+            "classe": "706",
+            "libelle": "Services vendus",
+            "undefined": "706 - Services vendus"
+        },
+        {
+            "classe": "7061",
+            "libelle": "Services vendus dans l'UÉMOA",
+            "undefined": "7061 - Services vendus dans l'UÉMOA"
+        },
+        {
+            "classe": "7062",
+            "libelle": "Services vendus Hors UÉMOA",
+            "undefined": "7062 - Services vendus Hors UÉMOA"
+        },
+        {
+            "classe": "7063",
+            "libelle": "Services vendus Groupe UÉMOA",
+            "undefined": "7063 - Services vendus Groupe UÉMOA"
+        },
+        {
+            "classe": "7064",
+            "libelle": "Services vendus Groupe hors UÉMOA",
+            "undefined": "7064 - Services vendus Groupe hors UÉMOA"
+        },
+        {
+            "classe": "707",
+            "libelle": "Produits accessoires",
+            "undefined": "707 - Produits accessoires"
+        },
+        {
+            "classe": "7071",
+            "libelle": "Ports, emballagas perdus, autres frais",
+            "undefined": "7071 - Ports, emballagas perdus, autres frais"
+        },
+        {
+            "classe": "7072",
+            "libelle": "Commissions et courtages",
+            "undefined": "7072 - Commissions et courtages"
+        },
+        {
+            "classe": "7073",
+            "libelle": "Locations",
+            "undefined": "7073 - Locations"
+        },
+        {
+            "classe": "7074",
+            "libelle": "Boni/reprises, cess. emballages",
+            "undefined": "7074 - Boni/reprises, cess. emballages"
+        },
+        {
+            "classe": "7075",
+            "libelle": "Mise à disposition de personnel",
+            "undefined": "7075 - Mise à disposition de personnel"
+        },
+        {
+            "classe": "7076",
+            "libelle": "Redevances brevets, logiciels",
+            "undefined": "7076 - Redevances brevets, logiciels"
+        },
+        {
+            "classe": "7077",
+            "libelle": "Service dans l'intérêt personnel",
+            "undefined": "7077 - Service dans l'intérêt personnel"
+        },
+        {
+            "classe": "7078",
+            "libelle": "Autres produits accessoires",
+            "undefined": "7078 - Autres produits accessoires"
+        },
+        {
+            "classe": "71",
+            "libelle": "Subventions d'exploitation",
+            "undefined": "71 - Subventions d'exploitation"
+        },
+        {
+            "classe": "711",
+            "libelle": "Sur produits à l'exportation",
+            "undefined": "711 - Sur produits à l'exportation"
+        },
+        {
+            "classe": "712",
+            "libelle": "Sur produits à l'importation",
+            "undefined": "712 - Sur produits à l'importation"
+        },
+        {
+            "classe": "713",
+            "libelle": "Sur produits de péréquation",
+            "undefined": "713 - Sur produits de péréquation"
+        },
+        {
+            "classe": "718",
+            "libelle": "Autres subventions exploitation",
+            "undefined": "718 - Autres subventions exploitation"
+        },
+        {
+            "classe": "72",
+            "libelle": "Production immobilisée",
+            "undefined": "72 - Production immobilisée"
+        },
+        {
+            "classe": "721",
+            "libelle": "Immobilisations incorporelles",
+            "undefined": "721 - Immobilisations incorporelles"
+        },
+        {
+            "classe": "722",
+            "libelle": "Immobilisations corporelles",
+            "undefined": "722 - Immobilisations corporelles"
+        },
+        {
+            "classe": "726",
+            "libelle": "Immobilisations financières",
+            "undefined": "726 - Immobilisations financières"
+        },
+        {
+            "classe": "73",
+            "libelle": "Variat. Stocks biens et services",
+            "undefined": "73 - Variat. Stocks biens et services"
+        },
+        {
+            "classe": "734",
+            "libelle": "Variat. Stocks produits en cours",
+            "undefined": "734 - Variat. Stocks produits en cours"
+        },
+        {
+            "classe": "735",
+            "libelle": "Variations : en-cours services",
+            "undefined": "735 - Variations : en-cours services"
+        },
+        {
+            "classe": "736",
+            "libelle": "Variat. : stocks produits finis",
+            "undefined": "736 - Variat. : stocks produits finis"
+        },
+        {
+            "classe": "737",
+            "libelle": "Variat. stocks produit interméd.",
+            "undefined": "737 - Variat. stocks produit interméd."
+        },
+        {
+            "classe": "75",
+            "libelle": "Autres produits",
+            "undefined": "75 - Autres produits"
+        },
+        {
+            "classe": "752",
+            "libelle": "QP résultat / opérat.  en commun",
+            "undefined": "752 - QP résultat / opérat.  en commun"
+        },
+        {
+            "classe": "7521",
+            "libelle": "Quote-part transférée de pertes",
+            "undefined": "7521 - Quote-part transférée de pertes"
+        },
+        {
+            "classe": "7525",
+            "libelle": "Bénéfices attribués par transfert",
+            "undefined": "7525 - Bénéfices attribués par transfert"
+        },
+        {
+            "classe": "753",
+            "libelle": "QP résultat /éxecut.part.contrat",
+            "undefined": "753 - QP résultat /éxecut.part.contrat"
+        },
+        {
+            "classe": "754",
+            "libelle": "Pdt cessions courantes d'immob.",
+            "undefined": "754 - Pdt cessions courantes d'immob."
+        },
+        {
+            "classe": "7541",
+            "libelle": "Prix cession Immobilisations incorporelles",
+            "undefined": "7541 - Prix cession Immobilisations incorporelles"
+        },
+        {
+            "classe": "7542",
+            "libelle": "Prix cession Immobilisations corporelles",
+            "undefined": "7542 - Prix cession Immobilisations corporelles"
+        },
+        {
+            "classe": "7546",
+            "libelle": "Prix cession Immobilisations financières",
+            "undefined": "7546 - Prix cession Immobilisations financières"
+        },
+        {
+            "classe": "758",
+            "libelle": "Produits divers",
+            "undefined": "758 - Produits divers"
+        },
+        {
+            "classe": "7581",
+            "libelle": "Jetons présence et autres-Adm",
+            "undefined": "7581 - Jetons présence et autres-Adm"
+        },
+        {
+            "classe": "7582",
+            "libelle": "Indemnités d'assurances reçues",
+            "undefined": "7582 - Indemnités d'assurances reçues"
+        },
+        {
+            "classe": "759",
+            "libelle": "Rep. charge provision. exploitat",
+            "undefined": "759 - Rep. charge provision. exploitat"
+        },
+        {
+            "classe": "7591",
+            "libelle": "Sur risques à court terme",
+            "undefined": "7591 - Sur risques à court terme"
+        },
+        {
+            "classe": "7593",
+            "libelle": "Sur stocks",
+            "undefined": "7593 - Sur stocks"
+        },
+        {
+            "classe": "7594",
+            "libelle": "Sur créances",
+            "undefined": "7594 - Sur créances"
+        },
+        {
+            "classe": "7598",
+            "libelle": "Sur autres charges provisionnées",
+            "undefined": "7598 - Sur autres charges provisionnées"
+        },
+        {
+            "classe": "77",
+            "libelle": "Revenus financiers et assimilés",
+            "undefined": "77 - Revenus financiers et assimilés"
+        },
+        {
+            "classe": "771",
+            "libelle": "Intérêts de prêts",
+            "undefined": "771 - Intérêts de prêts"
+        },
+        {
+            "classe": "772",
+            "libelle": "Revenus de participations",
+            "undefined": "772 - Revenus de participations"
+        },
+        {
+            "classe": "773",
+            "libelle": "Escomptes obtenus",
+            "undefined": "773 - Escomptes obtenus"
+        },
+        {
+            "classe": "774",
+            "libelle": "Revenus de titres de placement",
+            "undefined": "774 - Revenus de titres de placement"
+        },
+        {
+            "classe": "776",
+            "libelle": "Gains de change",
+            "undefined": "776 - Gains de change"
+        },
+        {
+            "classe": "777",
+            "libelle": "Gains Cessions titres placement",
+            "undefined": "777 - Gains Cessions titres placement"
+        },
+        {
+            "classe": "778",
+            "libelle": "Gains sur risques financiers",
+            "undefined": "778 - Gains sur risques financiers"
+        },
+        {
+            "classe": "779",
+            "libelle": "Rep. charges prov. financières",
+            "undefined": "779 - Rep. charges prov. financières"
+        },
+        {
+            "classe": "7791",
+            "libelle": "Sur risques financiers",
+            "undefined": "7791 - Sur risques financiers"
+        },
+        {
+            "classe": "7795",
+            "libelle": "Sur titres de placement",
+            "undefined": "7795 - Sur titres de placement"
+        },
+        {
+            "classe": "7798",
+            "libelle": "Aut. charges provis. financières",
+            "undefined": "7798 - Aut. charges provis. financières"
+        },
+        {
+            "classe": "78",
+            "libelle": "Transferts de charges",
+            "undefined": "78 - Transferts de charges"
+        },
+        {
+            "classe": "781",
+            "libelle": "Transferts charges exploitation",
+            "undefined": "781 - Transferts charges exploitation"
+        },
+        {
+            "classe": "787",
+            "libelle": "Transferts charges financières",
+            "undefined": "787 - Transferts charges financières"
+        },
+        {
+            "classe": "79",
+            "libelle": "Reprises de provisions",
+            "undefined": "79 - Reprises de provisions"
+        },
+        {
+            "classe": "791",
+            "libelle": "Reprises provisions exploitat.",
+            "undefined": "791 - Reprises provisions exploitat."
+        },
+        {
+            "classe": "7911",
+            "libelle": "Pour risques et charges",
+            "undefined": "7911 - Pour risques et charges"
+        },
+        {
+            "classe": "7912",
+            "libelle": "Pour grosses réparations",
+            "undefined": "7912 - Pour grosses réparations"
+        },
+        {
+            "classe": "7913",
+            "libelle": "dépréciat. : immob. incorporel.",
+            "undefined": "7913 - dépréciat. : immob. incorporel."
+        },
+        {
+            "classe": "7914",
+            "libelle": "Dépréciat. : immob. corporelles",
+            "undefined": "7914 - Dépréciat. : immob. corporelles"
+        },
+        {
+            "classe": "797",
+            "libelle": "Reprises provisions financières",
+            "undefined": "797 - Reprises provisions financières"
+        },
+        {
+            "classe": "7971",
+            "libelle": "Pour risques et charges",
+            "undefined": "7971 - Pour risques et charges"
+        },
+        {
+            "classe": "7972",
+            "libelle": "Dépréciat. : immob. financières",
+            "undefined": "7972 - Dépréciat. : immob. financières"
+        },
+        {
+            "classe": "7978",
+            "libelle": "Reprises d'amortissements",
+            "undefined": "7978 - Reprises d'amortissements"
+        },
+        {
+            "classe": "8",
+            "libelle": "Comptes des autres charges et autres produits",
+            "undefined": "8 - Comptes des autres charges et autres produits"
+        },
+        {
+            "classe": "81",
+            "libelle": "Valeurs comptables cess. immob.",
+            "undefined": "81 - Valeurs comptables cess. immob."
+        },
+        {
+            "classe": "8111",
+            "libelle": "Val.Brute Immobilisations incorporelles",
+            "undefined": "8111 - Val.Brute Immobilisations incorporelles"
+        },
+        {
+            "classe": "8118",
+            "libelle": "Amort. Immobilisations incorporelles",
+            "undefined": "8118 - Amort. Immobilisations incorporelles"
+        },
+        {
+            "classe": "8121",
+            "libelle": "Val.Brute Immobilisations corporelles",
+            "undefined": "8121 - Val.Brute Immobilisations corporelles"
+        },
+        {
+            "classe": "8128",
+            "libelle": "Amort. Immobilisations corporelles",
+            "undefined": "8128 - Amort. Immobilisations corporelles"
+        },
+        {
+            "classe": "8161",
+            "libelle": "Val.Brute Immobilisations financières",
+            "undefined": "8161 - Val.Brute Immobilisations financières"
+        },
+        {
+            "classe": "8168",
+            "libelle": "Amort. Immobilisations financières",
+            "undefined": "8168 - Amort. Immobilisations financières"
+        },
+        {
+            "classe": "82",
+            "libelle": "Produits des cess. immobilisat.",
+            "undefined": "82 - Produits des cess. immobilisat."
+        },
+        {
+            "classe": "821",
+            "libelle": "Prix cession Immobilisations incorporelles",
+            "undefined": "821 - Prix cession Immobilisations incorporelles"
+        },
+        {
+            "classe": "822",
+            "libelle": "Prix cession Immobilisations corporelles",
+            "undefined": "822 - Prix cession Immobilisations corporelles"
+        },
+        {
+            "classe": "826",
+            "libelle": "Prix cession Immobilisations financières",
+            "undefined": "826 - Prix cession Immobilisations financières"
+        },
+        {
+            "classe": "83",
+            "libelle": "Charges hors activité ordinaire",
+            "undefined": "83 - Charges hors activité ordinaire"
+        },
+        {
+            "classe": "831",
+            "libelle": "Charges H.A.O. constatées",
+            "undefined": "831 - Charges H.A.O. constatées"
+        },
+        {
+            "classe": "834",
+            "libelle": "Pertes sur créances H.A.O.",
+            "undefined": "834 - Pertes sur créances H.A.O."
+        },
+        {
+            "classe": "835",
+            "libelle": "Dons et libéralités accordés",
+            "undefined": "835 - Dons et libéralités accordés"
+        },
+        {
+            "classe": "836",
+            "libelle": "Abandons de créances consentis",
+            "undefined": "836 - Abandons de créances consentis"
+        },
+        {
+            "classe": "839",
+            "libelle": "Charges provisionnées H.A.O.",
+            "undefined": "839 - Charges provisionnées H.A.O."
+        },
+        {
+            "classe": "8393",
+            "libelle": "Charges provisionnées H.A.O. Stocks",
+            "undefined": "8393 - Charges provisionnées H.A.O. Stocks"
+        },
+        {
+            "classe": "8394",
+            "libelle": "Charges provisionnées H.A.O. Tiers",
+            "undefined": "8394 - Charges provisionnées H.A.O. Tiers"
+        },
+        {
+            "classe": "8395",
+            "libelle": "Charges provisionnées H.A.O. Trésorerie",
+            "undefined": "8395 - Charges provisionnées H.A.O. Trésorerie"
+        },
+        {
+            "classe": "84",
+            "libelle": "Produits hors activité ordinaire",
+            "undefined": "84 - Produits hors activité ordinaire"
+        },
+        {
+            "classe": "841",
+            "libelle": "Produits H.A.O. constatés",
+            "undefined": "841 - Produits H.A.O. constatés"
+        },
+        {
+            "classe": "845",
+            "libelle": "Dons et libéralités obtenus",
+            "undefined": "845 - Dons et libéralités obtenus"
+        },
+        {
+            "classe": "846",
+            "libelle": "Abandons de créances obtenus",
+            "undefined": "846 - Abandons de créances obtenus"
+        },
+        {
+            "classe": "848",
+            "libelle": "Transferts de charges H.A.O.",
+            "undefined": "848 - Transferts de charges H.A.O."
+        },
+        {
+            "classe": "849",
+            "libelle": "Reprises sur Charges provisionnées H.A.O.",
+            "undefined": "849 - Reprises sur Charges provisionnées H.A.O."
+        },
+        {
+            "classe": "8493",
+            "libelle": "Rep. Charges provisionnées H.A.O. Stocks",
+            "undefined": "8493 - Rep. Charges provisionnées H.A.O. Stocks"
+        },
+        {
+            "classe": "8494",
+            "libelle": "Rep. Charges provisionnées H.A.O. Tiers",
+            "undefined": "8494 - Rep. Charges provisionnées H.A.O. Tiers"
+        },
+        {
+            "classe": "8495",
+            "libelle": "Rep. Charges provisionnées H.A.O. Trésorerie",
+            "undefined": "8495 - Rep. Charges provisionnées H.A.O. Trésorerie"
+        },
+        {
+            "classe": "85",
+            "libelle": "Dotat. hors activité ordinaire",
+            "undefined": "85 - Dotat. hors activité ordinaire"
+        },
+        {
+            "classe": "851",
+            "libelle": "Dotat. aux provis. réglementées",
+            "undefined": "851 - Dotat. aux provis. réglementées"
+        },
+        {
+            "classe": "852",
+            "libelle": "Dotat. aux amortissem. H.A.O.",
+            "undefined": "852 - Dotat. aux amortissem. H.A.O."
+        },
+        {
+            "classe": "853",
+            "libelle": "Dotat. provis. dépréciat. H.A.O.",
+            "undefined": "853 - Dotat. provis. dépréciat. H.A.O."
+        },
+        {
+            "classe": "854",
+            "libelle": "Dotat. provis. R & C H.A.O.",
+            "undefined": "854 - Dotat. provis. R & C H.A.O."
+        },
+        {
+            "classe": "858",
+            "libelle": "Autres dotations H.A.O.",
+            "undefined": "858 - Autres dotations H.A.O."
+        },
+        {
+            "classe": "86",
+            "libelle": "Reprises hors activité ordinaire",
+            "undefined": "86 - Reprises hors activité ordinaire"
+        },
+        {
+            "classe": "861",
+            "libelle": "Reprises provisions réglementées",
+            "undefined": "861 - Reprises provisions réglementées"
+        },
+        {
+            "classe": "862",
+            "libelle": "Reprises d'amortissements H.A.O.",
+            "undefined": "862 - Reprises d'amortissements H.A.O."
+        },
+        {
+            "classe": "863",
+            "libelle": "Repris. provis. dépréc. H.A.O.",
+            "undefined": "863 - Repris. provis. dépréc. H.A.O."
+        },
+        {
+            "classe": "864",
+            "libelle": "Rep. provis. R & C H.A.O.",
+            "undefined": "864 - Rep. provis. R & C H.A.O."
+        },
+        {
+            "classe": "865",
+            "libelle": "Rep. subvent. investissement",
+            "undefined": "865 - Rep. subvent. investissement"
+        },
+        {
+            "classe": "868",
+            "libelle": "Autres Reprises H.A.O.",
+            "undefined": "868 - Autres Reprises H.A.O."
+        },
+        {
+            "classe": "87",
+            "libelle": "Participation des travailleurs",
+            "undefined": "87 - Participation des travailleurs"
+        },
+        {
+            "classe": "88",
+            "libelle": "Subventions d'équilibre",
+            "undefined": "88 - Subventions d'équilibre"
+        },
+        {
+            "classe": "89",
+            "libelle": "Impôts sur le résultat",
+            "undefined": "89 - Impôts sur le résultat"
+        },
+        {
+            "classe": "891",
+            "libelle": "Impôts bénéfices (exercice)",
+            "undefined": "891 - Impôts bénéfices (exercice)"
+        },
+        {
+            "classe": "892",
+            "libelle": "Rappels impôts / résultat antér.",
+            "undefined": "892 - Rappels impôts / résultat antér."
+        },
+        {
+            "classe": "895",
+            "libelle": "Impôt minimum forfaitaire I.M.F.",
+            "undefined": "895 - Impôt minimum forfaitaire I.M.F."
+        },
+        {
+            "classe": "899",
+            "libelle": "Dégrèvem. impôts / résult. ant.",
+            "undefined": "899 - Dégrèvem. impôts / résult. ant."
+        },
+        {
+            "classe": "9",
+            "libelle": "Comptes des engagements ",
+            "undefined": "9 - Comptes des engagements "
+        },
+        {
+            "classe": "901",
+            "libelle": "Engagements de financement obtenus",
+            "undefined": "901 - Engagements de financement obtenus"
+        },
+        {
+            "classe": "9011",
+            "libelle": "Crédits confirmés obtenus",
+            "undefined": "9011 - Crédits confirmés obtenus"
+        },
+        {
+            "classe": "9012",
+            "libelle": "Emprunts restant à encaisser",
+            "undefined": "9012 - Emprunts restant à encaisser"
+        },
+        {
+            "classe": "9013",
+            "libelle": "Facilités financières renouvelables",
+            "undefined": "9013 - Facilités financières renouvelables"
+        },
+        {
+            "classe": "9014",
+            "libelle": "Facilités d'émission",
+            "undefined": "9014 - Facilités d'émission"
+        },
+        {
+            "classe": "9018",
+            "libelle": "Autres engagements de financement obtenus",
+            "undefined": "9018 - Autres engagements de financement obtenus"
+        },
+        {
+            "classe": "902",
+            "libelle": "Engagements de garantie obtenus",
+            "undefined": "902 - Engagements de garantie obtenus"
+        },
+        {
+            "classe": "9021",
+            "libelle": "Avals obtenus",
+            "undefined": "9021 - Avals obtenus"
+        },
+        {
+            "classe": "9022",
+            "libelle": "Cautions, garanties obtenues",
+            "undefined": "9022 - Cautions, garanties obtenues"
+        },
+        {
+            "classe": "9023",
+            "libelle": "Hypothèques obtenues",
+            "undefined": "9023 - Hypothèques obtenues"
+        },
+        {
+            "classe": "9024",
+            "libelle": "Effets endossés par des tiers",
+            "undefined": "9024 - Effets endossés par des tiers"
+        },
+        {
+            "classe": "9028",
+            "libelle": "Autres garanties obtenues",
+            "undefined": "9028 - Autres garanties obtenues"
+        },
+        {
+            "classe": "903",
+            "libelle": "Engagements réciproques",
+            "undefined": "903 - Engagements réciproques"
+        },
+        {
+            "classe": "9031",
+            "libelle": "Achats de marchandises à terme",
+            "undefined": "9031 - Achats de marchandises à terme"
+        },
+        {
+            "classe": "9032",
+            "libelle": "Achats à terme de devises",
+            "undefined": "9032 - Achats à terme de devises"
+        },
+        {
+            "classe": "9033",
+            "libelle": "Commandes fermes des clients",
+            "undefined": "9033 - Commandes fermes des clients"
+        },
+        {
+            "classe": "9038",
+            "libelle": "Autres engagements réciproques",
+            "undefined": "9038 - Autres engagements réciproques"
+        },
+        {
+            "classe": "904",
+            "libelle": "Autres engagements obtenus",
+            "undefined": "904 - Autres engagements obtenus"
+        },
+        {
+            "classe": "9041",
+            "libelle": "Abandons créances conditionnels",
+            "undefined": "9041 - Abandons créances conditionnels"
+        },
+        {
+            "classe": "9043",
+            "libelle": "Ventes clause réserve propriété",
+            "undefined": "9043 - Ventes clause réserve propriété"
+        },
+        {
+            "classe": "9048",
+            "libelle": "Divers engagements obtenus",
+            "undefined": "9048 - Divers engagements obtenus"
+        },
+        {
+            "classe": "905",
+            "libelle": "Engagements de financement accordés",
+            "undefined": "905 - Engagements de financement accordés"
+        },
+        {
+            "classe": "9051",
+            "libelle": "Crédits accordés non encaissés",
+            "undefined": "9051 - Crédits accordés non encaissés"
+        },
+        {
+            "classe": "9058",
+            "libelle": "Autres engagements de financement accordés",
+            "undefined": "9058 - Autres engagements de financement accordés"
+        },
+        {
+            "classe": "906",
+            "libelle": "Engagements de garantie accordés",
+            "undefined": "906 - Engagements de garantie accordés"
+        },
+        {
+            "classe": "9061",
+            "libelle": "Avals accordés",
+            "undefined": "9061 - Avals accordés"
+        },
+        {
+            "classe": "9062",
+            "libelle": "Cautions, garanties accordées",
+            "undefined": "9062 - Cautions, garanties accordées"
+        },
+        {
+            "classe": "9063",
+            "libelle": "Hypothèques accordées",
+            "undefined": "9063 - Hypothèques accordées"
+        },
+        {
+            "classe": "9064",
+            "libelle": "Effets endossés par l'entreprise",
+            "undefined": "9064 - Effets endossés par l'entreprise"
+        },
+        {
+            "classe": "9068",
+            "libelle": "Autres garanties accordées",
+            "undefined": "9068 - Autres garanties accordées"
+        },
+        {
+            "classe": "907",
+            "libelle": "Engagements réciproques",
+            "undefined": "907 - Engagements réciproques"
+        },
+        {
+            "classe": "9071",
+            "libelle": "Ventes de marchandises à terme",
+            "undefined": "9071 - Ventes de marchandises à terme"
+        },
+        {
+            "classe": "9072",
+            "libelle": "Ventes à terme de devises",
+            "undefined": "9072 - Ventes à terme de devises"
+        },
+        {
+            "classe": "9073",
+            "libelle": "Commandes fermes aux fournisseur",
+            "undefined": "9073 - Commandes fermes aux fournisseur"
+        },
+        {
+            "classe": "9078",
+            "libelle": "Autres engagements réciproques",
+            "undefined": "9078 - Autres engagements réciproques"
+        },
+        {
+            "classe": "908",
+            "libelle": "Autres engagements accordés",
+            "undefined": "908 - Autres engagements accordés"
+        },
+        {
+            "classe": "9081",
+            "libelle": "Annulations conditionelles de dettes",
+            "undefined": "9081 - Annulations conditionelles de dettes"
+        },
+        {
+            "classe": "9082",
+            "libelle": "Engagements de retraite",
+            "undefined": "9082 - Engagements de retraite"
+        },
+        {
+            "classe": "9083",
+            "libelle": "Achats clause réserve propriété",
+            "undefined": "9083 - Achats clause réserve propriété"
+        },
+        {
+            "classe": "9088",
+            "libelle": "Divers engagements accordés",
+            "undefined": "9088 - Divers engagements accordés"
+        }
+    ]}

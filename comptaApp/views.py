@@ -264,14 +264,16 @@ def main(request):
 
 def saisiesoperations(request):
     if request.method == "POST":
-        username = request.POST['nom']
         operation = request.POST['libelle']
         entrepris = request.POST['entrep']
         entrepri = CustomUser.objects.get(username=entrepris)
         fournisseu = request.POST['movies']
+        if CustomUser.objects.filter(groups=3,username=fournisseu).exists() == False:
+                CustomUser.objects.create(username=fournisseu)
+                user=CustomUser.objects.get(username=fournisseu)
+                grouper=Group.objects.get(id=3)
+                user.groups.add(grouper)
         fournisse = CustomUser.objects.get(username=fournisseu)
-        if Fournisseurs.objects.filter(nom=username).exists() == False:
-                Fournisseurs.objects.create(nom=username)
         operationcompta.objects.create(libelle=operation,typejournal_idtypejournal=1,entrepriseid_id=entrepri.id,fournisseurs_id=fournisse.id)
         return HttpResponse('')
     else:
@@ -285,16 +287,30 @@ def imputation(request):
         userimpute=request.POST['useridimputer']
         post=request.POST['champs']
         post2 = request.POST['champs2']
+        comptes=request.POST['comptes']
+        comptes2 = request.POST['comptes2']
         q = QueryDict(post, mutable=True)
         q2 = QueryDict(post2, mutable=True)
+        q3 = QueryDict(comptes, mutable=True)
+        q4 = QueryDict(comptes2, mutable=True)
         ukeys=q.pop('champs')
         ukeys2 = q2.pop('champs2')
+        ukeys3 = q3.pop('comptes')
+        ukeys4 = q3.pop('comptes2')
+        cpt=0
+        cpt2=0
         for nbr in ukeys:
-            dbiter=Debit.objects.create(montant=nbr)
+            co=ukeys3[cpt]
+            comptid=co.split("-")
+            dbiter=Debit.objects.create(montant=nbr,compte_compteid=comptid[0])
+            cpt=cpt+1
             dbiter.save()
 
         for nbr in ukeys2:
-            cditer=Credit.objects.create(montant=nbr)
+            co2 = ukeys4[cpt2]
+            comptid2 = co2.split("-")
+            cditer=Credit.objects.create(montant=nbr,compte_compteid=comptid2[0])
+            cpt2 = cpt2 + 1
             cditer.save()
 
         ope=operationcompta.objects.get(id=op)
