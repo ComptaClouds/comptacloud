@@ -27,6 +27,8 @@ class CustomUser(AbstractUser):
     standard = models.BooleanField(default=True)
     valide = models.BooleanField(default=False)
     autorise = models.BooleanField(default=False)
+    saisieon = models.BooleanField(default=False)
+    saisieoccupe = models.BooleanField(default=False)
     relations = models.ManyToManyField('self',
                                        symmetrical=False)
 
@@ -90,6 +92,8 @@ class Document(models.Model):
     uploaded_at = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='documents', on_delete=models.CASCADE, default=1)
     entreprise = models.CharField(max_length=255, default='merde')
+    userid_saisie = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='+', on_delete=models.CASCADE, blank=True,null=True)
+    doc_saisie = models.BooleanField(default=False)
 
 
 class Fournisseurs(models.Model):
@@ -99,24 +103,41 @@ class liaison(models.Model):
    entrepriseid =  models.CharField(max_length=255, default='merde')
    comptableid =  models.CharField(max_length=255, default='merde')
 
+class reglement(models.Model):
+   modereglementid =   models.AutoField(primary_key=True)
+   nom =  models.CharField(max_length=255, blank=True, null=True)
+
 
 class operationcompta(models.Model):
-    useridsaisie = models.IntegerField(null=True)
-    useridimputer = models.IntegerField(null=True)
+    useridtranscription = models.IntegerField(null=True)
     typejournal_idtypejournal = models.PositiveIntegerField()
     libelle = models.CharField(max_length=45, blank=True, null=True)
     montant = models.FloatField(blank=True, null=True)
     prixunitaire = models.FloatField(blank=True, null=True)
     dateoperation = models.DateField(blank=True, null=True)
-    datesaisie = models.DateField(blank=True, null=True)
-    dateimput = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, null=True)
     reference = models.CharField(max_length=45, blank=True, null=True)
     quantité = models.IntegerField(null=True)
     fournisseurs = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE,null=True,related_name='+')
     entrepriseid = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True,related_name='+')
+    documentid = models.ForeignKey(Document, on_delete=models.CASCADE, null=True, related_name='+')
+    modereglementid = models.ForeignKey(reglement, on_delete=models.CASCADE, null=True, related_name='+')
+    controlesaisie = models.BooleanField(default=False)
+    controleimputation = models.BooleanField(default=False)
 
     def __str__(self):
         return self.libelle
+
+
+class imputation(models.Model):
+    imputationid = models.AutoField(primary_key=True)
+    operation = models.ForeignKey(operationcompta, on_delete=models.CASCADE, null=True, related_name='+')
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, related_name='+')
+    misajour = models.BooleanField(default=False)
+    date=models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.misajour
 
 
 
@@ -128,22 +149,18 @@ class Compte(models.Model):
 
 class Credit(models.Model):
     idcredit = models.AutoField(primary_key=True)
-    operationid = models.ForeignKey(operationcompta, on_delete=models.CASCADE, null=True)
+    imputation = models.ForeignKey(imputation, on_delete=models.CASCADE, null=True)
     compte_compteid = models.IntegerField(blank=True, null=True)
-    operation_user_2_useridsaisie = models.IntegerField(blank=True, null=True)
-    operation_user_2_useridimputer = models.IntegerField(blank=True, null=True)
-    operation_typejournal_idtypejournal = models.PositiveIntegerField(blank=True, null=True)
+    libellecompte = models.CharField(max_length=45, blank=True, null=True)
     montant = models.FloatField(blank=True, null=True)
 
 
 class Debit(models.Model):
     iddebit = models.AutoField(primary_key=True)
-    operationid = models.ForeignKey(operationcompta, on_delete=models.CASCADE, null=True)
+    imputation = models.ForeignKey(imputation, on_delete=models.CASCADE, null=True)
     compte_compteid = models.IntegerField(blank=True, null=True)
-    operation_user_2_useridsaisie = models.IntegerField(blank=True, null=True)
-    operation_user_2_useridimputer = models.IntegerField(blank=True, null=True)
-    operation_typejournal_idtypejournal = models.PositiveIntegerField(blank=True, null=True)
     montant = models.FloatField(blank=True, null=True)
+    libellecompte = models.CharField(max_length=45, blank=True, null=True)
 
 class Typejournal(models.Model):
     idtypejournal = models.AutoField(primary_key=True)

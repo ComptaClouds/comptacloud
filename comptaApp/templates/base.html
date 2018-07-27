@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 {% load staticfiles %}
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -13,7 +14,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="{% static 'css/autocomplete.css' %}" rel="stylesheet">
 <link href="{% static 'css/jquery-ui.css' %}" rel="stylesheet">
-
+ <style>
+    video, img {
+      max-width:100%;
+    }
+  </style>
   <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
 </head>
 <body>
@@ -28,6 +33,7 @@
 <script src = "//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src = "{% static 'js/jquery.easy-autocomplete.min.js' %}"></script>
  <script src = "{% static 'js/jquery-ui.js' %}"></script>
+<script src = "{% static 'js/opencv.js' %}"></script>
 <script src = "{% static 'js/jquery.ui.autocomplete.html.js' %}"></script>
 
 <script type="text/Javascript" >
@@ -7321,6 +7327,9 @@ function displayLoginBox(){
     $("#mov").fadeIn();
     $(".changer").remove()
       }
+
+
+
 </script>
 
 
@@ -7434,9 +7443,138 @@ $(document).ready(function() {
 			});
         });
     })
-
+$('body').click(function(){
+console.log($('input[id=id_document]').val());
+});
 </script>
 
+<script type="text/javascript">
+/* Code de l'imputation */
 
+
+$( ".oper" ).mouseenter( function() {
+$oper=$( this ).attr('id');
+$( this ).append($("<div class='w3-padding col-md-3 w3-center form'><form method='post' enctype='multipart/form-data' id='liste' >{% csrf_token %}<input type='hidden' name='prendop'><input type='submit' value='modifier'></form></div>"));
+$("input[name=prendop]").val($oper);
+console.log($oper);
+console.log($("input[name=prendop]").val());
+} ).mouseleave( function() {$( ".form" ).remove();});
+
+$(document).on('submit','#modif',function(e){
+     e.preventDefault();
+      $d=$('input[name=imputation]').val();
+      $.ajax({
+        type:'POST',
+        url:"{% url 'modifierimputation' pk="+$d+" %}",
+        data:{
+          useridimputer:$("input[name=useridimputer]").val(),
+          idoperation:$("input[name=idoperation]").val(),
+          csrfmiddlewaretoken:$("input[name=csrfmiddlewaretoken]").val(),
+          champs:$('input[name=champs]').serialize(),
+          champs2:$('input[name=champs2]').serialize(),
+          comptes:$('input[name=comptes]').serialize(),
+          comptes2:$('input[name=comptes2]').serialize()
+        },
+        success:function(){
+
+
+        }
+      });
+	});
+function trouveid(t){
+    document.getElementById("nbre").value++;
+    var a=document.getElementById("nbre").value;
+    t.setAttribute('id',a);
+    console.log(t.id);
+    addid(t.id);
+}
+
+function supp(e){
+    var a=e.parentElement;
+    a.remove();
+};
+
+
+
+$(document).on('submit','#filtre',function(e){
+        e.preventDefault();
+        datedebut=$("input[name=datedebut]").val();
+        datefin=$("input[name=datefin]").val();
+        typejournal = $("#typejournal option:selected").val();
+        console.log(typejournal);
+		csrfmiddlewaretoken=$("input[name=csrfmiddlewaretoken]").val()
+		$.post("{% url 'journalcentral' %}",{datedebut:datedebut,datefin:datefin,csrfmiddlewaretoken:csrfmiddlewaretoken,typejournal:typejournal},function(data){
+		        $("table").empty();
+		        $("table").append("<tr><th>Date</th><th>Numero de compte</th><th>Libelle de l'operation</th><th>Debit</th><th>Credit</th></tr>");
+		        idimputation=data.idimputation;
+		        idimputationdebit=data.idimputationdebit;
+		        idimputationcredit=data.idimputationcredit;
+		        datedebi=data.datedebit;
+		        datecredit=data.datecredit
+		        numcomptedebit=data.numcomptedebit;
+		        numcomptecredit=data.numcomptecredit;
+		        libellecomptedebit=data.libellecomptedebit;
+		        libellecomptecredit=data.libellecomptecredit;
+		        montantdebit=data.montantdebit;
+		        montantcredit=data.montantcredit;
+		        typejournal=data.typejournal;
+
+
+                if(typejournal!='grandlivre' && typejournal!='balance')
+                {
+	             for (var p=0;p<idimputation.length;p++){
+
+	                for (var s=0;s<idimputationdebit.length;s++){
+	                    if(idimputationdebit[s]==idimputation[p])
+	                    {
+	                        $("table").append("<tr><td>"+datedebi[s]+"</td><td>"+numcomptedebit[s]+"</td><td>"+libellecomptedebit[s]+"</td><td>"+montantdebit[s]+"</td><td></td></tr>");
+
+	                    }
+
+	                }
+	                for (var l=0;l<idimputationcredit.length;l++){
+	                    if(idimputationcredit[l]==idimputation[p])
+	                    {
+	                        $("table").append("<tr><td>"+datecredit[l]+"</td><td>"+numcomptecredit[l]+"</td><td>"+libellecomptecredit[l]+"</td><td></td><td>"+montantcredit[l]+"</td></tr>");
+	                    }
+
+	                }
+	                $("table").append("<tr class='w3-gray w3-padding'><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>");
+	             }
+	             }
+	             else{
+	                for (var p=0;p<idimputation.length;p++){
+	                var totaldebit=0;
+	                var totalcredit=0;
+	                $("table").append("<tr class='w3-padding'><td>&nbsp</td><td>&nbsp</td><td><h3>Compte "+idimputation[p]+"</h3></td><td>&nbsp</td><td>&nbsp</td></tr>");
+	                for (var s=0;s<idimputationdebit.length;s++){
+	                    if(idimputationdebit[s]==idimputation[p])
+	                    {
+	                        $("table").append("<tr><td>"+datedebi[s]+"</td><td>"+numcomptedebit[s]+"</td><td>"+libellecomptedebit[s]+"</td><td>"+montantdebit[s]+"</td><td></td></tr>");
+	                        totaldebit=totaldebit+montantdebit[s];
+	                    }
+
+	                }
+	                for (var l=0;l<idimputationcredit.length;l++){
+	                    if(idimputationcredit[l]==idimputation[p])
+	                    {
+	                        $("table").append("<tr><td>"+datecredit[l]+"</td><td>"+numcomptecredit[l]+"</td><td>"+libellecomptecredit[l]+"</td><td></td><td>"+montantcredit[l]+"</td></tr>");
+	                        totalcredit=totalcredit+montantcredit[l];
+	                    }
+
+	                }
+	                $("table").append("<tr class='w3-padding'><td>&nbsp</td><td>&nbsp</td><td class='w3-gray'>Total</td><td class='w3-gray'>"+totaldebit+"</td><td class='w3-gray'>"+totalcredit+"</td></tr>");
+	                $("table").append("<tr class='w3-padding'><td>&nbsp</td><td>&nbsp</td><td></td><td></td><td></td></tr>");
+
+	             }
+	             }
+			});
+
+
+
+
+	});
+
+</script>
 
 </html>

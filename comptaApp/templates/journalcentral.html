@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block title %}modifier operations imputees{% endblock %}
+{% block content %}
+<div class="container">
+<div class="row filtre w3-margin-bottom">
+    <h2>filtrer par:</h2>
+    <form method="post" name="filtre" id="filtre">
+    <div class="col-md-5">
+        <h3>Date</h3>
+
+            <div class="col-md-5 w3-margin-right">
+                <label>date debut</label>
+                <input type="date" name="datedebut" class=" w3-small">
+            </div>
+
+            <div class="col-md-5">
+                <label>date fin</label>
+                <input type="date" name="datefin" class=" w3-small">
+            </div>
+            {% csrf_token %}
+
+
+    </div>
+
+    <div class="col-md-5">
+        <h3>type journal</h3>
+        <select id="typejournal">
+            <option value="tous">tous</option>
+            {% for typejournals in typejournal %}
+            <option value="{{typejournals.idtypejournal}}">{{typejournals.libelle}}</option>
+            {% endfor %}
+            <option value="grandlivre">grand livre</option>
+            <option value="balance">balance</option>
+        </select>
+    </div>
+        <div class="col-md-2"><input type="submit"></div>
+
+        </form>
+</div>
+
+<table style="width:100%">
+  <tr>
+      <th>Date</th>
+      <th>Numero de compte</th>
+      <th>Libelle de l'operation</th>
+      <th>Debit</th>
+      <th>Credit</th>
+  </tr>
+    {% for imputations in imputations %}
+    {% for debits in debit %}
+            {% if debits.imputation_id == imputations.imputationid %}
+                    <tr>
+                        <td>{{imputations.date}}</td>
+                        <td>{{debits.compte_compteid}}</td>
+                         <td>{{debits.libellecompte}}</td>
+                        <td>{{debits.montant}}</td>
+                        <td></td>
+                    </tr>
+            {% endif %}
+        {% endfor %}
+    {% for credits in credit %}
+            {% if credits.imputation_id == imputations.imputationid %}
+                    <tr >
+                        <td>{{imputations.date}}</td>
+                        <td>{{credits.compte_compteid}}</td>
+                         <td>{{credits.libellecompte}}</td>
+                        <td></td>
+                        <td>{{credits.montant}}</td>
+
+                    </tr>
+
+            {% endif %}
+        {% endfor %}
+
+    <tr class="w3-gray w3-padding">
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+    </tr>
+  {% endfor %}
+</table>
+</div>
+
+
+{% endblock %}

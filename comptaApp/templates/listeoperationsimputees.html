@@ -1,0 +1,78 @@
+<!-- templates/signup.html -->
+{% extends 'base.html' %}
+
+{% block title %}Liste operations imputees{% endblock %}
+
+{% block content %}
+<div class="w3-padding container">
+
+<div class="w3-padding row w3-black">
+    <div class="w3-padding col-md-3 w3-center"><h2>libelle</h2></div>
+    <div class="w3-padding col-md-3">
+        <div class="w3-padding row w3-center">
+            <h2>debit</h2>
+        </div>
+        <div class="w3-padding row">
+            <div class="w3-padding col-md-6 w3-center w3-border-right">
+                montant
+            </div>
+            <div class="w3-padding col-md-6 w3-center">
+                compteid
+            </div>
+        </div>
+    </div>
+    <div class="w3-padding col-md-3 w3-center">
+        <div class="w3-padding row w3-center">
+            <h2>credit</h2>
+        </div>
+        <div class="w3-padding row">
+            <div class="w3-padding col-md-6 w3-center w3-border-right">
+                montant
+            </div>
+            <div class="w3-padding col-md-6 w3-center">
+                compteid
+            </div>
+        </div>
+    </div>
+
+</div>
+{% for imputations in imputations %}
+<div class="w3-padding row w3-border w3-border-gray w3-margin-top oper" id="{{imputations.imputationid}}">
+
+    <div class="w3-padding col-md-3">
+        {% for operations in operation %}
+            {% if operations.id == imputations.operation_id %}
+                <h4>{{operations.libelle}}</h4>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="w3-padding col-md-3">
+        {% for debits in debit %}
+            {% if debits.imputation_id == imputations.imputationid %}
+                <div class="w3-padding row">
+                    <div class="w3-padding col-md-6  w3-border-right">{{debits.montant}}</div>
+                    <div class="w3-padding col-md-6 w3-center">{{debits.compte_compteid}}</div>
+                </div>
+            {% endif %}
+
+        {% endfor %}
+    </div>
+    <div class="w3-padding col-md-3">
+        {% for credits in credit %}
+            {% if credits.imputation_id == imputations.imputationid %}
+            <div class="w3-padding row">
+                    <div class="w3-padding col-md-6 w3-center w3-border-right">{{credits.montant}}</div>
+                    <div class="w3-padding col-md-6 w3-center">{{credits.compte_compteid}}</div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+<a href="{% url 'modifierimputation' pk=imputations.pk %}">modifier</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+{% endblock %}

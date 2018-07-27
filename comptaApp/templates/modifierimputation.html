@@ -1,0 +1,51 @@
+<!-- templates/signup.html -->
+{% extends 'base.html' %}
+
+{% block title %}modifier operations imputees{% endblock %}
+{% block content %}
+{% load l10n %}
+<div class="container">
+   <p class="w3-xlarge w3-center">Vous etes en train de modifier l'operation : <span class="w3-text-red">{{operationname}}</span></p>
+    <form method="post" name="modif" id="modif">
+        <input type="hidden" value="{{ imputationid }}" name="imputation">
+         <input type="hidden" value="{{ user.id }}" name="useridimputer">
+            <input type="hidden" value="{{ operation }}" name="idoperation">
+        {% csrf_token %}
+<div class="row">
+    <div class="col-md-6">
+        <h3>Debit</h3>
+        {% for debits in debit %}
+        <div class=" w3-margin">
+            <input type="button" value="-" onclick='supp(this)'>
+            {% localize off %}
+                <input type="text" name="champs" value="{{debits.montant}}">
+            {% endlocalize %}
+
+            <input type="text" name="comptes" value="{{debits.compte_compteid}}-{{debits.libellecompte}}" onmouseover="trouveid(this)" onfocus="if(this.value == '{{debits.compte_compteid}}-{{debits.libellecompte}}')this.value = '';">
+
+        </div>
+        {% endfor %}
+    </div>
+    <div class="col-md-6">
+        <h3>Credit</h3>
+        {% for credits in credit %}
+        <div class="row w3-margin">
+            <input type="button" value="-" onclick='supp(this)'>
+            {% localize off %}
+            <input type="text" name="champs2" value="{{credits.montant}}">
+             {% endlocalize %}
+            <input type="text" name="comptes2" value="{{credits.compte_compteid}}-{{credits.libellecompte}}" onmouseover="trouveid(this)" >
+
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+        <div id="voir">
+                <input type="button" onclick="ajout(this);" value="+"/>
+            </div>
+        <input type="hidden" value="1" id="nbre">
+        <input type="submit" id="s">
+        </form>
+    </div>
+{% endblock %}

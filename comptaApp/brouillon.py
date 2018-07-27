@@ -447,6 +447,14 @@ $(".comptes").easyAutocomplete(options);
 
 
 
+
+
+
+
+
+
+
+
 var json = [
         {
             libelle: "1",
@@ -3965,3 +3973,216 @@ var json = [
         }
     ]
 ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let largest_area=0;
+      var bounding_rect;
+      let largest_contour_index=0;
+      let src = cv.imread('canvasid');
+      let dst = new cv.Mat();
+      let ksize = new cv.Size(5, 5);
+        let anchor = new cv.Point(-1, -1);
+        cv.cvtColor(src, dst, cv.COLOR_RGBA2GRAY, 0);
+        cv.threshold(dst, dst, 120, 200, cv.THRESH_BINARY);
+
+
+        let contours = new cv.MatVector();
+        let hierarchy = new cv.Mat();
+        let hull = new cv.MatVector();
+        cv.findContours(src, contours, hierarchy, cv.RETR_CCOMP, cv.CHAIN_APPROX_SIMPLE);
+        // approximates each contour to convex hull
+
+        for (let i = 0; i < contours.size(); ++i) {
+            let tmp = new cv.Mat();
+            let cnt = contours.get(i);
+            let r=cv.contourArea(cnt,false);
+             if(r>largest_area){
+                largest_area=r;
+                largest_contour_index=i;                //Store the index of largest contour
+                bounding_rect = cv.boundingRect(cnt);
+
+    }
+
+
+        }
+        console.log(largest_contour_index);
+        // draw contours with random Scalar
+
+            let colorHull = new cv.Scalar( 0, 255, 0 );
+            cv.drawContours( src, contours,largest_contour_index, colorHull, 2 );
+
+        cv.imshow('canvasOutput', dst);
+        cv.imshow('canvasOutput2', src);
+        src.delete(); dst.delete(); hierarchy.delete(); contours.delete(); hull.delete();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var largest_area=0;
+        var largest_contour_index=0;
+        var bounding_rect;
+        let ksize=new cv.Size(3, 3);
+        let src = cv.imread('canvasid');
+        let dst = cv.Mat.zeros(src.rows, src.cols, cv.CV_8U);
+        let lines = new cv.Mat();
+        let color = new cv.Scalar(255, 0, 0, 255);
+        console.log(color);
+        // You can
+try more different parameters
+cv.cvtColor(src, dst, cv.COLOR_RGBA2GRAY, 0);
+cv.medianBlur(dst, dst, 5);
+cv.threshold(dst, dst, 120, 255, cv.THRESH_BINARY);
+// cv.Canny(dst, dst, 50, 100, 3, false);
+// cv.HoughLinesP(dst, lines, 1, Math.PI / 180, 2, 0, 0);
+// for (let i = 0; i < lines.rows; ++i) {
+                                        // let startPoint = new cv.Point(lines.data32S[i * 4], lines.data32S[i * 4 + 1]);
+// let endPoint = new cv.Point(lines.data32S[i * 4 + 2], lines.data32S[i * 4 + 3]);
+// cv.line(src, startPoint, endPoint, color);
+//}
+
+let
+contours = new
+cv.MatVector();
+let
+hierarchy = new
+cv.Mat();
+let
+hull = new
+cv.MatVector();
+cv.findContours(dst, contours, hierarchy, cv.RETR_CCOMP, cv.CHAIN_APPROX_SIMPLE);
+// approximates
+each
+contour
+to
+convex
+hull
+console.log(contours.size());
+for (let i = 0; i < contours.size(); ++i) {
+let tmp = new cv.Mat();
+let cnt = contours.get(i);
+let r=cv.contourArea(cnt, false);
+if (r > largest_area){
+largest_area=r;
+largest_contour_index=i; // Store the index of largest contour
+bounding_rect = cv.boundingRect(cnt);
+
+}
+let colorHull = new cv.Scalar( 0, 255, 0 );
+cv.drawContours( src, contours, largest_contour_index, colorHull, 2 );
+let srcTri = cv.matFromArray(3, 1, cv.CV_32FC2, [0, 0, 0, 1, 1, 0]);
+let dstTri = cv.matFromArray(3, 1, cv.CV_32FC2, [0.6, 0.2, 0.1, 1.3, 1.5, 0.3]);
+let dsize = new cv.Size(src.rows, src.cols);
+let M = cv.getAffineTransform(srcTri, dstTri);
+// You can
+try more different parameters
+cv.warpAffine(contours, src, M, dsize, cv.INTER_LINEAR, cv.BORDER_CONSTANT, new
+cv.Scalar());
+
+}
+
+console.log(lines.rows);
+cv.imshow('canvasOutput', src);
+
+src.delete();
+dst.delete();
+lines.delete();
+
+// You
+can
+try more different parameters
+
+// cv.Canny(src, dst, 50, 100, 3, false);
+
+// let
+contours = new
+cv.MatVector();
+// let
+hierarchy = new
+cv.Mat();
+// let
+poly = new
+cv.MatVector();
+// cv.findContours(dst, contours, hierarchy, cv.RETR_CCOMP, cv.CHAIN_APPROX_SIMPLE);
+// approximates
+each
+contour
+to
+convex
+hull
+// console.log(cv.CHAIN_APPROX_SIMPLE);
+// for (let i = 0; i < contours.size(); ++i) {
+// let tmp = new cv.Mat();
+// let cnt = contours.get(i);
+// let r=cv.contourArea(cnt, false);
+// if (r > largest_area){
+// largest_area=r;
+// largest_contour_index=i; // Store the index of largest contour
+// bounding_rect = cv.boundingRect(cnt);
+//}
+//}
+
+// console.log(largest_contour_index);
+// draw
+contours
+with random Scalar
+
+// let
+colorHull = new
+cv.Scalar(0, 255, 0);
+// cv.drawContours(src, contours, largest_contour_index, colorHull, 2);
+
+
+
+

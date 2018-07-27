@@ -1,6 +1,6 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %}
-
+{% load auth_extras %}
 {% block title %}Home{% endblock %}
 
 {% block content %}
@@ -67,13 +67,21 @@ Autorisation en attente
 <!-- fin permissions de l'utilisateur -->
 
 
-  <p><a href="{% url 'login' %}">logout</a></p>
+  <p><a href="{% url 'logout' %}">logout</a></p>
 {% else %}
   <p>You are not logged in</p>
 
     <a href="{% url 'login' %}">login</a> |
     <a href="{% url 'signup' %}">signup</a>
     <a href="{% url 'enregistrement' %}">continuer enregistrement</a>
+
 {% endif %}
+<div class="saisies">
+    {% if request.user|has_group:"Comptable" %}
+    <a href="{% url 'saisiesoperations' %}">saisir operations</a>
+    {% endif %}
+
+<a href="{% url 'scan' %}">scan</a>
+
 {% endblock %}
 
