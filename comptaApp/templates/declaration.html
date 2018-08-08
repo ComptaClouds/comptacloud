@@ -1,0 +1,121 @@
+<!-- templates/signup.html -->
+{% extends 'base.html' %}
+
+{% block title %}Declaration{% endblock %}
+
+{% block content %}
+<div class="idcontri container w3-margin-bottom">
+     <div class="row">1-IDENTIFICATION DU CONTRIBUABLE</div>
+        <div class="row w3-border w3-padding">
+            <div class="col-md-12 w3-margin-bottom">
+
+                <div class="col-md-7">
+                    <div class="col-md-5 w3-tiny">Nom et prénom ou raison sociale:</div>
+                    <div class="col-md-7 w3-yellow w3-padding" style="border-bottom:1px dashed black">{{user.username}}</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="col-md-4 w3-tiny">Sigle:</div>
+                    <div class="col-md-8 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+                </div>
+            </div>
+
+        <div class="col-md-12 w3-margin-bottom">
+            <div class="col-md-12">
+                <div class="col-md-5 w3-tiny">Nom du dirigeant de l'entreprise:</div>
+                <div class="col-md-7 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+        </div>
+
+        <div class="col-md-12 w3-margin-bottom">
+            <div class="col-md-6">
+                <div class="col-md-1 w3-center w3-tiny">NCC:</div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-4 w3-tiny">Objet ou activité:</div>
+                <div class="col-md-8 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+        </div>
+
+        <div class="col-md-12 w3-margin-bottom">
+            <div class="col-md-4">
+                <div class="col-md-4 w3-tiny"><strong>Adresse:</strong>Commune:</div>
+                <div class="col-md-8 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="col-md-1 w3-tiny">Tel:</div>
+                <div class="col-md-9 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+            <div class="col-md-2">
+                <div class="col-md-1 w3-tiny">BP:</div>
+                <div class="col-md-9 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="col-md-1 w3-tiny w3-padding ">Email:</div>
+                <div class="col-md-1"></div>
+                <div class="col-md-9 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+        </div>
+
+        <div class="col-md-12 w3-margin-bottom">
+            <div class="col-md-4">
+                <div class="col-md-4 w3-tiny">Quartier</div>
+                <div class="col-md-8 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-4 w3-tiny">Rue</div>
+                <div class="col-md-8 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+            <div class="col-md-2">
+                <div class="col-md-6 w3-tiny  ">N du lot:</div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+            <div class="col-md-2">
+                <div class="col-md-1 w3-tiny w3-margin-right ">Ilot:</div>
+                <div class="col-md-7 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+        </div>
+
+        <div class="col-md-12 w3-margin-bottom">
+            <div class="col-md-6">
+                <div class="col-md-7 w3-tiny">Références cadastrales:Section :</div>
+                <div class="col-md-5 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-5 w3-tiny">Parcelle:</div>
+                <div class="col-md-7 w3-yellow w3-padding" style="border-bottom:1px dashed black"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="taxes container w3-border w3-padding">
+     <div class="row">1-IMPOTS ET TAXES A ACQUITTER</div>
+    <table class="w3-border w3-table w3-bordered">
+        <tr>
+            <th class="w3-padding w3-center">cocher</th>
+            <th class="w3-padding w3-center">IMPOTS ET TAXES</th>
+            <th class="w3-padding w3-center">MONTANT DU</th>
+            <th class="w3-padding w3-center">MONTANT REGLE</th>
+            <th class="w3-padding w3-center">RESTE A PAYER</th>
+        </tr>
+
+        {% for taxes in taxes%}
+        <tr >
+
+            <td class="w3-padding"></td>
+            <td class="w3-padding">{{ taxes.libelle }}</td>
+            <td class="w3-padding"></td>
+            <td class="w3-padding"></td>
+            <td class="w3-padding"></td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+
+</div>
+{% endblock %}

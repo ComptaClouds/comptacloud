@@ -621,3 +621,12 @@ def journal_central(request):
         typejournal = Typejournal.objects.all()
         return render(request, 'journalcentral.html',
                       {'debit': debit, 'credit': credit, 'operation': operation, 'imputations': imputations,'typejournal':typejournal})
+
+
+
+def declarations(request):
+    if request.method == 'POST':
+        return HttpResponse('')
+    else:
+        taxes=taxe.objects.all()
+        return render(request, 'declaration.html',{'taxes':taxes})

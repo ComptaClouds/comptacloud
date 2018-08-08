@@ -31,6 +31,19 @@ class CustomUser(AbstractUser):
     saisieoccupe = models.BooleanField(default=False)
     relations = models.ManyToManyField('self',
                                        symmetrical=False)
+    quartier = models.CharField(blank=True, max_length=255)
+    objet_ou_activite = models.CharField(blank=True, max_length=255)
+    telephone = models.CharField(blank=True, max_length=55)
+    sigle = models.CharField(blank=True, max_length=255)
+    nom_dirigeant = models.CharField(blank=True, max_length=255)
+    ncc = models.CharField(blank=True, max_length=255)
+    commune = models.CharField(blank=True, max_length=255)
+    boite_postale = models.CharField(blank=True, max_length=255)
+    raisonsociale = models.CharField(blank=True, max_length=255)
+    regime = models.CharField(blank=True, max_length=5)
+    comptecontribuable = models.CharField(blank=True, max_length=255)
+    rue = models.CharField(blank=True, max_length=255)
+    nlot = models.IntegerField(blank=True, null=True)
 
 
     class Meta:
@@ -165,3 +178,75 @@ class Debit(models.Model):
 class Typejournal(models.Model):
     idtypejournal = models.AutoField(primary_key=True)
     libelle = models.CharField(max_length=45, blank=True, null=True)
+
+
+
+class categorieimpot(models.Model):
+    categorieimpotid = models.AutoField(primary_key=True)
+    libelle = models.CharField(max_length=200, blank=True, null=True)
+
+
+class impotstaxe(models.Model):
+    libelle = models.CharField(max_length=200, blank=True, null=True)
+    categorieimpot = models.ForeignKey(categorieimpot, on_delete=models.CASCADE, null=True)
+
+class usertaxe(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, related_name='+')
+    taxeids = models.CharField(max_length=100, blank=True, null=True)
+
+
+class serviceassiette(models.Model):
+    serviceassietteid = models.AutoField(primary_key=True)
+    situation = models.CharField(max_length=200, blank=True, null=True)
+
+
+class declarations(models.Model):
+    declarationid = models.AutoField(primary_key=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, related_name='+')
+    mois = models.IntegerField(blank=True, null=True)
+    trim = models.IntegerField(blank=True, null=True)
+    annee = models.IntegerField(blank=True, null=True)
+
+
+
+class banque(models.Model):
+    banqueid = models.AutoField(primary_key=True)
+    nom = models.CharField(max_length=200, blank=True, null=True)
+    situation = models.CharField(max_length=200, blank=True, null=True)
+    telephone = models.CharField(max_length=200, blank=True, null=True)
+
+
+class reglementimpot(models.Model):
+    reglemenntimpotid = models.AutoField(primary_key=True)
+    nchequevirement = models.CharField(max_length=200, blank=True, null=True)
+    date = models.DateTimeField(auto_now_add=True)
+    banque = models.ForeignKey(banque, on_delete=models.CASCADE, null=True)
+    montant = models.FloatField(blank=True, null=True)
+    declaration = models.ForeignKey(declarations, on_delete=models.CASCADE, null=True)
+    unique = models.BooleanField(default=False)
+    modereglementid = models.ForeignKey(reglement, on_delete=models.CASCADE, null=True)
+
+
+class user_banque(models.Model):
+    user_banqueid = models.AutoField(primary_key=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, related_name='+')
+    banque = models.ForeignKey(banque, on_delete=models.CASCADE, null=True)
+    gestionnaire = models.CharField(max_length=200, blank=True, null=True)
+
+
+
+class specialisation(models.Model):
+    specialisationid = models.AutoField(primary_key=True)
+    impots_taxe = models.ForeignKey(impotstaxe, on_delete=models.CASCADE, null=True)
+    libelle = models.CharField(max_length=200, blank=True, null=True)
+
+
+class impotdeclaration(models.Model):
+    impotdeclarationid = models.AutoField(primary_key=True)
+    impots_taxe = models.ForeignKey(impotstaxe, on_delete=models.CASCADE, null=True)
+    declarations = models.ForeignKey(declarations, on_delete=models.CASCADE, null=True)
+    montantdu = models.FloatField(blank=True, null=True)
+    reglementimpot = models.ForeignKey(reglementimpot, on_delete=models.CASCADE, null=True)
+    montantregle = models.FloatField(blank=True, null=True)
+    specialisation = models.ForeignKey(specialisation, on_delete=models.CASCADE, null=True)
+

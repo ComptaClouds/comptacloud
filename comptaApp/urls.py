@@ -26,6 +26,7 @@ urlpatterns = [
     path('imputation/', views.imputationss, name='imputation'),
     path('fourni/', views.fourni, name='fourni'),
     path('scan/', views.scan, name='scan'),
+    path('declaration/', views.declarations, name='declaration'),
     path('journalcentral/', views.journal_central, name='journalcentral'),
     path('afficherfournisseurs/', views.afficherfournisseurs, name='afficherfournisseurs'),
     url(r'account_activation_sent/$', views.account_activation_sent, name='account_activation_sent'),
