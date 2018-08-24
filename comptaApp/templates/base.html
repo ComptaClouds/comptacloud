@@ -21,13 +21,13 @@
   </style>
   <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
 </head>
-<body>
+<body onload="myScript()">
   <main>
     {% block content %}
     {% endblock %}
   </main>
 
-</body>
+</body >
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src = "//code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -7574,6 +7574,50 @@ $(document).on('submit','#filtre',function(e){
 
 
 	});
+
+$(document).on('submit','#enregistre',function(e){
+        e.preventDefault();
+        id=$('input[name=id]').val();
+        a=$('input[name=a]').serialize();
+        tpdeclaration = $('input[name=tpdeclaration]').val();
+        console.log(a);
+		csrfmiddlewaretoken=$("input[name=csrfmiddlewaretoken]").val()
+		$.post("{% url 'enregistrement' %}",{a:a,csrfmiddlewaretoken:csrfmiddlewaretoken,id:id,tpdeclaration:tpdeclaration},function(data){
+                lesid=data.lesid;
+
+                for (var se=0;se<lesid.length;se++){
+                    $("input[id='"+lesid[se]+"']").attr("checked","checked");
+                    console.log($("input[id='"+lesid[se]+"']").val());
+                    console.log(lesid[se]);
+                }
+			});
+
+	});
+
+
+function cal(a){
+a.nextElementSibling.value=a.previousElementSibling.value-a.value;
+}
+
+ function myScript(){
+ var concat = document.getElementById('concat').value;
+ var morceaux = concat.split(['-']);
+
+ for (var iter = 0; iter < morceaux.length; iter++) {
+ var d=String(morceaux[iter]);
+ if(d!=''){
+   document.getElementById(d).setAttribute("checked", "checked");
+   }
+}
+
+
+console.log(morceaux);
+ }
+
+
+
+
+
 
 </script>
 

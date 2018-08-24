@@ -5,9 +5,21 @@
 
 {% block content %}
   <h2>{{ user }}</h2>
-  <form method="post" enctype="multipart/form-data">
+  <form method="post" enctype="multipart/form-data" name="enregistre" id="enregistre">
     {% csrf_token %}
-    {{ form.as_p }}
+    <input type="hidden" name="id" value="{{user.id}}">
+    {% for impots in impots %}
+
+      <input type="checkbox" name="a" value="{{ impots.id}}" id="{{ impots.id }}">{{impots.libelle}}<br/>
+
+    {% endfor %}
+    <input id='concat' name="concat" type="hidden" value="{% for i in i %}{{ i }}{% endfor %}"><br/>
+    <label>Type de declaration</label>
+
+      <input type="radio" name="tpdeclaration" value="mensuel">mensuel<br/>
+      <input type="radio" name="tpdeclaration" value="trimestriel">trimestriel
+
+    <br/>
     <button type="submit">Sign up</button>
   </form>
 {% endblock %}

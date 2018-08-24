@@ -1,0 +1,42 @@
+<!-- templates/signup.html -->
+{% extends 'base.html' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<div id="message" style="display:none">Your message has been sent.<br /><br /></div>
+<div id="choisi"></div>
+  <h2>{{ user.id }}</h2>
+  <form method="post" enctype="multipart/form-data" id="paiementdec">
+    {% csrf_token %}
+
+      <table class="w3-border w3-table w3-bordered">
+        <tr>
+            <th class="w3-padding w3-center">cocher</th>
+            <th class="w3-padding w3-center">IMPOTS ET TAXES</th>
+            <th class="w3-padding w3-row">
+                <span class="w3-col w3-center" style="width:30%">MONTANT DU</span>
+                 <span class="w3-col w3-center" style="width:30%">MONTANT REGLE</span>
+                <span class="w3-col w3-center" style="width:30%">RESTE A PAYER</span>
+            </th>
+        </tr>
+       {% for c in c %}
+      <tr >
+            <td class="w3-padding"></td>
+            <td class="w3-padding" width="35%">{{ c.libelle }}</td>
+            <td class="w3-padding w3-row">
+                <input type="text" id="du" value="23600" readonly class="w3-col" style="width:30%;" >
+                <input type="text" id="reg" name="montant" oninput="cal(this)" class="w3-col" style="width:30%;" >
+                <input type="text" id="res" readonly class="w3-col" style="width:30%" >
+            </td>
+        </tr>
+
+
+
+      {% endfor %}
+
+    </table>
+
+    <button type="submit">Sign up</button>
+  </form>
+{% endblock %}

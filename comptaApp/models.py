@@ -44,6 +44,7 @@ class CustomUser(AbstractUser):
     comptecontribuable = models.CharField(blank=True, max_length=255)
     rue = models.CharField(blank=True, max_length=255)
     nlot = models.IntegerField(blank=True, null=True)
+    typedeclaration = models.CharField(blank=True, max_length=255)
 
 
     class Meta:
@@ -192,7 +193,7 @@ class impotstaxe(models.Model):
 
 class usertaxe(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, related_name='+')
-    taxeids = models.CharField(max_length=100, blank=True, null=True)
+    taxe = models.ForeignKey(impotstaxe, on_delete=models.CASCADE, null=True)
 
 
 class serviceassiette(models.Model):

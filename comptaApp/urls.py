@@ -16,6 +16,8 @@ from django.urls import path, include
 urlpatterns = [
     path('signup/', views.SignUp, name='signup'),
     path('modifier/', views.modifier, name='modifier'),
+
+
     path('modifierimputation/(?P<pk>[0-9]+)/$', views.modifierimputation, name='modifierimputation'),
     path('model_form_upload/', views.model_form_upload, name='model_form_upload'),
     path('autorise/', views.autorise, name='autorise'),
@@ -23,6 +25,7 @@ urlpatterns = [
     path('listeoperationsimputees/', views.listeoperationsimputees, name='listeoperationsimputees'),
     path('saisiesoperations/', views.saisiesoperations, name='saisiesoperations'),
     path('enregistrement/', views.enregistrement, name='enregistrement'),
+    path('paiementdeclaration/', views.paiement, name='paiementdeclaration'),
     path('imputation/', views.imputationss, name='imputation'),
     path('fourni/', views.fourni, name='fourni'),
     path('scan/', views.scan, name='scan'),

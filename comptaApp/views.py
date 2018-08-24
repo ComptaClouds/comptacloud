@@ -20,8 +20,11 @@ from .forms import*
 from django.contrib import auth
 from pyimagesearch.transform import four_point_transform
 from skimage.filters import threshold_local
-import numpy as np
-import argparse
+from django.contrib.auth.decorators import login_required
+from django.template.loader import get_template
+from django.template import RequestContext
+from django.http import HttpResponse
+
 import cv2
 import imutils
 
@@ -79,17 +82,41 @@ def liaisons(request):
 
 
 def enregistrement(request):
+    ad={}
     if request.method == 'POST':
-        form = continuerenregistrement(request.POST,request.FILES, instance=request.user)
-        if form.is_valid():
-            user=form.save(commit=False)
-            if user.valide is False:
-                user.valide=True
-            user.save()
-            return redirect('home')
+        id=request.POST['id']
+        a=request.POST['a']
+        tpdeclaration=request.POST['tpdeclaration']
+        user=CustomUser.objects.get(id=id)
+        user.typedeclaration = tpdeclaration
+        user.save()
+        q = QueryDict(a, mutable=True)
+        print(a)
+        imp = q.pop('a')
+        print(imp)
+        existe=usertaxe.objects.filter(user_id=id).exists()
+        if existe == True:
+            usertaxe.objects.filter(user_id=id).delete()
+
+        for imp in imp:
+                usertaxe.objects.create(user_id=id,taxe_id=imp)
+
+        tableau=[]
+        lesi=usertaxe.objects.filter(user_id=id)
+        for lesi in lesi:
+            tableau.append(lesi.taxe_id)
+        ad['lesid']=tableau
+
+        return HttpResponse(json.dumps(ad), content_type="application/json")
     else:
-            form = continuerenregistrement(instance=request.user)
-            args={'form':form}
+            impots=impotstaxe.objects.all()
+            i=[]
+            usert=usertaxe.objects.filter(user_id=request.user.id)
+            for usert in usert:
+
+                i.extend(str(usert.taxe_id)+'-')
+
+            args={'impots':impots,'i':i}
             return render(request, 'enregistrement.html',args)
 
 
@@ -628,5 +655,29 @@ def declarations(request):
     if request.method == 'POST':
         return HttpResponse('')
     else:
-        taxes=taxe.objects.all()
-        return render(request, 'declaration.html',{'taxes':taxes})
+        taxes=impotstaxe.objects.all()
+        user=request.user
+        print(user)
+        userna=CustomUser.objects.filter(id=user.id)
+        us=''
+        for userna in userna:
+            us=userna.username
+        return render(request, 'declaration.html',{'taxes':taxes,'username':user.username})
+
+
+
+def paiement(request):
+    if request.method == 'POST':
+        return HttpResponse('')
+    else:
+        user=request.user
+        c=[]
+        a=usertaxe.objects.filter(user_id=user.id)
+        for a in a:
+            b = impotstaxe.objects.filter(id=a.taxe_id)
+            c.extend(b)
+
+        return render(request, 'paiementdeclaration.html',{'c':c})
+
+
+
